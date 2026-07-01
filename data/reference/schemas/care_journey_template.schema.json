@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "care_journey_template.schema.json",
+  "title": "Care Journey Template",
+  "type": "object",
+  "required": [
+    "template_id",
+    "version",
+    "template_type",
+    "name",
+    "description",
+    "source_basis",
+    "privacy",
+    "update_modes",
+    "patient_journey_template",
+    "specialized_process_blueprint",
+    "fallbacks"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "template_id": { "type": "string", "minLength": 1 },
+    "version": { "type": "integer", "minimum": 1 },
+    "template_type": { "const": "blank_patient_journey" },
+    "name": { "$ref": "#/$defs/localized_text" },
+    "description": { "$ref": "#/$defs/localized_text" },
+    "source_basis": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "privacy": {
+      "type": "object",
+      "required": [
+        "stores_patient_identity",
+        "patient_identifier_policy",
+        "session_ttl_minutes",
+        "allowed_extracted_fields"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "stores_patient_identity": { "type": "boolean" },
+        "patient_identifier_policy": { "type": "string", "minLength": 1 },
+        "session_ttl_minutes": { "type": "integer", "minimum": 1 },
+        "allowed_extracted_fields": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "update_modes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/update_mode" },
+      "minItems": 1
+    },
+    "patient_journey_template": { "$ref": "#/$defs/patient_journey" },
+    "specialized_process_blueprint": { "$ref": "#/$defs/specialized_process" },
+    "example_after_update": { "$ref": "#/$defs/patient_journey" },
+    "fallbacks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/fallback" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "localized_text": {
+      "type": "object",
+      "required": ["vi", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "vi": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "update_mode": {
+      "type": "object",
+      "required": ["mode", "description_vi", "fills"],
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["hospital_app_api", "paper_form_ocr"]
+        },
+        "description_vi": { "type": "string", "minLength": 1 },
+        "fills": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "journey_checkpoint": {
+      "type": "object",
+      "required": ["room", "location_code", "floor", "is_done", "completed_at"],
+      "additionalProperties": false,
+      "properties": {
+        "room": { "type": "string", "minLength": 1 },
+        "location_code": { "type": "string", "minLength": 1 },
+        "floor": { "type": "integer", "minimum": 1 },
+        "is_done": { "type": "boolean" },
+        "completed_at": { "type": ["string", "null"] }
+      }
+    },
+    "extracted_fields": {
+      "type": "object",
+      "required": [
+        "specialty",
+        "initial_exam_room",
+        "ordered_services",
+        "return_room",
+        "queue_number",
+        "completed_steps"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "specialty": { "type": ["string", "null"] },
+        "initial_exam_room": { "type": ["string", "null"] },
+        "ordered_services": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "return_room": { "type": ["string", "null"] },
+        "queue_number": { "type": ["string", "integer", "null"] },
+        "completed_steps": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "patient_journey": {
+      "type": "object",
+      "required": [
+        "patient_id",
+        "session_id",
+        "register",
+        "identity",
+        "payment",
+        "specialized_process_updated",
+        "specialized_process",
+        "extracted_fields",
+        "current_step",
+        "next_action",
+        "confidence_score",
+        "requires_user_confirmation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "patient_id": { "type": ["string", "null"] },
+        "session_id": { "type": ["string", "null"] },
+        "register": { "$ref": "#/$defs/journey_checkpoint" },
+        "identity": { "$ref": "#/$defs/journey_checkpoint" },
+        "payment": { "$ref": "#/$defs/journey_checkpoint" },
+        "specialized_process_updated": { "type": "boolean" },
+        "specialized_process": {
+          "anyOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/specialized_process" }
+          ]
+        },
+        "extracted_fields": { "$ref": "#/$defs/extracted_fields" },
+        "current_step": { "type": "string", "minLength": 1 },
+        "next_action": { "type": ["string", "null"] },
+        "confidence_score": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "requires_user_confirmation": { "type": "boolean" }
+      }
+    },
+    "specialized_process": {
+      "type": "object",
+      "required": ["services", "return_room"],
+      "additionalProperties": false,
+      "properties": {
+        "services": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/service" },
+          "minItems": 1
+        },
+        "return_room": { "type": ["string", "null"] }
+      }
+    },
+    "service": {
+      "type": "object",
+      "required": [
+        "service_id",
+        "service_name",
+        "description",
+        "department",
+        "room",
+        "room_name",
+        "building",
+        "floor",
+        "estimated_duration_minutes",
+        "status",
+        "completed_at",
+        "next_step"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "service_id": { "type": "string", "minLength": 1 },
+        "service_name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "department": { "type": "string", "minLength": 1 },
+        "room": { "type": "string", "minLength": 1 },
+        "room_name": { "type": "string", "minLength": 1 },
+        "building": { "type": "string", "minLength": 1 },
+        "floor": { "type": "integer", "minimum": 1 },
+        "estimated_duration_minutes": { "type": "integer", "minimum": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "in_progress", "completed", "skipped"]
+        },
+        "completed_at": { "type": ["string", "null"] },
+        "next_step": { "type": ["string", "null"] }
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "required": ["fallback_id", "trigger", "message_vi"],
+      "additionalProperties": false,
+      "properties": {
+        "fallback_id": { "type": "string", "minLength": 1 },
+        "trigger": { "type": "string", "minLength": 1 },
+        "message_vi": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

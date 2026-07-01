@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+  # ─────────────────────────────────────────────────────────────
+  # Patient-facing hospital app (Next.js)
+  # ─────────────────────────────────────────────────────────────
+  hospital-app:
+    build:
+      context: ./apps/hospital-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_ENGINE_BASE_URL=http://navigation-engine:8000
+    depends_on:
+      - navigation-engine
+    networks:
+      - sdk-network
+
+  # ─────────────────────────────────────────────────────────────
+  # Admin console / Map Builder (Next.js)
+  # ─────────────────────────────────────────────────────────────
+  admin-console:
+    build:
+      context: ./apps/admin-console
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NEXT_PUBLIC_ENGINE_BASE_URL=http://navigation-engine:8000
+    depends_on:
+      - navigation-engine
+    networks:
+      - sdk-network
+
+  # ─────────────────────────────────────────────────────────────
+  # AI Navigation Engine (FastAPI Python backend)
+  # ─────────────────────────────────────────────────────────────
+  navigation-engine:
+    build:
+      context: ./services/navigation-engine
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount the shared /data directory so the engine can read
+      # all demo data files (maps, sessions, reference data)
+      - ./data:/app/data
+    env_file:
+      - .env
+    networks:
+      - sdk-network
+
+networks:
+  sdk-network:
+    driver: bridge

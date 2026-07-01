@@ -1,0 +1,9 @@
+# ─────────────────────────────────────────────────────────────
+# Root requirements — for running helper scripts on your machine
+# (seed_demo_data.py, validate_data.py, generate_precomputed_graph.py)
+#
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────
+
+jsonschema==4.23.0    # Validates JSON data files against their schemas
+python-dotenv==1.0.1  # Reads .env file in scripts (e.g. to find DATA_ROOT)

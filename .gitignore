@@ -1,5 +1,34 @@
+# Environment — never commit secrets
 .env
+.env.local
+.env.example
 
-FILE_ARCHITECTURE.md
+# Node dependencies
+node_modules/
+.pnpm-store/
 
-\docs
+# Next.js build output
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Runtime data (reset before every demo)
+data/runtime/sessions/*.json
+data/runtime/events/events.json
+data/runtime/dashboard_cache/dashboard_summary.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+reflection.md 
+ARCHITECTURE.md

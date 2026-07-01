@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   Hospital brand theme — same colors as hospital-app
+   Admin UI uses same palette for visual consistency
+   ───────────────────────────────────────────────────────────── */
+@theme {
+  --color-hospital-blue:  #0057A8;
+  --color-hospital-green: #00875A;
+  --color-hospital-red:   #D32F2F;
+  --color-hospital-gray:  #F5F5F5;
+
+  --font-sans: "Be Vietnam Pro", Arial, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

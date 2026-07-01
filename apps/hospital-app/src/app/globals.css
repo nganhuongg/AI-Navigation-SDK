@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Bach Mai-style deep forest green — all headers, buttons, active states */
+  --color-hospital-green:       #1A7C3E;
+  /* Very light green — tile backgrounds, badge fills, selected states */
+  --color-hospital-green-light: #E8F5EE;
+  /* Step status colors used on the appointment/navigation pages */
+  --color-hospital-orange:      #F59E0B;  /* in-progress */
+  --color-hospital-blue:        #3B82F6;  /* pending */
+  --color-hospital-red:         #EF4444;  /* error / urgent */
+  /* Page-level background (off-white) */
+  --color-hospital-gray:        #F3F4F6;
+
+  --font-sans: "Be Vietnam Pro", Arial, sans-serif;
+}
+
+:root {
+  --background: #F3F4F6;
+  --foreground: #111827;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

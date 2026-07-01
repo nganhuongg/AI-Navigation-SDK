@@ -1,0 +1,277 @@
+{
+  "template_id": "standard_outpatient_v1",
+  "version": 1,
+  "template_type": "blank_patient_journey",
+  "name": {
+    "vi": "Mẫu hành trình khám ngoại trú tiêu chuẩn",
+    "en": "Standard outpatient patient journey template"
+  },
+  "description": {
+    "vi": "Mẫu trạng thái trống được sao chép cho từng phiên bệnh nhân. AI không tự suy luận quy trình y tế; AI chỉ điền các trường còn thiếu từ dữ liệu bệnh viện, app, OCR phiếu khám hoặc xác nhận của người dùng.",
+    "en": "A blank state template copied into each patient session. AI does not infer medical workflow; it only fills missing fields from hospital data, app data, OCR forms, or user confirmation."
+  },
+  "source_basis": [
+    "docs/AI NAVIGATION SDK.pdf pages 15-19: first-round Care Journey Template idea and patient_journey examples",
+    "docs/AI NAVIGATION SDK.pdf pages 26-29: Session Context, extracted fields, privacy boundary, and schema enforcement",
+    "data/raw/SƠ ĐỒ BỆNH VIỆN - data_benh_vien.csv: current demo POI codes and room names"
+  ],
+  "privacy": {
+    "stores_patient_identity": false,
+    "patient_identifier_policy": "patient_id is a session-scoped placeholder or account reference, not a legal identity field.",
+    "session_ttl_minutes": 480,
+    "allowed_extracted_fields": [
+      "specialty",
+      "initial_exam_room",
+      "ordered_services",
+      "return_room",
+      "queue_number",
+      "completed_steps"
+    ]
+  },
+  "update_modes": [
+    {
+      "mode": "hospital_app_api",
+      "description_vi": "Bệnh viện cập nhật trạng thái khám trực tiếp trong app hoặc HIS.",
+      "fills": [
+        "current_step",
+        "completed_steps",
+        "initial_exam_room",
+        "ordered_services",
+        "return_room"
+      ]
+    },
+    {
+      "mode": "paper_form_ocr",
+      "description_vi": "Bệnh nhân chụp phiếu khám hoặc phiếu chỉ định; OCR và SmartBot trích xuất trường an toàn.",
+      "fills": [
+        "initial_exam_room",
+        "ordered_services",
+        "return_room"
+      ]
+    }
+  ],
+  "patient_journey_template": {
+    "patient_id": null,
+    "session_id": null,
+    "register": {
+      "room": "Quầy hướng dẫn",
+      "location_code": "A101",
+      "floor": 1,
+      "is_done": false,
+      "completed_at": null
+    },
+    "identity": {
+      "room": "Quầy xác thực CCCD/VNeID",
+      "location_code": "A103",
+      "floor": 1,
+      "is_done": false,
+      "completed_at": null
+    },
+    "payment": {
+      "room": "Quầy thanh toán 1",
+      "location_code": "A115",
+      "floor": 1,
+      "is_done": false,
+      "completed_at": null
+    },
+    "specialized_process_updated": false,
+    "specialized_process": null,
+    "extracted_fields": {
+      "specialty": null,
+      "initial_exam_room": null,
+      "ordered_services": [],
+      "return_room": null,
+      "queue_number": null,
+      "completed_steps": []
+    },
+    "current_step": "waiting_for_doctor",
+    "next_action": "Khám ban đầu",
+    "confidence_score": null,
+    "requires_user_confirmation": false
+  },
+  "specialized_process_blueprint": {
+    "services": [
+      {
+        "service_id": "blood_collection",
+        "service_name": "Lấy máu",
+        "description": "Lấy mẫu máu để thực hiện các xét nghiệm được chỉ định",
+        "department": "Cận lâm sàng / Chẩn đoán hình ảnh",
+        "room": "A303",
+        "room_name": "Phòng lấy máu 1",
+        "building": "Khu A",
+        "floor": 3,
+        "estimated_duration_minutes": 15,
+        "status": "pending",
+        "completed_at": null,
+        "next_step": "general_ultrasound"
+      },
+      {
+        "service_id": "general_ultrasound",
+        "service_name": "Siêu âm tổng quát",
+        "description": "Thực hiện siêu âm theo chỉ định trên phiếu khám",
+        "department": "Cận lâm sàng / Chẩn đoán hình ảnh",
+        "room": "A311",
+        "room_name": "Phòng siêu âm tổng quát 1",
+        "building": "Khu A",
+        "floor": 3,
+        "estimated_duration_minutes": 20,
+        "status": "pending",
+        "completed_at": null,
+        "next_step": "return_doctor"
+      },
+      {
+        "service_id": "return_doctor",
+        "service_name": "Quay lại bác sĩ",
+        "description": "Bác sĩ đọc kết quả và đưa ra kết luận",
+        "department": "Khám lâm sàng",
+        "room": "A203",
+        "room_name": "PK Tim mạch 1",
+        "building": "Khu A",
+        "floor": 2,
+        "estimated_duration_minutes": 10,
+        "status": "pending",
+        "completed_at": null,
+        "next_step": "pharmacy"
+      },
+      {
+        "service_id": "pharmacy",
+        "service_name": "Nhận thuốc",
+        "description": "Nhận thuốc theo đơn được kê",
+        "department": "Nhà thuốc / thuốc",
+        "room": "A124",
+        "room_name": "Nhà thuốc",
+        "building": "Khu A",
+        "floor": 1,
+        "estimated_duration_minutes": 10,
+        "status": "pending",
+        "completed_at": null,
+        "next_step": null
+      }
+    ],
+    "return_room": "A203"
+  },
+  "example_after_update": {
+    "patient_id": "SESSION_PATIENT_REF",
+    "session_id": "sess_demo_001",
+    "register": {
+      "room": "Quầy hướng dẫn",
+      "location_code": "A101",
+      "floor": 1,
+      "is_done": true,
+      "completed_at": "08:05"
+    },
+    "identity": {
+      "room": "Quầy xác thực CCCD/VNeID",
+      "location_code": "A103",
+      "floor": 1,
+      "is_done": true,
+      "completed_at": "08:10"
+    },
+    "payment": {
+      "room": "Quầy thanh toán 1",
+      "location_code": "A115",
+      "floor": 1,
+      "is_done": true,
+      "completed_at": "08:15"
+    },
+    "specialized_process_updated": true,
+    "specialized_process": {
+      "services": [
+        {
+          "service_id": "blood_collection",
+          "service_name": "Lấy máu",
+          "description": "Lấy mẫu máu để thực hiện các xét nghiệm được chỉ định",
+          "department": "Cận lâm sàng / Chẩn đoán hình ảnh",
+          "room": "A303",
+          "room_name": "Phòng lấy máu 1",
+          "building": "Khu A",
+          "floor": 3,
+          "estimated_duration_minutes": 15,
+          "status": "completed",
+          "completed_at": "08:35",
+          "next_step": "general_ultrasound"
+        },
+        {
+          "service_id": "general_ultrasound",
+          "service_name": "Siêu âm tổng quát",
+          "description": "Thực hiện siêu âm theo chỉ định trên phiếu khám",
+          "department": "Cận lâm sàng / Chẩn đoán hình ảnh",
+          "room": "A311",
+          "room_name": "Phòng siêu âm tổng quát 1",
+          "building": "Khu A",
+          "floor": 3,
+          "estimated_duration_minutes": 20,
+          "status": "in_progress",
+          "completed_at": null,
+          "next_step": "return_doctor"
+        },
+        {
+          "service_id": "return_doctor",
+          "service_name": "Quay lại bác sĩ",
+          "description": "Bác sĩ đọc kết quả và đưa ra kết luận",
+          "department": "Khám lâm sàng",
+          "room": "A203",
+          "room_name": "PK Tim mạch 1",
+          "building": "Khu A",
+          "floor": 2,
+          "estimated_duration_minutes": 10,
+          "status": "pending",
+          "completed_at": null,
+          "next_step": "pharmacy"
+        },
+        {
+          "service_id": "pharmacy",
+          "service_name": "Nhận thuốc",
+          "description": "Nhận thuốc theo đơn được kê",
+          "department": "Nhà thuốc / thuốc",
+          "room": "A124",
+          "room_name": "Nhà thuốc",
+          "building": "Khu A",
+          "floor": 1,
+          "estimated_duration_minutes": 10,
+          "status": "pending",
+          "completed_at": null,
+          "next_step": null
+        }
+      ],
+      "return_room": "A203"
+    },
+    "extracted_fields": {
+      "specialty": "Tim mạch",
+      "initial_exam_room": "A203",
+      "ordered_services": [
+        "blood_collection",
+        "general_ultrasound"
+      ],
+      "return_room": "A203",
+      "queue_number": null,
+      "completed_steps": [
+        "register",
+        "identity",
+        "payment",
+        "blood_collection"
+      ]
+    },
+    "current_step": "general_ultrasound",
+    "next_action": "Đi tới phòng A311 để siêu âm tổng quát",
+    "confidence_score": 0.92,
+    "requires_user_confirmation": true
+  },
+  "fallbacks": [
+    {
+      "fallback_id": "low_ocr_confidence",
+      "trigger": "ocr_confidence_below_threshold",
+      "message_vi": "Cháu không đọc rõ phiếu. Bác chụp lại giúp cháu hoặc xác nhận thông tin thủ công."
+    },
+    {
+      "fallback_id": "unknown_location",
+      "trigger": "location_code_not_found_or_unverified_map",
+      "message_vi": "Khu vực này chưa có trong bản đồ đã xác thực. Bác hỏi quầy hướng dẫn gần nhất giúp cháu."
+    },
+    {
+      "fallback_id": "medical_advice",
+      "trigger": "out_of_scope_medical_question",
+      "message_vi": "Cháu không thể tư vấn điều trị. Bác hỏi trực tiếp bác sĩ hoặc điều dưỡng giúp cháu."
+    }
+  ]
+}
