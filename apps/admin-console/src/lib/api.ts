@@ -5,6 +5,7 @@ import type {
   DigitalMap,
   HealthStatus,
   MapStatus,
+  MapListItem,
   OCRResult,
   RouteResult,
   SessionContext,
@@ -120,9 +121,9 @@ export async function sendChatMessage(
   return unwrap<ChatbotMessageResponse>(response);
 }
 
-export async function listMaps(): Promise<DigitalMap[]> {
+export async function listMaps(): Promise<MapListItem[]> {
   const response = await fetch(`${getEngineBaseUrl()}/maps`);
-  return unwrap<DigitalMap[]>(response);
+  return unwrap<MapListItem[]>(response);
 }
 
 export async function digitizeMap(): Promise<DigitalMap> {

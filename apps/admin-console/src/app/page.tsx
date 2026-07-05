@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { getEngineBaseUrl, getHealth, listMaps } from "@/lib/api";
-import type { DigitalMap, HealthStatus } from "@/lib/types";
+import type { HealthStatus, MapListItem } from "@/lib/types";
 import { Chip, EmptyState } from "@/components/ui";
 
 export default function OverviewPage() {
   const [engineUrl, setEngineUrl] = useState<string | null>(null);
   const [health, setHealth] = useState<HealthStatus | null>(null);
   const [healthError, setHealthError] = useState<string | null>(null);
-  const [maps, setMaps] = useState<DigitalMap[] | null>(null);
+  const [maps, setMaps] = useState<MapListItem[] | null>(null);
 
   useEffect(() => {
     setEngineUrl(getEngineBaseUrl());
@@ -86,7 +86,8 @@ export default function OverviewPage() {
             </div>
             {verifiedMap ? (
               <div className="oc-sub">
-                {verifiedMap.nodes.length} nút · {verifiedMap.edges.length} cạnh · {verifiedMap.pois.length} POI
+                {verifiedMap.floor_count} tầng · {verifiedMap.node_count} nút · {verifiedMap.edge_count} cạnh ·{" "}
+                {verifiedMap.poi_count} POI
               </div>
             ) : (
               <div className="oc-sub">Chưa số hoá bản đồ nào</div>

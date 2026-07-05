@@ -195,6 +195,18 @@ export type DigitalMap = {
   verified_at?: string | null;
 };
 
+export type MapListItem = {
+  map_id: string;
+  status: MapStatus;
+  version: number;
+  floor_count: number;
+  node_count: number;
+  edge_count: number;
+  poi_count: number;
+  created_at: string;
+  verified_at?: string | null;
+};
+
 export type RouteResult = {
   map_available: boolean;
   destination_room: string;
