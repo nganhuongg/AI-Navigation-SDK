@@ -2,9 +2,15 @@
 export type AnalyticsEvent = {
   event_id: string;
   event_type: string;
-  session_id: string;
+  session_id?: string;
   timestamp: string;
-  metadata: Record<string, string | number | boolean>;
+  metadata: Record<string, unknown>;
+};
+
+export type AnalyticsEventRequest = {
+  event_type: string;
+  session_id?: string;
+  metadata?: Record<string, unknown>;
 };
 
 export type DashboardSummary = {

@@ -25,6 +25,19 @@ numpy==2.1.3                       # Numeric arrays used by OpenCV and scikit-im
 Pillow==11.0.0                     # Load and save PNG/JPG floor plan images
 
 # ─────────────────────────────────────────────────────────────
+# Voice preprocessing (Phase 5) — STT INPUT only. OPTIONAL + heavy.
+# The backend runs without these (mock STT/TTS + pass-through preprocessing).
+# Install to enable real Silero VAD + RNNoise/noise suppression. Adjust pins if needed.
+# ─────────────────────────────────────────────────────────────
+# torch                    # required by silero-vad; use a CPU wheel for demo laptops
+# silero-vad==5.1.2         # voice activity detection
+# rnnoise                   # preferred denoiser when an installed wrapper is available
+# pyrnnoise                 # alternate RNNoise wrapper supported by audio_preprocess.py
+# noisereduce==3.0.3        # fallback denoiser when RNNoise is unavailable
+# soundfile==0.12.1         # decode/encode WAV for preprocessing
+# scipy                     # higher-quality resampling; linear interpolation is fallback
+
+# ─────────────────────────────────────────────────────────────
 # Testing
 # ─────────────────────────────────────────────────────────────
 pytest==8.3.3             # Test runner

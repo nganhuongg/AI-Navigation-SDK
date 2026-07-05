@@ -108,9 +108,14 @@
         "specialty",
         "initial_exam_room",
         "ordered_services",
+        "detected_room_codes",
+        "room_descriptions",
+        "room_notes",
+        "room_queue_numbers",
         "return_room",
         "queue_number",
-        "completed_steps"
+        "completed_steps",
+        "source"
       ],
       "additionalProperties": false,
       "properties": {
@@ -120,11 +125,31 @@
           "type": "array",
           "items": { "type": "string", "minLength": 1 }
         },
+        "detected_room_codes": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "room_descriptions": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "room_notes": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "room_queue_numbers": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
         "return_room": { "type": ["string", "null"] },
         "queue_number": { "type": ["string", "integer", "null"] },
         "completed_steps": {
           "type": "array",
           "items": { "type": "string", "minLength": 1 }
+        },
+        "source": {
+          "type": ["string", "null"],
+          "enum": ["ocr", "hospital_api", "manual", null]
         }
       }
     },

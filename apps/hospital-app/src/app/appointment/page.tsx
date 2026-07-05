@@ -11,12 +11,19 @@
   Everything else on the page is identical between the two states.
 */
 
+import { useEffect } from "react";
 import Link from "next/link";
 import AppHeader from "@/components/AppHeader";
+import ReadAloudButton from "@/components/ReadAloudButton";
 import { useDemo } from "@/context/demo";
+import SmartUXEvents from "@/integrations/smartux/smartuxEvents";
 
 export default function AppointmentPage() {
   const { sdkEnabled } = useDemo();
+
+  useEffect(() => {
+    SmartUXEvents.screenView("Appointment");
+  }, []);
 
   return (
     <div className="flex flex-col flex-1">
@@ -52,12 +59,17 @@ export default function AppointmentPage() {
             <span className="text-hospital-green font-semibold text-sm">Đã xác nhận đặt lịch</span>
           </div>
           <div className="divide-y divide-gray-100">
-            <InfoRow label="Chuyên khoa"  value="Tim mạch" />
-            <InfoRow label="Bác sĩ"       value="BS. Nguyễn Minh An" />
-            <InfoRow label="Ngày khám"    value="01/07/2026" />
-            <InfoRow label="Giờ khám"     value="14:00" />
-            <InfoRow label="Phòng khám"   value="A203 — PK Tim mạch 1, Tầng 2" highlight />
-            <InfoRow label="Phí dự kiến"  value="300.000 VNĐ" />
+            <InfoRow label="Chuyên khoa" value="Tim mạch" speakText="Chuyên khoa Tim mạch" />
+            <InfoRow label="Bác sĩ" value="BS. Nguyễn Minh An" speakText="Bác sĩ Nguyễn Minh An" />
+            <InfoRow label="Ngày khám" value="01/07/2026" speakText="Ngày khám 01 tháng 07 năm 2026" />
+            <InfoRow label="Giờ khám" value="14:00" speakText="Giờ khám 14 giờ" />
+            <InfoRow
+              label="Phòng khám"
+              value="A203 — PK Tim mạch 1, Tầng 2"
+              highlight
+              speakText="Phòng khám A203, phòng tim mạch 1, tầng 2"
+            />
+            <InfoRow label="Phí dự kiến" value="300.000 VNĐ" speakText="Phí dự kiến ba trăm nghìn đồng" />
           </div>
         </div>
 
@@ -84,17 +96,29 @@ export default function AppointmentPage() {
             This is the feature the SDK adds — the patient can now get
             real-time voice-guided navigation to their room.
           */
-          <Link
-            href="/navigate"
-            className="flex items-center justify-center gap-2 w-full bg-hospital-green
-                       text-white font-bold py-4 rounded-xl text-sm shadow-md active:opacity-90"
-          >
-            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" strokeWidth={2} stroke="white">
-              <path strokeLinecap="round" strokeLinejoin="round"
-                d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c-.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-            </svg>
-            Tìm đường đến phòng khám
-          </Link>
+          <div className="space-y-3">
+            <Link
+              href="/assistant"
+              className="flex items-center justify-center gap-2 w-full bg-zinc-900
+                         text-white font-bold py-4 rounded-xl text-sm shadow-md active:opacity-90"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" strokeWidth={2} stroke="white">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-12 0v1.5a6 6 0 006 6zm0 0v3m-3 0h6M12 15a3 3 0 003-3V5.25a3 3 0 10-6 0V12a3 3 0 003 3z" />
+              </svg>
+              Hỏi trợ lý bằng giọng nói
+            </Link>
+            <Link
+              href="/navigate"
+              className="flex items-center justify-center gap-2 w-full bg-hospital-green
+                         text-white font-bold py-4 rounded-xl text-sm shadow-md active:opacity-90"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" strokeWidth={2} stroke="white">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c-.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+              </svg>
+              Tìm đường đến phòng khám
+            </Link>
+          </div>
         ) : (
           /*
             BEFORE SDK: no navigation feature. The patient only has the room
@@ -128,18 +152,24 @@ function InfoRow({
   label,
   value,
   highlight = false,
+  speakText,
 }: {
   label: string;
   value: string;
   highlight?: boolean;
+  speakText?: string;
 }) {
+  const { sdkEnabled } = useDemo();
   return (
     <div className="flex items-start justify-between px-4 py-3 gap-4">
       <span className="text-gray-500 text-sm flex-shrink-0 w-28">{label}</span>
-      <span className={`text-sm font-medium text-right
-        ${highlight ? "text-hospital-green" : "text-gray-800"}`}>
-        {value}
-      </span>
+      <div className="flex items-start gap-2 min-w-0">
+        <span className={`text-sm font-medium text-right break-words
+          ${highlight ? "text-hospital-green" : "text-gray-800"}`}>
+          {value}
+        </span>
+        {sdkEnabled && speakText ? <ReadAloudButton text={speakText} label={label} /> : null}
+      </div>
     </div>
   );
 }

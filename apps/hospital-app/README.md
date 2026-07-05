@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## SmartUX Tracking
+
+The app includes a SmartUX wrapper with a safe web/dev fallback. When the native SDK is not present, the console shows mock calls such as `[SmartUX mock] screen_view ...` and the app keeps working normally.
+
+Manual check:
+
+1. Open the home screen and confirm `screen_view` for `Home`.
+2. Tap `Quét phiếu` or `Chụp phiếu` and confirm `ocr_started`.
+3. Send a chatbot question and confirm `chatbot_question`.
+4. Tap any speaker button and confirm `voice_guide_played`.

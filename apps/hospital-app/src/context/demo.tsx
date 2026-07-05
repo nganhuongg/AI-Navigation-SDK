@@ -13,21 +13,29 @@
 */
 
 import { createContext, useContext, useState } from "react";
+import type { PatientSession } from "@/lib/api";
 
 type DemoContextType = {
   sdkEnabled: boolean;
+  session: PatientSession | null;
   toggle: () => void;
+  setSession: (session: PatientSession | null) => void;
 };
 
 const DemoContext = createContext<DemoContextType>({
   sdkEnabled: false,
+  session: null,
   toggle: () => {},
+  setSession: () => {},
 });
 
 export function DemoProvider({ children }: { children: React.ReactNode }) {
   const [sdkEnabled, setSdkEnabled] = useState(false);
+  const [session, setSession] = useState<PatientSession | null>(null);
   return (
-    <DemoContext.Provider value={{ sdkEnabled, toggle: () => setSdkEnabled(v => !v) }}>
+    <DemoContext.Provider
+      value={{ sdkEnabled, session, setSession, toggle: () => setSdkEnabled(v => !v) }}
+    >
       {children}
     </DemoContext.Provider>
   );

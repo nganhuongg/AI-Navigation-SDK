@@ -11,7 +11,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_ENGINE_BASE_URL=http://navigation-engine:8000
+      - NEXT_PUBLIC_ENGINE_BASE_URL=http://navigation-engine:8001
     depends_on:
       - navigation-engine
     networks:
@@ -27,7 +27,7 @@ services:
     ports:
       - "3001:3001"
     environment:
-      - NEXT_PUBLIC_ENGINE_BASE_URL=http://navigation-engine:8000
+      - NEXT_PUBLIC_ENGINE_BASE_URL=http://navigation-engine:8001
     depends_on:
       - navigation-engine
     networks:
@@ -41,7 +41,7 @@ services:
       context: ./services/navigation-engine
       dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - "8001:8001"
     volumes:
       # Mount the shared /data directory so the engine can read
       # all demo data files (maps, sessions, reference data)

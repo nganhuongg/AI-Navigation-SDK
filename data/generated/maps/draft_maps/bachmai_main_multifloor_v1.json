@@ -1,0 +1,6194 @@
+{
+  "map_id": "bachmai_main_multifloor_v1",
+  "hospital_id": "bachmai_demo",
+  "building_id": "building_main_a",
+  "status": "draft",
+  "version": 1,
+  "floors": [
+    {
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "image_width": 2342,
+      "image_height": 1656,
+      "source_image": "map-floor1.png"
+    },
+    {
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "image_width": 2342,
+      "image_height": 1656,
+      "source_image": "map-floor2.png"
+    },
+    {
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "image_width": 2342,
+      "image_height": 1656,
+      "source_image": "map-floor3.png"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "f1_main_left_top",
+      "x": 220.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 main_left_top"
+    },
+    {
+      "node_id": "f1_main_mid_top",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 main_mid_top"
+    },
+    {
+      "node_id": "f1_main_right_top",
+      "x": 1320.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 main_right_top"
+    },
+    {
+      "node_id": "f1_main_left_bottom",
+      "x": 220.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 main_left_bottom"
+    },
+    {
+      "node_id": "f1_main_mid_bottom",
+      "x": 805.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 main_mid_bottom"
+    },
+    {
+      "node_id": "f1_main_right_bottom",
+      "x": 1320.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 main_right_bottom"
+    },
+    {
+      "node_id": "f1_branch_bottom",
+      "x": 1380.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 branch_bottom"
+    },
+    {
+      "node_id": "f1_branch_top",
+      "x": 1380.0,
+      "y": 248.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 branch_top"
+    },
+    {
+      "node_id": "f1_upper_left_top",
+      "x": 1500.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 upper_left_top"
+    },
+    {
+      "node_id": "f1_upper_mid_top",
+      "x": 1815.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 upper_mid_top"
+    },
+    {
+      "node_id": "f1_upper_right_top",
+      "x": 2132.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 upper_right_top"
+    },
+    {
+      "node_id": "f1_upper_left_bottom",
+      "x": 1500.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 upper_left_bottom"
+    },
+    {
+      "node_id": "f1_upper_mid_bottom",
+      "x": 1815.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 upper_mid_bottom"
+    },
+    {
+      "node_id": "f1_upper_right_bottom",
+      "x": 2132.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 upper_right_bottom"
+    },
+    {
+      "node_id": "f1_elevator_a",
+      "x": 918.0,
+      "y": 945.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 elevator_a"
+    },
+    {
+      "node_id": "f1_stairs_a",
+      "x": 1030.0,
+      "y": 945.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 stairs_a"
+    },
+    {
+      "node_id": "f1_elevator_b",
+      "x": 2132.0,
+      "y": 416.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 elevator_b"
+    },
+    {
+      "node_id": "f1_stairs_b",
+      "x": 2132.0,
+      "y": 360.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 1 stairs_b"
+    },
+    {
+      "node_id": "door_A101",
+      "x": 220.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A101"
+    },
+    {
+      "node_id": "node_A101",
+      "x": 357.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A101",
+      "poi_id": "A101",
+      "label": "A101 - Quầy hướng dẫn"
+    },
+    {
+      "node_id": "door_A102",
+      "x": 220.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A102"
+    },
+    {
+      "node_id": "node_A102",
+      "x": 469.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A102",
+      "poi_id": "A102",
+      "label": "A102 - Kiosk lấy số"
+    },
+    {
+      "node_id": "door_A103",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A103"
+    },
+    {
+      "node_id": "node_A103",
+      "x": 581.0,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A103",
+      "poi_id": "A103",
+      "label": "A103 - Quầy xác thực CCCD/VNeID"
+    },
+    {
+      "node_id": "door_A104",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A104"
+    },
+    {
+      "node_id": "node_A104",
+      "x": 692.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A104",
+      "poi_id": "A104",
+      "label": "A104 - Quầy đăng ký 1"
+    },
+    {
+      "node_id": "door_A105",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A105"
+    },
+    {
+      "node_id": "node_A105",
+      "x": 804.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A105",
+      "poi_id": "A105",
+      "label": "A105 - Quầy đăng ký 2"
+    },
+    {
+      "node_id": "door_A106",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A106"
+    },
+    {
+      "node_id": "node_A106",
+      "x": 916.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A106",
+      "poi_id": "A106",
+      "label": "A106 - Quầy đăng ký 3"
+    },
+    {
+      "node_id": "door_A107",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A107"
+    },
+    {
+      "node_id": "node_A107",
+      "x": 1027.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A107",
+      "poi_id": "A107",
+      "label": "A107 - Quầy BHYT 1"
+    },
+    {
+      "node_id": "door_A108",
+      "x": 1320.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A108"
+    },
+    {
+      "node_id": "node_A108",
+      "x": 1138.5,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A108",
+      "poi_id": "A108",
+      "label": "A108 - Quầy BHYT 2"
+    },
+    {
+      "node_id": "door_A109",
+      "x": 1320.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A109"
+    },
+    {
+      "node_id": "node_A109",
+      "x": 1258.0,
+      "y": 701.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A109",
+      "poi_id": "A109",
+      "label": "A109 - Phòng tư vấn khám theo yêu cầu"
+    },
+    {
+      "node_id": "door_A110",
+      "x": 1500.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A110"
+    },
+    {
+      "node_id": "node_A110",
+      "x": 1502.5,
+      "y": 248.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A110",
+      "poi_id": "A110",
+      "label": "A110 - Quầy trả kết quả giấy tờ"
+    },
+    {
+      "node_id": "door_A111",
+      "x": 1500.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A111"
+    },
+    {
+      "node_id": "node_A111",
+      "x": 1628.4,
+      "y": 248.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A111",
+      "poi_id": "A111",
+      "label": "A111 - Phòng in/photocopy y tế"
+    },
+    {
+      "node_id": "door_A112",
+      "x": 1815.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A112"
+    },
+    {
+      "node_id": "node_A112",
+      "x": 1754.3,
+      "y": 248.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A112",
+      "poi_id": "A112",
+      "label": "A112 - Phòng sơ cứu nhỏ"
+    },
+    {
+      "node_id": "door_A113",
+      "x": 1815.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A113"
+    },
+    {
+      "node_id": "node_A113",
+      "x": 1880.2,
+      "y": 248.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A113",
+      "poi_id": "A113",
+      "label": "A113 - Phòng an ninh-y tế trực"
+    },
+    {
+      "node_id": "door_A114",
+      "x": 2132.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A114"
+    },
+    {
+      "node_id": "node_A114",
+      "x": 2005.5,
+      "y": 522.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A114",
+      "poi_id": "A114",
+      "label": "A114 - Kho cấp phát thuốc"
+    },
+    {
+      "node_id": "door_A115",
+      "x": 1815.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A115"
+    },
+    {
+      "node_id": "node_A115",
+      "x": 1879.75,
+      "y": 522.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A115",
+      "poi_id": "A115",
+      "label": "A115 - Quầy thanh toán 1"
+    },
+    {
+      "node_id": "door_A116",
+      "x": 1815.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A116"
+    },
+    {
+      "node_id": "node_A116",
+      "x": 1754.0,
+      "y": 522.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A116",
+      "poi_id": "A116",
+      "label": "A116 - Quầy thanh toán 2"
+    },
+    {
+      "node_id": "door_A117",
+      "x": 1500.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A117"
+    },
+    {
+      "node_id": "node_A117",
+      "x": 1628.25,
+      "y": 522.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A117",
+      "poi_id": "A117",
+      "label": "A117 - Quầy tạm ứng viện phí"
+    },
+    {
+      "node_id": "door_A118",
+      "x": 1500.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A118"
+    },
+    {
+      "node_id": "node_A118",
+      "x": 1502.5,
+      "y": 522.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A118",
+      "poi_id": "A118",
+      "label": "A118 - Quầy bảo lãnh viện phí"
+    },
+    {
+      "node_id": "door_A119",
+      "x": 1320.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A119"
+    },
+    {
+      "node_id": "node_A119",
+      "x": 1258.0,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A119",
+      "poi_id": "A119",
+      "label": "A119 - Điểm gọi hỗ trợ"
+    },
+    {
+      "node_id": "door_A120",
+      "x": 1030.0,
+      "y": 945.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A120"
+    },
+    {
+      "node_id": "node_A120",
+      "x": 1139.5,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A120",
+      "poi_id": "A120",
+      "label": "A120 - Khu chờ đăng ký"
+    },
+    {
+      "node_id": "door_A121",
+      "x": 805.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A121"
+    },
+    {
+      "node_id": "node_A121",
+      "x": 804.5,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A121",
+      "poi_id": "A121",
+      "label": "A121 - Phòng công tác xã hội"
+    },
+    {
+      "node_id": "door_A122",
+      "x": 805.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A122"
+    },
+    {
+      "node_id": "node_A122",
+      "x": 692.5,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A122",
+      "poi_id": "A122",
+      "label": "A122 - Phòng hỗ trợ người cao tuổi"
+    },
+    {
+      "node_id": "door_A123",
+      "x": 805.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A123"
+    },
+    {
+      "node_id": "node_A123",
+      "x": 581.0,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A123",
+      "poi_id": "A123",
+      "label": "A123 - Phòng chăm sóc khách hàng"
+    },
+    {
+      "node_id": "door_A124",
+      "x": 220.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A124"
+    },
+    {
+      "node_id": "node_A124",
+      "x": 220.0,
+      "y": 750.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A124",
+      "poi_id": "A124",
+      "label": "A124 - Nhà thuốc"
+    },
+    {
+      "node_id": "door_A125",
+      "x": 220.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A125"
+    },
+    {
+      "node_id": "node_A125",
+      "x": 225.562945368171,
+      "y": 703.9075663333596,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_A125",
+      "poi_id": "A125",
+      "label": "A125 - Quầy tư vấn dùng thuốc"
+    },
+    {
+      "node_id": "door_ELEV-1A",
+      "x": 918.0,
+      "y": 945.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ELEV-1A"
+    },
+    {
+      "node_id": "node_ELEV-1A",
+      "x": 916.5,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "elevator",
+      "location_id": "loc_ELEV-1A",
+      "poi_id": "ELEV-1A",
+      "label": "ELEV-1A - Thang máy khu A tầng 1"
+    },
+    {
+      "node_id": "door_ELEV-1B",
+      "x": 2132.0,
+      "y": 416.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ELEV-1B"
+    },
+    {
+      "node_id": "node_ELEV-1B",
+      "x": 2132.0,
+      "y": 416.0,
+      "floor_number": 1,
+      "kind": "elevator",
+      "location_id": "loc_ELEV-1B",
+      "poi_id": "ELEV-1B",
+      "label": "ELEV-1B - Thang máy khu B tầng 1"
+    },
+    {
+      "node_id": "door_ENT-1-01",
+      "x": 220.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ENT-1-01"
+    },
+    {
+      "node_id": "node_ENT-1-01",
+      "x": 220.0,
+      "y": 607.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_ENT-1-01",
+      "poi_id": "ENT-1-01",
+      "label": "ENT-1-01 - Lối vào chính"
+    },
+    {
+      "node_id": "door_HALL-1-BRANCH",
+      "x": 1320.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to HALL-1-BRANCH"
+    },
+    {
+      "node_id": "node_HALL-1-BRANCH",
+      "x": 1380.0,
+      "y": 600.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_HALL-1-BRANCH",
+      "poi_id": "HALL-1-BRANCH",
+      "label": "HALL-1-BRANCH - Hành lang nhánh tầng 1"
+    },
+    {
+      "node_id": "door_HALL-1-MAIN",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to HALL-1-MAIN"
+    },
+    {
+      "node_id": "node_HALL-1-MAIN",
+      "x": 805.0,
+      "y": 772.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_HALL-1-MAIN",
+      "poi_id": "HALL-1-MAIN",
+      "label": "HALL-1-MAIN - Hành lang chính tầng 1"
+    },
+    {
+      "node_id": "door_STAIR-1A",
+      "x": 1030.0,
+      "y": 945.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to STAIR-1A"
+    },
+    {
+      "node_id": "node_STAIR-1A",
+      "x": 1028.0,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "stairs",
+      "location_id": "loc_STAIR-1A",
+      "poi_id": "STAIR-1A",
+      "label": "STAIR-1A - Cầu thang bộ khu A tầng 1"
+    },
+    {
+      "node_id": "door_STAIR-1B",
+      "x": 2132.0,
+      "y": 360.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to STAIR-1B"
+    },
+    {
+      "node_id": "node_STAIR-1B",
+      "x": 2132.0,
+      "y": 363.0,
+      "floor_number": 1,
+      "kind": "stairs",
+      "location_id": "loc_STAIR-1B",
+      "poi_id": "STAIR-1B",
+      "label": "STAIR-1B - Cầu thang bộ khu B tầng 1"
+    },
+    {
+      "node_id": "door_WAIT-1-BRANCH",
+      "x": 1815.0,
+      "y": 470.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WAIT-1-BRANCH"
+    },
+    {
+      "node_id": "node_WAIT-1-BRANCH",
+      "x": 1754.0,
+      "y": 394.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WAIT-1-BRANCH",
+      "poi_id": "WAIT-1-BRANCH",
+      "label": "WAIT-1-BRANCH - Khu chờ nhánh tầng 1"
+    },
+    {
+      "node_id": "door_WAIT-1-CENTER",
+      "x": 805.0,
+      "y": 762.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WAIT-1-CENTER"
+    },
+    {
+      "node_id": "node_WAIT-1-CENTER",
+      "x": 804.5,
+      "y": 834.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WAIT-1-CENTER",
+      "poi_id": "WAIT-1-CENTER",
+      "label": "WAIT-1-CENTER - Sảnh chờ trung tâm"
+    },
+    {
+      "node_id": "door_WC-1A-ACC",
+      "x": 220.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-1A-ACC"
+    },
+    {
+      "node_id": "node_WC-1A-ACC",
+      "x": 469.5,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WC-1A-ACC",
+      "poi_id": "WC-1A-ACC",
+      "label": "WC-1A-ACC - WC xe lăn khu A tầng 1"
+    },
+    {
+      "node_id": "door_WC-1A-F",
+      "x": 220.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-1A-F"
+    },
+    {
+      "node_id": "node_WC-1A-F",
+      "x": 357.5,
+      "y": 983.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WC-1A-F",
+      "poi_id": "WC-1A-F",
+      "label": "WC-1A-F - WC nữ khu A tầng 1"
+    },
+    {
+      "node_id": "door_WC-1A-M",
+      "x": 220.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-1A-M"
+    },
+    {
+      "node_id": "node_WC-1A-M",
+      "x": 220.0,
+      "y": 914.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WC-1A-M",
+      "poi_id": "WC-1A-M",
+      "label": "WC-1A-M - WC nam khu A tầng 1"
+    },
+    {
+      "node_id": "door_WC-1B-ACC",
+      "x": 2132.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-1B-ACC"
+    },
+    {
+      "node_id": "node_WC-1B-ACC",
+      "x": 2132.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WC-1B-ACC",
+      "poi_id": "WC-1B-ACC",
+      "label": "WC-1B-ACC - WC xe lăn khu B tầng 1"
+    },
+    {
+      "node_id": "door_WC-1B-F",
+      "x": 2132.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-1B-F"
+    },
+    {
+      "node_id": "node_WC-1B-F",
+      "x": 2132.0,
+      "y": 248.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WC-1B-F",
+      "poi_id": "WC-1B-F",
+      "label": "WC-1B-F - WC nữ khu B tầng 1"
+    },
+    {
+      "node_id": "door_WC-1B-M",
+      "x": 2132.0,
+      "y": 310.0,
+      "floor_number": 1,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-1B-M"
+    },
+    {
+      "node_id": "node_WC-1B-M",
+      "x": 2006.1,
+      "y": 248.5,
+      "floor_number": 1,
+      "kind": "room",
+      "location_id": "loc_WC-1B-M",
+      "poi_id": "WC-1B-M",
+      "label": "WC-1B-M - WC nam khu B tầng 1"
+    },
+    {
+      "node_id": "f2_main_left_top",
+      "x": 215.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 main_left_top"
+    },
+    {
+      "node_id": "f2_main_mid_top",
+      "x": 837.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 main_mid_top"
+    },
+    {
+      "node_id": "f2_main_right_top",
+      "x": 1380.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 main_right_top"
+    },
+    {
+      "node_id": "f2_main_left_bottom",
+      "x": 215.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 main_left_bottom"
+    },
+    {
+      "node_id": "f2_main_mid_bottom",
+      "x": 837.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 main_mid_bottom"
+    },
+    {
+      "node_id": "f2_main_right_bottom",
+      "x": 1380.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 main_right_bottom"
+    },
+    {
+      "node_id": "f2_branch_bottom",
+      "x": 1435.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 branch_bottom"
+    },
+    {
+      "node_id": "f2_branch_top",
+      "x": 1435.0,
+      "y": 242.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 branch_top"
+    },
+    {
+      "node_id": "f2_upper_left_top",
+      "x": 1545.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 upper_left_top"
+    },
+    {
+      "node_id": "f2_upper_mid_top",
+      "x": 1782.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 upper_mid_top"
+    },
+    {
+      "node_id": "f2_upper_right_top",
+      "x": 2137.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 upper_right_top"
+    },
+    {
+      "node_id": "f2_upper_left_bottom",
+      "x": 1545.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 upper_left_bottom"
+    },
+    {
+      "node_id": "f2_upper_mid_bottom",
+      "x": 1782.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 upper_mid_bottom"
+    },
+    {
+      "node_id": "f2_upper_right_bottom",
+      "x": 2137.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 upper_right_bottom"
+    },
+    {
+      "node_id": "f2_elevator_a",
+      "x": 970.0,
+      "y": 760.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 elevator_a"
+    },
+    {
+      "node_id": "f2_stairs_a",
+      "x": 1087.0,
+      "y": 760.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 stairs_a"
+    },
+    {
+      "node_id": "f2_elevator_b",
+      "x": 2137.0,
+      "y": 375.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 elevator_b"
+    },
+    {
+      "node_id": "f2_stairs_b",
+      "x": 2137.0,
+      "y": 337.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 2 stairs_b"
+    },
+    {
+      "node_id": "door_A201",
+      "x": 215.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A201"
+    },
+    {
+      "node_id": "node_A201",
+      "x": 215.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A201",
+      "poi_id": "A201",
+      "label": "A201 - PK Nội tổng quát 1"
+    },
+    {
+      "node_id": "door_A202",
+      "x": 215.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A202"
+    },
+    {
+      "node_id": "node_A202",
+      "x": 351.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A202",
+      "poi_id": "A202",
+      "label": "A202 - PK Nội tổng quát 2"
+    },
+    {
+      "node_id": "door_A203",
+      "x": 215.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A203"
+    },
+    {
+      "node_id": "node_A203",
+      "x": 469.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A203",
+      "poi_id": "A203",
+      "label": "A203 - PK Tim mạch 1"
+    },
+    {
+      "node_id": "door_A204",
+      "x": 837.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A204"
+    },
+    {
+      "node_id": "node_A204",
+      "x": 587.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A204",
+      "poi_id": "A204",
+      "label": "A204 - PK Tim mạch 2"
+    },
+    {
+      "node_id": "door_A205",
+      "x": 837.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A205"
+    },
+    {
+      "node_id": "node_A205",
+      "x": 719.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A205",
+      "poi_id": "A205",
+      "label": "A205 - PK Hô hấp 1"
+    },
+    {
+      "node_id": "door_A206",
+      "x": 837.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A206"
+    },
+    {
+      "node_id": "node_A206",
+      "x": 850.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A206",
+      "poi_id": "A206",
+      "label": "A206 - PK Hô hấp 2"
+    },
+    {
+      "node_id": "door_A207",
+      "x": 837.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A207"
+    },
+    {
+      "node_id": "node_A207",
+      "x": 968.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A207",
+      "poi_id": "A207",
+      "label": "A207 - PK Tiêu hóa 1"
+    },
+    {
+      "node_id": "door_A208",
+      "x": 1087.0,
+      "y": 760.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A208"
+    },
+    {
+      "node_id": "node_A208",
+      "x": 1087.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A208",
+      "poi_id": "A208",
+      "label": "A208 - PK Tiêu hóa 2"
+    },
+    {
+      "node_id": "door_A209",
+      "x": 1380.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A209"
+    },
+    {
+      "node_id": "node_A209",
+      "x": 1205.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A209",
+      "poi_id": "A209",
+      "label": "A209 - PK Nội tiết 1"
+    },
+    {
+      "node_id": "door_A210",
+      "x": 1380.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A210"
+    },
+    {
+      "node_id": "node_A210",
+      "x": 1323.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A210",
+      "poi_id": "A210",
+      "label": "A210 - PK Nội tiết 2"
+    },
+    {
+      "node_id": "door_A211",
+      "x": 1435.0,
+      "y": 242.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A211"
+    },
+    {
+      "node_id": "node_A211",
+      "x": 1434.5,
+      "y": 242.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A211",
+      "poi_id": "A211",
+      "label": "A211 - PK Cơ xương khớp 1"
+    },
+    {
+      "node_id": "door_A212",
+      "x": 1545.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A212"
+    },
+    {
+      "node_id": "node_A212",
+      "x": 1574.9,
+      "y": 242.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A212",
+      "poi_id": "A212",
+      "label": "A212 - PK Cơ xương khớp 2"
+    },
+    {
+      "node_id": "door_A213",
+      "x": 1782.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A213"
+    },
+    {
+      "node_id": "node_A213",
+      "x": 1715.3,
+      "y": 242.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A213",
+      "poi_id": "A213",
+      "label": "A213 - PK Thần kinh 1"
+    },
+    {
+      "node_id": "door_A214",
+      "x": 1782.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A214"
+    },
+    {
+      "node_id": "node_A214",
+      "x": 1855.7,
+      "y": 242.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A214",
+      "poi_id": "A214",
+      "label": "A214 - PK Thần kinh 2"
+    },
+    {
+      "node_id": "door_A215",
+      "x": 2137.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A215"
+    },
+    {
+      "node_id": "node_A215",
+      "x": 2137.0,
+      "y": 459.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A215",
+      "poi_id": "A215",
+      "label": "A215 - PK Da liễu"
+    },
+    {
+      "node_id": "door_A216",
+      "x": 2137.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A216"
+    },
+    {
+      "node_id": "node_A216",
+      "x": 2018.6,
+      "y": 459.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A216",
+      "poi_id": "A216",
+      "label": "A216 - PK Tai mũi họng"
+    },
+    {
+      "node_id": "door_A217",
+      "x": 1782.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A217"
+    },
+    {
+      "node_id": "node_A217",
+      "x": 1900.2,
+      "y": 459.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A217",
+      "poi_id": "A217",
+      "label": "A217 - PK Mắt"
+    },
+    {
+      "node_id": "door_A218",
+      "x": 1782.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A218"
+    },
+    {
+      "node_id": "node_A218",
+      "x": 1781.8,
+      "y": 459.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A218",
+      "poi_id": "A218",
+      "label": "A218 - PK Răng hàm mặt"
+    },
+    {
+      "node_id": "door_A219",
+      "x": 1545.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A219"
+    },
+    {
+      "node_id": "node_A219",
+      "x": 1663.4,
+      "y": 459.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A219",
+      "poi_id": "A219",
+      "label": "A219 - PK Sản phụ khoa"
+    },
+    {
+      "node_id": "door_A220",
+      "x": 1545.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A220"
+    },
+    {
+      "node_id": "node_A220",
+      "x": 1545.0,
+      "y": 459.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A220",
+      "poi_id": "A220",
+      "label": "A220 - PK Nhi"
+    },
+    {
+      "node_id": "door_A221",
+      "x": 1380.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A221"
+    },
+    {
+      "node_id": "node_A221",
+      "x": 1380.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A221",
+      "poi_id": "A221",
+      "label": "A221 - Phòng tư vấn dinh dưỡng"
+    },
+    {
+      "node_id": "door_A222",
+      "x": 1380.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A222"
+    },
+    {
+      "node_id": "node_A222",
+      "x": 1323.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A222",
+      "poi_id": "A222",
+      "label": "A222 - Phòng tư vấn tâm lý cơ bản"
+    },
+    {
+      "node_id": "door_A223",
+      "x": 1087.0,
+      "y": 760.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A223"
+    },
+    {
+      "node_id": "node_A223",
+      "x": 1205.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A223",
+      "poi_id": "A223",
+      "label": "A223 - Phòng điều dưỡng"
+    },
+    {
+      "node_id": "door_A224",
+      "x": 837.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A224"
+    },
+    {
+      "node_id": "node_A224",
+      "x": 850.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A224",
+      "poi_id": "A224",
+      "label": "A224 - Phòng thủ thuật nhỏ"
+    },
+    {
+      "node_id": "door_A225",
+      "x": 837.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A225"
+    },
+    {
+      "node_id": "node_A225",
+      "x": 719.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A225",
+      "poi_id": "A225",
+      "label": "A225 - Phòng tiêm-truyền ngắn"
+    },
+    {
+      "node_id": "door_A226",
+      "x": 837.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A226"
+    },
+    {
+      "node_id": "node_A226",
+      "x": 587.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A226",
+      "poi_id": "A226",
+      "label": "A226 - Phòng đo sinh hiệu"
+    },
+    {
+      "node_id": "door_A227",
+      "x": 215.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A227"
+    },
+    {
+      "node_id": "node_A227",
+      "x": 215.0,
+      "y": 645.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A227",
+      "poi_id": "A227",
+      "label": "A227 - Phòng đọc KQ tổng hợp 2"
+    },
+    {
+      "node_id": "door_A228",
+      "x": 215.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A228"
+    },
+    {
+      "node_id": "node_A228",
+      "x": 215.0,
+      "y": 554.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_A228",
+      "poi_id": "A228",
+      "label": "A228 - Phòng đọc KQ tổng hợp 1"
+    },
+    {
+      "node_id": "door_ELEV-2A",
+      "x": 970.0,
+      "y": 760.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ELEV-2A"
+    },
+    {
+      "node_id": "node_ELEV-2A",
+      "x": 968.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "elevator",
+      "location_id": "loc_ELEV-2A",
+      "poi_id": "ELEV-2A",
+      "label": "ELEV-2A - Thang máy khu A tầng 2"
+    },
+    {
+      "node_id": "door_ELEV-2B",
+      "x": 2137.0,
+      "y": 375.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ELEV-2B"
+    },
+    {
+      "node_id": "node_ELEV-2B",
+      "x": 2136.5,
+      "y": 375.5,
+      "floor_number": 2,
+      "kind": "elevator",
+      "location_id": "loc_ELEV-2B",
+      "poi_id": "ELEV-2B",
+      "label": "ELEV-2B - Thang máy khu B tầng 2"
+    },
+    {
+      "node_id": "door_HALL-2-BRANCH",
+      "x": 1380.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to HALL-2-BRANCH"
+    },
+    {
+      "node_id": "node_HALL-2-BRANCH",
+      "x": 1435.0,
+      "y": 490.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_HALL-2-BRANCH",
+      "poi_id": "HALL-2-BRANCH",
+      "label": "HALL-2-BRANCH - Hành lang nhánh tầng 2"
+    },
+    {
+      "node_id": "door_STAIR-2A",
+      "x": 1087.0,
+      "y": 760.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to STAIR-2A"
+    },
+    {
+      "node_id": "node_STAIR-2A",
+      "x": 1087.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "stairs",
+      "location_id": "loc_STAIR-2A",
+      "poi_id": "STAIR-2A",
+      "label": "STAIR-2A - Cầu thang bộ khu A tầng 2"
+    },
+    {
+      "node_id": "door_STAIR-2B",
+      "x": 2137.0,
+      "y": 337.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to STAIR-2B"
+    },
+    {
+      "node_id": "node_STAIR-2B",
+      "x": 2136.5,
+      "y": 332.0,
+      "floor_number": 2,
+      "kind": "stairs",
+      "location_id": "loc_STAIR-2B",
+      "poi_id": "STAIR-2B",
+      "label": "STAIR-2B - Cầu thang bộ khu B tầng 2"
+    },
+    {
+      "node_id": "door_WAIT-2-01",
+      "x": 837.0,
+      "y": 600.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WAIT-2-01"
+    },
+    {
+      "node_id": "node_WAIT-2-01",
+      "x": 837.0,
+      "y": 666.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WAIT-2-01",
+      "poi_id": "WAIT-2-01",
+      "label": "WAIT-2-01 - Khu chờ khám 1"
+    },
+    {
+      "node_id": "door_WAIT-2-02",
+      "x": 1782.0,
+      "y": 410.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WAIT-2-02"
+    },
+    {
+      "node_id": "node_WAIT-2-02",
+      "x": 1781.5,
+      "y": 351.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WAIT-2-02",
+      "poi_id": "WAIT-2-02",
+      "label": "WAIT-2-02 - Khu chờ khám 2"
+    },
+    {
+      "node_id": "door_WC-2A-ACC",
+      "x": 215.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-2A-ACC"
+    },
+    {
+      "node_id": "node_WC-2A-ACC",
+      "x": 469.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WC-2A-ACC",
+      "poi_id": "WC-2A-ACC",
+      "label": "WC-2A-ACC - WC xe lăn khu A tầng 2"
+    },
+    {
+      "node_id": "door_WC-2A-F",
+      "x": 215.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-2A-F"
+    },
+    {
+      "node_id": "node_WC-2A-F",
+      "x": 351.0,
+      "y": 788.0,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WC-2A-F",
+      "poi_id": "WC-2A-F",
+      "label": "WC-2A-F - WC nữ khu A tầng 2"
+    },
+    {
+      "node_id": "door_WC-2A-M",
+      "x": 215.0,
+      "y": 735.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-2A-M"
+    },
+    {
+      "node_id": "node_WC-2A-M",
+      "x": 215.0,
+      "y": 735.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WC-2A-M",
+      "poi_id": "WC-2A-M",
+      "label": "WC-2A-M - WC nam khu A tầng 2"
+    },
+    {
+      "node_id": "door_WC-2B-ACC",
+      "x": 2137.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-2B-ACC"
+    },
+    {
+      "node_id": "node_WC-2B-ACC",
+      "x": 2136.5,
+      "y": 288.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WC-2B-ACC",
+      "poi_id": "WC-2B-ACC",
+      "label": "WC-2B-ACC - WC xe lăn khu B tầng 2"
+    },
+    {
+      "node_id": "door_WC-2B-F",
+      "x": 2137.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-2B-F"
+    },
+    {
+      "node_id": "node_WC-2B-F",
+      "x": 2136.5,
+      "y": 242.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WC-2B-F",
+      "poi_id": "WC-2B-F",
+      "label": "WC-2B-F - WC nữ khu B tầng 2"
+    },
+    {
+      "node_id": "door_WC-2B-M",
+      "x": 2137.0,
+      "y": 289.0,
+      "floor_number": 2,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-2B-M"
+    },
+    {
+      "node_id": "node_WC-2B-M",
+      "x": 1996.1,
+      "y": 242.5,
+      "floor_number": 2,
+      "kind": "room",
+      "location_id": "loc_WC-2B-M",
+      "poi_id": "WC-2B-M",
+      "label": "WC-2B-M - WC nam khu B tầng 2"
+    },
+    {
+      "node_id": "f3_main_left_top",
+      "x": 215.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 main_left_top"
+    },
+    {
+      "node_id": "f3_main_mid_top",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 main_mid_top"
+    },
+    {
+      "node_id": "f3_main_right_top",
+      "x": 1450.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 main_right_top"
+    },
+    {
+      "node_id": "f3_main_left_bottom",
+      "x": 215.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 main_left_bottom"
+    },
+    {
+      "node_id": "f3_main_mid_bottom",
+      "x": 858.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 main_mid_bottom"
+    },
+    {
+      "node_id": "f3_main_right_bottom",
+      "x": 1450.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 main_right_bottom"
+    },
+    {
+      "node_id": "f3_branch_bottom",
+      "x": 1500.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 branch_bottom"
+    },
+    {
+      "node_id": "f3_branch_top",
+      "x": 1500.0,
+      "y": 248.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 branch_top"
+    },
+    {
+      "node_id": "f3_upper_left_top",
+      "x": 1610.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 upper_left_top"
+    },
+    {
+      "node_id": "f3_upper_mid_top",
+      "x": 1816.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 upper_mid_top"
+    },
+    {
+      "node_id": "f3_upper_right_top",
+      "x": 2138.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 upper_right_top"
+    },
+    {
+      "node_id": "f3_upper_left_bottom",
+      "x": 1610.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 upper_left_bottom"
+    },
+    {
+      "node_id": "f3_upper_mid_bottom",
+      "x": 1816.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 upper_mid_bottom"
+    },
+    {
+      "node_id": "f3_upper_right_bottom",
+      "x": 2138.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 upper_right_bottom"
+    },
+    {
+      "node_id": "f3_elevator_a",
+      "x": 902.0,
+      "y": 779.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 elevator_a"
+    },
+    {
+      "node_id": "f3_stairs_a",
+      "x": 1019.0,
+      "y": 779.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 stairs_a"
+    },
+    {
+      "node_id": "f3_elevator_b",
+      "x": 2138.0,
+      "y": 389.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 elevator_b"
+    },
+    {
+      "node_id": "f3_stairs_b",
+      "x": 2138.0,
+      "y": 348.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Floor 3 stairs_b"
+    },
+    {
+      "node_id": "door_A301",
+      "x": 215.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A301"
+    },
+    {
+      "node_id": "node_A301",
+      "x": 348.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A301",
+      "poi_id": "A301",
+      "label": "A301 - Khu tiếp nhận CLS"
+    },
+    {
+      "node_id": "door_A302",
+      "x": 215.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A302"
+    },
+    {
+      "node_id": "node_A302",
+      "x": 482.5,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A302",
+      "poi_id": "A302",
+      "label": "A302 - Quầy lấy số xét nghiệm"
+    },
+    {
+      "node_id": "door_A303",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A303"
+    },
+    {
+      "node_id": "node_A303",
+      "x": 631.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A303",
+      "poi_id": "A303",
+      "label": "A303 - Phòng lấy máu 1"
+    },
+    {
+      "node_id": "door_A304",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A304"
+    },
+    {
+      "node_id": "node_A304",
+      "x": 773.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A304",
+      "poi_id": "A304",
+      "label": "A304 - Phòng lấy máu 2"
+    },
+    {
+      "node_id": "door_A305",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A305"
+    },
+    {
+      "node_id": "node_A305",
+      "x": 902.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A305",
+      "poi_id": "A305",
+      "label": "A305 - Phòng XN sinh hóa"
+    },
+    {
+      "node_id": "door_A306",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A306"
+    },
+    {
+      "node_id": "node_A306",
+      "x": 1019.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A306",
+      "poi_id": "A306",
+      "label": "A306 - Phòng XN huyết học"
+    },
+    {
+      "node_id": "door_A307",
+      "x": 1019.0,
+      "y": 779.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A307"
+    },
+    {
+      "node_id": "node_A307",
+      "x": 1135.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A307",
+      "poi_id": "A307",
+      "label": "A307 - Phòng XN nước tiểu"
+    },
+    {
+      "node_id": "door_A308",
+      "x": 1450.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A308"
+    },
+    {
+      "node_id": "node_A308",
+      "x": 1251.5,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A308",
+      "poi_id": "A308",
+      "label": "A308 - Phòng XN miễn dịch"
+    },
+    {
+      "node_id": "door_A309",
+      "x": 1450.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A309"
+    },
+    {
+      "node_id": "node_A309",
+      "x": 1380.0,
+      "y": 587.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A309",
+      "poi_id": "A309",
+      "label": "A309 - Phòng trả KQ xét nghiệm"
+    },
+    {
+      "node_id": "door_A310",
+      "x": 1610.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A310"
+    },
+    {
+      "node_id": "node_A310",
+      "x": 1610.0,
+      "y": 248.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A310",
+      "poi_id": "A310",
+      "label": "A310 - Phòng điện tim ECG"
+    },
+    {
+      "node_id": "door_A311",
+      "x": 1816.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A311"
+    },
+    {
+      "node_id": "node_A311",
+      "x": 1714.0,
+      "y": 248.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A311",
+      "poi_id": "A311",
+      "label": "A311 - Phòng siêu âm tổng quát 1"
+    },
+    {
+      "node_id": "door_A312",
+      "x": 1816.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A312"
+    },
+    {
+      "node_id": "node_A312",
+      "x": 1800.5,
+      "y": 248.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A312",
+      "poi_id": "A312",
+      "label": "A312 - Phòng siêu âm tổng quát 2"
+    },
+    {
+      "node_id": "door_A313",
+      "x": 1816.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A313"
+    },
+    {
+      "node_id": "node_A313",
+      "x": 1902.0,
+      "y": 248.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A313",
+      "poi_id": "A313",
+      "label": "A313 - Phòng siêu âm tim"
+    },
+    {
+      "node_id": "door_A314",
+      "x": 2138.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A314"
+    },
+    {
+      "node_id": "node_A314",
+      "x": 2138.0,
+      "y": 486.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A314",
+      "poi_id": "A314",
+      "label": "A314 - Phòng X-quang 1"
+    },
+    {
+      "node_id": "door_A315",
+      "x": 2138.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A315"
+    },
+    {
+      "node_id": "node_A315",
+      "x": 2021.5,
+      "y": 486.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A315",
+      "poi_id": "A315",
+      "label": "A315 - Phòng X-quang 2"
+    },
+    {
+      "node_id": "door_A316",
+      "x": 1816.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A316"
+    },
+    {
+      "node_id": "node_A316",
+      "x": 1902.0,
+      "y": 486.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A316",
+      "poi_id": "A316",
+      "label": "A316 - Phòng CT mô phỏng"
+    },
+    {
+      "node_id": "door_A317",
+      "x": 1816.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A317"
+    },
+    {
+      "node_id": "node_A317",
+      "x": 1800.5,
+      "y": 486.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A317",
+      "poi_id": "A317",
+      "label": "A317 - Phòng MRI mô phỏng"
+    },
+    {
+      "node_id": "door_A318",
+      "x": 1816.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A318"
+    },
+    {
+      "node_id": "node_A318",
+      "x": 1714.0,
+      "y": 486.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A318",
+      "poi_id": "A318",
+      "label": "A318 - Phòng nội soi tiêu hóa"
+    },
+    {
+      "node_id": "door_A319",
+      "x": 1610.0,
+      "y": 430.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A319"
+    },
+    {
+      "node_id": "node_A319",
+      "x": 1610.0,
+      "y": 486.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A319",
+      "poi_id": "A319",
+      "label": "A319 - Phòng đo chức năng hô hấp"
+    },
+    {
+      "node_id": "door_A320",
+      "x": 1450.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A320"
+    },
+    {
+      "node_id": "node_A320",
+      "x": 1380.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A320",
+      "poi_id": "A320",
+      "label": "A320 - Phòng đo mật độ xương"
+    },
+    {
+      "node_id": "door_A321",
+      "x": 1450.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A321"
+    },
+    {
+      "node_id": "node_A321",
+      "x": 1251.5,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A321",
+      "poi_id": "A321",
+      "label": "A321 - Phòng lấy mẫu chuyên biệt"
+    },
+    {
+      "node_id": "door_A322",
+      "x": 1019.0,
+      "y": 779.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A322"
+    },
+    {
+      "node_id": "node_A322",
+      "x": 1135.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A322",
+      "poi_id": "A322",
+      "label": "A322 - Phòng tư vấn trước thủ thuật"
+    },
+    {
+      "node_id": "door_A323",
+      "x": 858.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A323"
+    },
+    {
+      "node_id": "node_A323",
+      "x": 773.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A323",
+      "poi_id": "A323",
+      "label": "A323 - Phòng nghỉ sau thủ thuật"
+    },
+    {
+      "node_id": "door_A324",
+      "x": 858.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A324"
+    },
+    {
+      "node_id": "node_A324",
+      "x": 631.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A324",
+      "poi_id": "A324",
+      "label": "A324 - Quầy hỗ trợ KQ online"
+    },
+    {
+      "node_id": "door_A325",
+      "x": 215.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A325"
+    },
+    {
+      "node_id": "node_A325",
+      "x": 482.5,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A325",
+      "poi_id": "A325",
+      "label": "A325 - Khu trả phim/CĐHA"
+    },
+    {
+      "node_id": "door_A326",
+      "x": 215.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to A326"
+    },
+    {
+      "node_id": "node_A326",
+      "x": 348.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_A326",
+      "poi_id": "A326",
+      "label": "A326 - Phòng kỹ thuật viên"
+    },
+    {
+      "node_id": "door_ELEV-3A",
+      "x": 902.0,
+      "y": 779.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ELEV-3A"
+    },
+    {
+      "node_id": "node_ELEV-3A",
+      "x": 902.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "elevator",
+      "location_id": "loc_ELEV-3A",
+      "poi_id": "ELEV-3A",
+      "label": "ELEV-3A - Thang máy khu A tầng 3"
+    },
+    {
+      "node_id": "door_ELEV-3B",
+      "x": 2138.0,
+      "y": 389.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to ELEV-3B"
+    },
+    {
+      "node_id": "node_ELEV-3B",
+      "x": 2138.0,
+      "y": 388.5,
+      "floor_number": 3,
+      "kind": "elevator",
+      "location_id": "loc_ELEV-3B",
+      "poi_id": "ELEV-3B",
+      "label": "ELEV-3B - Thang máy khu B tầng 3"
+    },
+    {
+      "node_id": "door_HALL-3-BRANCH",
+      "x": 1450.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to HALL-3-BRANCH"
+    },
+    {
+      "node_id": "node_HALL-3-BRANCH",
+      "x": 1480.0,
+      "y": 560.0,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_HALL-3-BRANCH",
+      "poi_id": "HALL-3-BRANCH",
+      "label": "HALL-3-BRANCH - Hành lang nhánh tầng 3"
+    },
+    {
+      "node_id": "door_HALL-3-MAIN",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to HALL-3-MAIN"
+    },
+    {
+      "node_id": "node_HALL-3-MAIN",
+      "x": 870.0,
+      "y": 612.0,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_HALL-3-MAIN",
+      "poi_id": "HALL-3-MAIN",
+      "label": "HALL-3-MAIN - Hành lang chính tầng 3"
+    },
+    {
+      "node_id": "door_STAIR-3A",
+      "x": 1019.0,
+      "y": 779.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to STAIR-3A"
+    },
+    {
+      "node_id": "node_STAIR-3A",
+      "x": 1019.0,
+      "y": 807.5,
+      "floor_number": 3,
+      "kind": "stairs",
+      "location_id": "loc_STAIR-3A",
+      "poi_id": "STAIR-3A",
+      "label": "STAIR-3A - Cầu thang bộ khu A tầng 3"
+    },
+    {
+      "node_id": "door_STAIR-3B",
+      "x": 2138.0,
+      "y": 348.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to STAIR-3B"
+    },
+    {
+      "node_id": "node_STAIR-3B",
+      "x": 2138.0,
+      "y": 344.25,
+      "floor_number": 3,
+      "kind": "stairs",
+      "location_id": "loc_STAIR-3B",
+      "poi_id": "STAIR-3B",
+      "label": "STAIR-3B - Cầu thang bộ khu B tầng 3"
+    },
+    {
+      "node_id": "door_WAIT-3-01",
+      "x": 858.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WAIT-3-01"
+    },
+    {
+      "node_id": "node_WAIT-3-01",
+      "x": 857.5,
+      "y": 688.0,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WAIT-3-01",
+      "poi_id": "WAIT-3-01",
+      "label": "WAIT-3-01 - Khu chờ xét nghiệm"
+    },
+    {
+      "node_id": "door_WAIT-3-02",
+      "x": 1816.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WAIT-3-02"
+    },
+    {
+      "node_id": "node_WAIT-3-02",
+      "x": 1816.0,
+      "y": 364.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WAIT-3-02",
+      "poi_id": "WAIT-3-02",
+      "label": "WAIT-3-02 - Khu chờ chẩn đoán hình ảnh"
+    },
+    {
+      "node_id": "door_WC-3A-ACC",
+      "x": 215.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-3A-ACC"
+    },
+    {
+      "node_id": "node_WC-3A-ACC",
+      "x": 214.5,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WC-3A-ACC",
+      "poi_id": "WC-3A-ACC",
+      "label": "WC-3A-ACC - WC xe lăn khu A tầng 3"
+    },
+    {
+      "node_id": "door_WC-3A-F",
+      "x": 215.0,
+      "y": 755.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-3A-F"
+    },
+    {
+      "node_id": "node_WC-3A-F",
+      "x": 214.5,
+      "y": 710.25,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WC-3A-F",
+      "poi_id": "WC-3A-F",
+      "label": "WC-3A-F - WC nữ khu A tầng 3"
+    },
+    {
+      "node_id": "door_WC-3A-M",
+      "x": 215.0,
+      "y": 626.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-3A-M"
+    },
+    {
+      "node_id": "node_WC-3A-M",
+      "x": 214.5,
+      "y": 665.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WC-3A-M",
+      "poi_id": "WC-3A-M",
+      "label": "WC-3A-M - WC nam khu A tầng 3"
+    },
+    {
+      "node_id": "door_WC-3B-ACC",
+      "x": 2138.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-3B-ACC"
+    },
+    {
+      "node_id": "node_WC-3B-ACC",
+      "x": 2138.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WC-3B-ACC",
+      "poi_id": "WC-3B-ACC",
+      "label": "WC-3B-ACC - WC xe lăn khu B tầng 3"
+    },
+    {
+      "node_id": "door_WC-3B-F",
+      "x": 2138.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-3B-F"
+    },
+    {
+      "node_id": "node_WC-3B-F",
+      "x": 2138.0,
+      "y": 248.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WC-3B-F",
+      "poi_id": "WC-3B-F",
+      "label": "WC-3B-F - WC nữ khu B tầng 3"
+    },
+    {
+      "node_id": "door_WC-3B-M",
+      "x": 2138.0,
+      "y": 300.0,
+      "floor_number": 3,
+      "kind": "corridor",
+      "location_id": null,
+      "poi_id": null,
+      "label": "Door to WC-3B-M"
+    },
+    {
+      "node_id": "node_WC-3B-M",
+      "x": 2021.5,
+      "y": 248.5,
+      "floor_number": 3,
+      "kind": "room",
+      "location_id": "loc_WC-3B-M",
+      "poi_id": "WC-3B-M",
+      "label": "WC-3B-M - WC nam khu B tầng 3"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_f1_main_left_top_f1_main_mid_top",
+      "from_node": "f1_main_left_top",
+      "to_node": "f1_main_mid_top",
+      "weight": 585.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_main_mid_top_f1_main_right_top",
+      "from_node": "f1_main_mid_top",
+      "to_node": "f1_main_right_top",
+      "weight": 515.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_main_left_bottom_f1_main_mid_bottom",
+      "from_node": "f1_main_left_bottom",
+      "to_node": "f1_main_mid_bottom",
+      "weight": 585.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_main_mid_bottom_f1_main_right_bottom",
+      "from_node": "f1_main_mid_bottom",
+      "to_node": "f1_main_right_bottom",
+      "weight": 515.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_main_left_top_f1_main_left_bottom",
+      "from_node": "f1_main_left_top",
+      "to_node": "f1_main_left_bottom",
+      "weight": 152.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_main_right_top_f1_main_right_bottom",
+      "from_node": "f1_main_right_top",
+      "to_node": "f1_main_right_bottom",
+      "weight": 152.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_branch_bottom_f1_branch_top",
+      "from_node": "f1_branch_bottom",
+      "to_node": "f1_branch_top",
+      "weight": 666.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_upper_left_top_f1_upper_mid_top",
+      "from_node": "f1_upper_left_top",
+      "to_node": "f1_upper_mid_top",
+      "weight": 315.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_upper_mid_top_f1_upper_right_top",
+      "from_node": "f1_upper_mid_top",
+      "to_node": "f1_upper_right_top",
+      "weight": 317.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_upper_left_bottom_f1_upper_mid_bottom",
+      "from_node": "f1_upper_left_bottom",
+      "to_node": "f1_upper_mid_bottom",
+      "weight": 315.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_upper_mid_bottom_f1_upper_right_bottom",
+      "from_node": "f1_upper_mid_bottom",
+      "to_node": "f1_upper_right_bottom",
+      "weight": 317.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_upper_left_top_f1_upper_left_bottom",
+      "from_node": "f1_upper_left_top",
+      "to_node": "f1_upper_left_bottom",
+      "weight": 160.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_upper_right_top_f1_upper_right_bottom",
+      "from_node": "f1_upper_right_top",
+      "to_node": "f1_upper_right_bottom",
+      "weight": 160.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_elevator_a_f1_main_mid_bottom",
+      "from_node": "f1_elevator_a",
+      "to_node": "f1_main_mid_bottom",
+      "weight": 117.18,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_stairs_a_f1_main_mid_bottom",
+      "from_node": "f1_stairs_a",
+      "to_node": "f1_main_mid_bottom",
+      "weight": 227.13,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_elevator_b_f1_upper_right_bottom",
+      "from_node": "f1_elevator_b",
+      "to_node": "f1_upper_right_bottom",
+      "weight": 54.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f1_stairs_b_f1_upper_right_bottom",
+      "from_node": "f1_stairs_b",
+      "to_node": "f1_upper_right_bottom",
+      "weight": 110.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A101_door_A101",
+      "from_node": "node_A101",
+      "to_node": "door_A101",
+      "weight": 150.22,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A101_f1_main_left_top",
+      "from_node": "door_A101",
+      "to_node": "f1_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A102_door_A102",
+      "from_node": "node_A102",
+      "to_node": "door_A102",
+      "weight": 256.73,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A102_f1_main_left_top",
+      "from_node": "door_A102",
+      "to_node": "f1_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A103_door_A103",
+      "from_node": "node_A103",
+      "to_node": "door_A103",
+      "weight": 232.03,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A103_f1_main_mid_top",
+      "from_node": "door_A103",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A104_door_A104",
+      "from_node": "node_A104",
+      "to_node": "door_A104",
+      "weight": 127.74,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A104_f1_main_mid_top",
+      "from_node": "door_A104",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A105_door_A105",
+      "from_node": "node_A105",
+      "to_node": "door_A105",
+      "weight": 60.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A105_f1_main_mid_top",
+      "from_node": "door_A105",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A106_door_A106",
+      "from_node": "node_A106",
+      "to_node": "door_A106",
+      "weight": 126.86,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A106_f1_main_mid_top",
+      "from_node": "door_A106",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A107_door_A107",
+      "from_node": "node_A107",
+      "to_node": "door_A107",
+      "weight": 230.58,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A107_f1_main_mid_top",
+      "from_node": "door_A107",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A108_door_A108",
+      "from_node": "node_A108",
+      "to_node": "door_A108",
+      "weight": 191.32,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A108_f1_main_right_top",
+      "from_node": "door_A108",
+      "to_node": "f1_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A109_door_A109",
+      "from_node": "node_A109",
+      "to_node": "door_A109",
+      "weight": 86.63,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A109_f1_main_right_top",
+      "from_node": "door_A109",
+      "to_node": "f1_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A110_door_A110",
+      "from_node": "node_A110",
+      "to_node": "door_A110",
+      "weight": 61.55,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A110_f1_upper_left_top",
+      "from_node": "door_A110",
+      "to_node": "f1_upper_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A111_door_A111",
+      "from_node": "node_A111",
+      "to_node": "door_A111",
+      "weight": 142.37,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A111_f1_upper_left_top",
+      "from_node": "door_A111",
+      "to_node": "f1_upper_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A112_door_A112",
+      "from_node": "node_A112",
+      "to_node": "door_A112",
+      "weight": 86.41,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A112_f1_upper_mid_top",
+      "from_node": "door_A112",
+      "to_node": "f1_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A113_door_A113",
+      "from_node": "node_A113",
+      "to_node": "door_A113",
+      "weight": 89.63,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A113_f1_upper_mid_top",
+      "from_node": "door_A113",
+      "to_node": "f1_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A114_door_A114",
+      "from_node": "node_A114",
+      "to_node": "door_A114",
+      "weight": 136.96,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A114_f1_upper_right_bottom",
+      "from_node": "door_A114",
+      "to_node": "f1_upper_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A115_door_A115",
+      "from_node": "node_A115",
+      "to_node": "door_A115",
+      "weight": 83.36,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A115_f1_upper_mid_bottom",
+      "from_node": "door_A115",
+      "to_node": "f1_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A116_door_A116",
+      "from_node": "node_A116",
+      "to_node": "door_A116",
+      "weight": 80.48,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A116_f1_upper_mid_bottom",
+      "from_node": "door_A116",
+      "to_node": "f1_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A117_door_A117",
+      "from_node": "node_A117",
+      "to_node": "door_A117",
+      "weight": 138.58,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A117_f1_upper_left_bottom",
+      "from_node": "door_A117",
+      "to_node": "f1_upper_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A118_door_A118",
+      "from_node": "node_A118",
+      "to_node": "door_A118",
+      "weight": 52.56,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A118_f1_upper_left_bottom",
+      "from_node": "door_A118",
+      "to_node": "f1_upper_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A119_door_A119",
+      "from_node": "node_A119",
+      "to_node": "door_A119",
+      "weight": 92.76,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A119_f1_main_right_bottom",
+      "from_node": "door_A119",
+      "to_node": "f1_main_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A120_door_A120",
+      "from_node": "node_A120",
+      "to_node": "door_A120",
+      "weight": 115.91,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A120_f1_stairs_a",
+      "from_node": "door_A120",
+      "to_node": "f1_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A121_door_A121",
+      "from_node": "node_A121",
+      "to_node": "door_A121",
+      "weight": 69.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A121_f1_main_mid_bottom",
+      "from_node": "door_A121",
+      "to_node": "f1_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A122_door_A122",
+      "from_node": "node_A122",
+      "to_node": "door_A122",
+      "weight": 131.97,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A122_f1_main_mid_bottom",
+      "from_node": "door_A122",
+      "to_node": "f1_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A123_door_A123",
+      "from_node": "node_A123",
+      "to_node": "door_A123",
+      "weight": 234.39,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A123_f1_main_mid_bottom",
+      "from_node": "door_A123",
+      "to_node": "f1_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A124_door_A124",
+      "from_node": "node_A124",
+      "to_node": "door_A124",
+      "weight": 12.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A124_f1_main_left_top",
+      "from_node": "door_A124",
+      "to_node": "f1_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A125_door_A125",
+      "from_node": "node_A125",
+      "to_node": "door_A125",
+      "weight": 58.36,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A125_f1_main_left_top",
+      "from_node": "door_A125",
+      "to_node": "f1_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-1A_door_ELEV-1A",
+      "from_node": "node_ELEV-1A",
+      "to_node": "door_ELEV-1A",
+      "weight": 38.03,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ELEV-1A_f1_elevator_a",
+      "from_node": "door_ELEV-1A",
+      "to_node": "f1_elevator_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-1B_door_ELEV-1B",
+      "from_node": "node_ELEV-1B",
+      "to_node": "door_ELEV-1B",
+      "weight": 0.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ELEV-1B_f1_elevator_b",
+      "from_node": "door_ELEV-1B",
+      "to_node": "f1_elevator_b",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ENT-1-01_door_ENT-1-01",
+      "from_node": "node_ENT-1-01",
+      "to_node": "door_ENT-1-01",
+      "weight": 155.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ENT-1-01_f1_main_left_top",
+      "from_node": "door_ENT-1-01",
+      "to_node": "f1_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_HALL-1-BRANCH_door_HALL-1-BRANCH",
+      "from_node": "node_HALL-1-BRANCH",
+      "to_node": "door_HALL-1-BRANCH",
+      "weight": 172.75,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_HALL-1-BRANCH_f1_main_right_top",
+      "from_node": "door_HALL-1-BRANCH",
+      "to_node": "f1_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_HALL-1-MAIN_door_HALL-1-MAIN",
+      "from_node": "node_HALL-1-MAIN",
+      "to_node": "door_HALL-1-MAIN",
+      "weight": 10.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_HALL-1-MAIN_f1_main_mid_top",
+      "from_node": "door_HALL-1-MAIN",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_STAIR-1A_door_STAIR-1A",
+      "from_node": "node_STAIR-1A",
+      "to_node": "door_STAIR-1A",
+      "weight": 38.05,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_STAIR-1A_f1_stairs_a",
+      "from_node": "door_STAIR-1A",
+      "to_node": "f1_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_STAIR-1B_door_STAIR-1B",
+      "from_node": "node_STAIR-1B",
+      "to_node": "door_STAIR-1B",
+      "weight": 3.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_STAIR-1B_f1_stairs_b",
+      "from_node": "door_STAIR-1B",
+      "to_node": "f1_stairs_b",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WAIT-1-BRANCH_door_WAIT-1-BRANCH",
+      "from_node": "node_WAIT-1-BRANCH",
+      "to_node": "door_WAIT-1-BRANCH",
+      "weight": 97.45,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WAIT-1-BRANCH_f1_upper_mid_bottom",
+      "from_node": "door_WAIT-1-BRANCH",
+      "to_node": "f1_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WAIT-1-CENTER_door_WAIT-1-CENTER",
+      "from_node": "node_WAIT-1-CENTER",
+      "to_node": "door_WAIT-1-CENTER",
+      "weight": 72.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WAIT-1-CENTER_f1_main_mid_top",
+      "from_node": "door_WAIT-1-CENTER",
+      "to_node": "f1_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-1A-ACC_door_WC-1A-ACC",
+      "from_node": "node_WC-1A-ACC",
+      "to_node": "door_WC-1A-ACC",
+      "weight": 258.87,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-1A-ACC_f1_main_left_bottom",
+      "from_node": "door_WC-1A-ACC",
+      "to_node": "f1_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-1A-F_door_WC-1A-F",
+      "from_node": "node_WC-1A-F",
+      "to_node": "door_WC-1A-F",
+      "weight": 153.84,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-1A-F_f1_main_left_bottom",
+      "from_node": "door_WC-1A-F",
+      "to_node": "f1_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-1A-M_door_WC-1A-M",
+      "from_node": "node_WC-1A-M",
+      "to_node": "door_WC-1A-M",
+      "weight": 0.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-1A-M_f1_main_left_bottom",
+      "from_node": "door_WC-1A-M",
+      "to_node": "f1_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-1B-ACC_door_WC-1B-ACC",
+      "from_node": "node_WC-1B-ACC",
+      "to_node": "door_WC-1B-ACC",
+      "weight": 0.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-1B-ACC_f1_upper_right_top",
+      "from_node": "door_WC-1B-ACC",
+      "to_node": "f1_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-1B-F_door_WC-1B-F",
+      "from_node": "node_WC-1B-F",
+      "to_node": "door_WC-1B-F",
+      "weight": 61.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-1B-F_f1_upper_right_top",
+      "from_node": "door_WC-1B-F",
+      "to_node": "f1_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-1B-M_door_WC-1B-M",
+      "from_node": "node_WC-1B-M",
+      "to_node": "door_WC-1B-M",
+      "weight": 140.12,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-1B-M_f1_upper_right_top",
+      "from_node": "door_WC-1B-M",
+      "to_node": "f1_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_main_left_top_f2_main_mid_top",
+      "from_node": "f2_main_left_top",
+      "to_node": "f2_main_mid_top",
+      "weight": 622.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_main_mid_top_f2_main_right_top",
+      "from_node": "f2_main_mid_top",
+      "to_node": "f2_main_right_top",
+      "weight": 543.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_main_left_bottom_f2_main_mid_bottom",
+      "from_node": "f2_main_left_bottom",
+      "to_node": "f2_main_mid_bottom",
+      "weight": 622.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_main_mid_bottom_f2_main_right_bottom",
+      "from_node": "f2_main_mid_bottom",
+      "to_node": "f2_main_right_bottom",
+      "weight": 543.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_main_left_top_f2_main_left_bottom",
+      "from_node": "f2_main_left_top",
+      "to_node": "f2_main_left_bottom",
+      "weight": 135.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_main_right_top_f2_main_right_bottom",
+      "from_node": "f2_main_right_top",
+      "to_node": "f2_main_right_bottom",
+      "weight": 135.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_branch_bottom_f2_branch_top",
+      "from_node": "f2_branch_bottom",
+      "to_node": "f2_branch_top",
+      "weight": 493.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_upper_left_top_f2_upper_mid_top",
+      "from_node": "f2_upper_left_top",
+      "to_node": "f2_upper_mid_top",
+      "weight": 237.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_upper_mid_top_f2_upper_right_top",
+      "from_node": "f2_upper_mid_top",
+      "to_node": "f2_upper_right_top",
+      "weight": 355.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_upper_left_bottom_f2_upper_mid_bottom",
+      "from_node": "f2_upper_left_bottom",
+      "to_node": "f2_upper_mid_bottom",
+      "weight": 237.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_upper_mid_bottom_f2_upper_right_bottom",
+      "from_node": "f2_upper_mid_bottom",
+      "to_node": "f2_upper_right_bottom",
+      "weight": 355.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_upper_left_top_f2_upper_left_bottom",
+      "from_node": "f2_upper_left_top",
+      "to_node": "f2_upper_left_bottom",
+      "weight": 121.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_upper_right_top_f2_upper_right_bottom",
+      "from_node": "f2_upper_right_top",
+      "to_node": "f2_upper_right_bottom",
+      "weight": 121.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_elevator_a_f2_main_mid_bottom",
+      "from_node": "f2_elevator_a",
+      "to_node": "f2_main_mid_bottom",
+      "weight": 135.33,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_stairs_a_f2_main_mid_bottom",
+      "from_node": "f2_stairs_a",
+      "to_node": "f2_main_mid_bottom",
+      "weight": 251.25,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_elevator_b_f2_upper_right_bottom",
+      "from_node": "f2_elevator_b",
+      "to_node": "f2_upper_right_bottom",
+      "weight": 35.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f2_stairs_b_f2_upper_right_bottom",
+      "from_node": "f2_stairs_b",
+      "to_node": "f2_upper_right_bottom",
+      "weight": 73.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A201_door_A201",
+      "from_node": "node_A201",
+      "to_node": "door_A201",
+      "weight": 45.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A201_f2_main_left_top",
+      "from_node": "door_A201",
+      "to_node": "f2_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A202_door_A202",
+      "from_node": "node_A202",
+      "to_node": "door_A202",
+      "weight": 143.41,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A202_f2_main_left_top",
+      "from_node": "door_A202",
+      "to_node": "f2_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A203_door_A203",
+      "from_node": "node_A203",
+      "to_node": "door_A203",
+      "weight": 258.04,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A203_f2_main_left_top",
+      "from_node": "door_A203",
+      "to_node": "f2_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A204_door_A204",
+      "from_node": "node_A204",
+      "to_node": "door_A204",
+      "weight": 254.11,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A204_f2_main_mid_top",
+      "from_node": "door_A204",
+      "to_node": "f2_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A205_door_A205",
+      "from_node": "node_A205",
+      "to_node": "door_A205",
+      "weight": 126.47,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A205_f2_main_mid_top",
+      "from_node": "door_A205",
+      "to_node": "f2_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A206_door_A206",
+      "from_node": "node_A206",
+      "to_node": "door_A206",
+      "weight": 47.32,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A206_f2_main_mid_top",
+      "from_node": "door_A206",
+      "to_node": "f2_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A207_door_A207",
+      "from_node": "node_A207",
+      "to_node": "door_A207",
+      "weight": 138.68,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A207_f2_main_mid_top",
+      "from_node": "door_A207",
+      "to_node": "f2_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A208_door_A208",
+      "from_node": "node_A208",
+      "to_node": "door_A208",
+      "weight": 205.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A208_f2_stairs_a",
+      "from_node": "door_A208",
+      "to_node": "f2_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A209_door_A209",
+      "from_node": "node_A209",
+      "to_node": "door_A209",
+      "weight": 180.82,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A209_f2_main_right_top",
+      "from_node": "door_A209",
+      "to_node": "f2_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A210_door_A210",
+      "from_node": "node_A210",
+      "to_node": "door_A210",
+      "weight": 72.93,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A210_f2_main_right_top",
+      "from_node": "door_A210",
+      "to_node": "f2_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A211_door_A211",
+      "from_node": "node_A211",
+      "to_node": "door_A211",
+      "weight": 0.71,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A211_f2_branch_top",
+      "from_node": "door_A211",
+      "to_node": "f2_branch_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A212_door_A212",
+      "from_node": "node_A212",
+      "to_node": "door_A212",
+      "weight": 55.28,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A212_f2_upper_left_top",
+      "from_node": "door_A212",
+      "to_node": "f2_upper_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A213_door_A213",
+      "from_node": "node_A213",
+      "to_node": "door_A213",
+      "weight": 81.31,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A213_f2_upper_mid_top",
+      "from_node": "door_A213",
+      "to_node": "f2_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A214_door_A214",
+      "from_node": "node_A214",
+      "to_node": "door_A214",
+      "weight": 87.14,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A214_f2_upper_mid_top",
+      "from_node": "door_A214",
+      "to_node": "f2_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A215_door_A215",
+      "from_node": "node_A215",
+      "to_node": "door_A215",
+      "weight": 49.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A215_f2_upper_right_bottom",
+      "from_node": "door_A215",
+      "to_node": "f2_upper_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A216_door_A216",
+      "from_node": "node_A216",
+      "to_node": "door_A216",
+      "weight": 128.33,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A216_f2_upper_right_bottom",
+      "from_node": "door_A216",
+      "to_node": "f2_upper_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A217_door_A217",
+      "from_node": "node_A217",
+      "to_node": "door_A217",
+      "weight": 128.15,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A217_f2_upper_mid_bottom",
+      "from_node": "door_A217",
+      "to_node": "f2_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A218_door_A218",
+      "from_node": "node_A218",
+      "to_node": "door_A218",
+      "weight": 49.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A218_f2_upper_mid_bottom",
+      "from_node": "door_A218",
+      "to_node": "f2_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A219_door_A219",
+      "from_node": "node_A219",
+      "to_node": "door_A219",
+      "weight": 128.33,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A219_f2_upper_left_bottom",
+      "from_node": "door_A219",
+      "to_node": "f2_upper_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A220_door_A220",
+      "from_node": "node_A220",
+      "to_node": "door_A220",
+      "weight": 49.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A220_f2_upper_left_bottom",
+      "from_node": "door_A220",
+      "to_node": "f2_upper_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A221_door_A221",
+      "from_node": "node_A221",
+      "to_node": "door_A221",
+      "weight": 53.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A221_f2_main_right_bottom",
+      "from_node": "door_A221",
+      "to_node": "f2_main_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A222_door_A222",
+      "from_node": "node_A222",
+      "to_node": "door_A222",
+      "weight": 77.83,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A222_f2_main_right_bottom",
+      "from_node": "door_A222",
+      "to_node": "f2_main_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A223_door_A223",
+      "from_node": "node_A223",
+      "to_node": "door_A223",
+      "weight": 121.28,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A223_f2_stairs_a",
+      "from_node": "door_A223",
+      "to_node": "f2_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A224_door_A224",
+      "from_node": "node_A224",
+      "to_node": "door_A224",
+      "weight": 54.57,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A224_f2_main_mid_bottom",
+      "from_node": "door_A224",
+      "to_node": "f2_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A225_door_A225",
+      "from_node": "node_A225",
+      "to_node": "door_A225",
+      "weight": 129.36,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A225_f2_main_mid_bottom",
+      "from_node": "door_A225",
+      "to_node": "f2_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A226_door_A226",
+      "from_node": "node_A226",
+      "to_node": "door_A226",
+      "weight": 255.56,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A226_f2_main_mid_bottom",
+      "from_node": "door_A226",
+      "to_node": "f2_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A227_door_A227",
+      "from_node": "node_A227",
+      "to_node": "door_A227",
+      "weight": 45.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A227_f2_main_left_top",
+      "from_node": "door_A227",
+      "to_node": "f2_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A228_door_A228",
+      "from_node": "node_A228",
+      "to_node": "door_A228",
+      "weight": 45.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A228_f2_main_left_top",
+      "from_node": "door_A228",
+      "to_node": "f2_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-2A_door_ELEV-2A",
+      "from_node": "node_ELEV-2A",
+      "to_node": "door_ELEV-2A",
+      "weight": 28.07,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ELEV-2A_f2_elevator_a",
+      "from_node": "door_ELEV-2A",
+      "to_node": "f2_elevator_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-2B_door_ELEV-2B",
+      "from_node": "node_ELEV-2B",
+      "to_node": "door_ELEV-2B",
+      "weight": 0.71,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ELEV-2B_f2_elevator_b",
+      "from_node": "door_ELEV-2B",
+      "to_node": "f2_elevator_b",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_HALL-2-BRANCH_door_HALL-2-BRANCH",
+      "from_node": "node_HALL-2-BRANCH",
+      "to_node": "door_HALL-2-BRANCH",
+      "weight": 122.98,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_HALL-2-BRANCH_f2_main_right_top",
+      "from_node": "door_HALL-2-BRANCH",
+      "to_node": "f2_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_STAIR-2A_door_STAIR-2A",
+      "from_node": "node_STAIR-2A",
+      "to_node": "door_STAIR-2A",
+      "weight": 28.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_STAIR-2A_f2_stairs_a",
+      "from_node": "door_STAIR-2A",
+      "to_node": "f2_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_STAIR-2B_door_STAIR-2B",
+      "from_node": "node_STAIR-2B",
+      "to_node": "door_STAIR-2B",
+      "weight": 5.02,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_STAIR-2B_f2_stairs_b",
+      "from_node": "door_STAIR-2B",
+      "to_node": "f2_stairs_b",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WAIT-2-01_door_WAIT-2-01",
+      "from_node": "node_WAIT-2-01",
+      "to_node": "door_WAIT-2-01",
+      "weight": 66.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WAIT-2-01_f2_main_mid_top",
+      "from_node": "door_WAIT-2-01",
+      "to_node": "f2_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WAIT-2-02_door_WAIT-2-02",
+      "from_node": "node_WAIT-2-02",
+      "to_node": "door_WAIT-2-02",
+      "weight": 59.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WAIT-2-02_f2_upper_mid_bottom",
+      "from_node": "door_WAIT-2-02",
+      "to_node": "f2_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-2A-ACC_door_WC-2A-ACC",
+      "from_node": "node_WC-2A-ACC",
+      "to_node": "door_WC-2A-ACC",
+      "weight": 259.47,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-2A-ACC_f2_main_left_bottom",
+      "from_node": "door_WC-2A-ACC",
+      "to_node": "f2_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-2A-F_door_WC-2A-F",
+      "from_node": "node_WC-2A-F",
+      "to_node": "door_WC-2A-F",
+      "weight": 145.96,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-2A-F_f2_main_left_bottom",
+      "from_node": "door_WC-2A-F",
+      "to_node": "f2_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-2A-M_door_WC-2A-M",
+      "from_node": "node_WC-2A-M",
+      "to_node": "door_WC-2A-M",
+      "weight": 0.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-2A-M_f2_main_left_bottom",
+      "from_node": "door_WC-2A-M",
+      "to_node": "f2_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-2B-ACC_door_WC-2B-ACC",
+      "from_node": "node_WC-2B-ACC",
+      "to_node": "door_WC-2B-ACC",
+      "weight": 0.71,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-2B-ACC_f2_upper_right_top",
+      "from_node": "door_WC-2B-ACC",
+      "to_node": "f2_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-2B-F_door_WC-2B-F",
+      "from_node": "node_WC-2B-F",
+      "to_node": "door_WC-2B-F",
+      "weight": 46.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-2B-F_f2_upper_right_top",
+      "from_node": "door_WC-2B-F",
+      "to_node": "f2_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-2B-M_door_WC-2B-M",
+      "from_node": "node_WC-2B-M",
+      "to_node": "door_WC-2B-M",
+      "weight": 148.37,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-2B-M_f2_upper_right_top",
+      "from_node": "door_WC-2B-M",
+      "to_node": "f2_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_main_left_top_f3_main_mid_top",
+      "from_node": "f3_main_left_top",
+      "to_node": "f3_main_mid_top",
+      "weight": 643.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_main_mid_top_f3_main_right_top",
+      "from_node": "f3_main_mid_top",
+      "to_node": "f3_main_right_top",
+      "weight": 592.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_main_left_bottom_f3_main_mid_bottom",
+      "from_node": "f3_main_left_bottom",
+      "to_node": "f3_main_mid_bottom",
+      "weight": 643.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_main_mid_bottom_f3_main_right_bottom",
+      "from_node": "f3_main_mid_bottom",
+      "to_node": "f3_main_right_bottom",
+      "weight": 592.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_main_left_top_f3_main_left_bottom",
+      "from_node": "f3_main_left_top",
+      "to_node": "f3_main_left_bottom",
+      "weight": 129.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_main_right_top_f3_main_right_bottom",
+      "from_node": "f3_main_right_top",
+      "to_node": "f3_main_right_bottom",
+      "weight": 129.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_branch_bottom_f3_branch_top",
+      "from_node": "f3_branch_bottom",
+      "to_node": "f3_branch_top",
+      "weight": 507.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_upper_left_top_f3_upper_mid_top",
+      "from_node": "f3_upper_left_top",
+      "to_node": "f3_upper_mid_top",
+      "weight": 206.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_upper_mid_top_f3_upper_right_top",
+      "from_node": "f3_upper_mid_top",
+      "to_node": "f3_upper_right_top",
+      "weight": 322.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_upper_left_bottom_f3_upper_mid_bottom",
+      "from_node": "f3_upper_left_bottom",
+      "to_node": "f3_upper_mid_bottom",
+      "weight": 206.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_upper_mid_bottom_f3_upper_right_bottom",
+      "from_node": "f3_upper_mid_bottom",
+      "to_node": "f3_upper_right_bottom",
+      "weight": 322.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_upper_left_top_f3_upper_left_bottom",
+      "from_node": "f3_upper_left_top",
+      "to_node": "f3_upper_left_bottom",
+      "weight": 130.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_upper_right_top_f3_upper_right_bottom",
+      "from_node": "f3_upper_right_top",
+      "to_node": "f3_upper_right_bottom",
+      "weight": 130.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_elevator_a_f3_main_mid_bottom",
+      "from_node": "f3_elevator_a",
+      "to_node": "f3_main_mid_bottom",
+      "weight": 50.12,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_stairs_a_f3_main_mid_bottom",
+      "from_node": "f3_stairs_a",
+      "to_node": "f3_main_mid_bottom",
+      "weight": 162.78,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_elevator_b_f3_upper_right_bottom",
+      "from_node": "f3_elevator_b",
+      "to_node": "f3_upper_right_bottom",
+      "weight": 41.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_f3_stairs_b_f3_upper_right_bottom",
+      "from_node": "f3_stairs_b",
+      "to_node": "f3_upper_right_bottom",
+      "weight": 82.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A301_door_A301",
+      "from_node": "node_A301",
+      "to_node": "door_A301",
+      "weight": 138.46,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A301_f3_main_left_top",
+      "from_node": "door_A301",
+      "to_node": "f3_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A302_door_A302",
+      "from_node": "node_A302",
+      "to_node": "door_A302",
+      "weight": 270.26,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A302_f3_main_left_top",
+      "from_node": "door_A302",
+      "to_node": "f3_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A303_door_A303",
+      "from_node": "node_A303",
+      "to_node": "door_A303",
+      "weight": 230.24,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A303_f3_main_mid_top",
+      "from_node": "door_A303",
+      "to_node": "f3_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A304_door_A304",
+      "from_node": "node_A304",
+      "to_node": "door_A304",
+      "weight": 93.31,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A304_f3_main_mid_top",
+      "from_node": "door_A304",
+      "to_node": "f3_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A305_door_A305",
+      "from_node": "node_A305",
+      "to_node": "door_A305",
+      "weight": 58.47,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A305_f3_main_mid_top",
+      "from_node": "door_A305",
+      "to_node": "f3_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A306_door_A306",
+      "from_node": "node_A306",
+      "to_node": "door_A306",
+      "weight": 165.54,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A306_f3_main_mid_top",
+      "from_node": "door_A306",
+      "to_node": "f3_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A307_door_A307",
+      "from_node": "node_A307",
+      "to_node": "door_A307",
+      "weight": 223.89,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A307_f3_stairs_a",
+      "from_node": "door_A307",
+      "to_node": "f3_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A308_door_A308",
+      "from_node": "node_A308",
+      "to_node": "door_A308",
+      "weight": 202.2,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A308_f3_main_right_top",
+      "from_node": "door_A308",
+      "to_node": "f3_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A309_door_A309",
+      "from_node": "node_A309",
+      "to_node": "door_A309",
+      "weight": 79.89,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A309_f3_main_right_top",
+      "from_node": "door_A309",
+      "to_node": "f3_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A310_door_A310",
+      "from_node": "node_A310",
+      "to_node": "door_A310",
+      "weight": 51.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A310_f3_upper_left_top",
+      "from_node": "door_A310",
+      "to_node": "f3_upper_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A311_door_A311",
+      "from_node": "node_A311",
+      "to_node": "door_A311",
+      "weight": 114.26,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A311_f3_upper_mid_top",
+      "from_node": "door_A311",
+      "to_node": "f3_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A312_door_A312",
+      "from_node": "node_A312",
+      "to_node": "door_A312",
+      "weight": 53.78,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A312_f3_upper_mid_top",
+      "from_node": "door_A312",
+      "to_node": "f3_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A313_door_A313",
+      "from_node": "node_A313",
+      "to_node": "door_A313",
+      "weight": 100.24,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A313_f3_upper_mid_top",
+      "from_node": "door_A313",
+      "to_node": "f3_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A314_door_A314",
+      "from_node": "node_A314",
+      "to_node": "door_A314",
+      "weight": 56.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A314_f3_upper_right_bottom",
+      "from_node": "door_A314",
+      "to_node": "f3_upper_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A315_door_A315",
+      "from_node": "node_A315",
+      "to_node": "door_A315",
+      "weight": 129.48,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A315_f3_upper_right_bottom",
+      "from_node": "door_A315",
+      "to_node": "f3_upper_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A316_door_A316",
+      "from_node": "node_A316",
+      "to_node": "door_A316",
+      "weight": 102.9,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A316_f3_upper_mid_bottom",
+      "from_node": "door_A316",
+      "to_node": "f3_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A317_door_A317",
+      "from_node": "node_A317",
+      "to_node": "door_A317",
+      "weight": 58.59,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A317_f3_upper_mid_bottom",
+      "from_node": "door_A317",
+      "to_node": "f3_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A318_door_A318",
+      "from_node": "node_A318",
+      "to_node": "door_A318",
+      "weight": 116.6,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A318_f3_upper_mid_bottom",
+      "from_node": "door_A318",
+      "to_node": "f3_upper_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A319_door_A319",
+      "from_node": "node_A319",
+      "to_node": "door_A319",
+      "weight": 56.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A319_f3_upper_left_bottom",
+      "from_node": "door_A319",
+      "to_node": "f3_upper_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A320_door_A320",
+      "from_node": "node_A320",
+      "to_node": "door_A320",
+      "weight": 87.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A320_f3_main_right_bottom",
+      "from_node": "door_A320",
+      "to_node": "f3_main_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A321_door_A321",
+      "from_node": "node_A321",
+      "to_node": "door_A321",
+      "weight": 205.33,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A321_f3_main_right_bottom",
+      "from_node": "door_A321",
+      "to_node": "f3_main_right_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A322_door_A322",
+      "from_node": "node_A322",
+      "to_node": "door_A322",
+      "weight": 119.45,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A322_f3_stairs_a",
+      "from_node": "door_A322",
+      "to_node": "f3_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A323_door_A323",
+      "from_node": "node_A323",
+      "to_node": "door_A323",
+      "weight": 99.91,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A323_f3_main_mid_bottom",
+      "from_node": "door_A323",
+      "to_node": "f3_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A324_door_A324",
+      "from_node": "node_A324",
+      "to_node": "door_A324",
+      "weight": 232.99,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A324_f3_main_mid_bottom",
+      "from_node": "door_A324",
+      "to_node": "f3_main_mid_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A325_door_A325",
+      "from_node": "node_A325",
+      "to_node": "door_A325",
+      "weight": 272.6,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A325_f3_main_left_bottom",
+      "from_node": "door_A325",
+      "to_node": "f3_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_A326_door_A326",
+      "from_node": "node_A326",
+      "to_node": "door_A326",
+      "weight": 142.99,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_A326_f3_main_left_bottom",
+      "from_node": "door_A326",
+      "to_node": "f3_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-3A_door_ELEV-3A",
+      "from_node": "node_ELEV-3A",
+      "to_node": "door_ELEV-3A",
+      "weight": 28.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ELEV-3A_f3_elevator_a",
+      "from_node": "door_ELEV-3A",
+      "to_node": "f3_elevator_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-3B_door_ELEV-3B",
+      "from_node": "node_ELEV-3B",
+      "to_node": "door_ELEV-3B",
+      "weight": 0.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_ELEV-3B_f3_elevator_b",
+      "from_node": "door_ELEV-3B",
+      "to_node": "f3_elevator_b",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_HALL-3-BRANCH_door_HALL-3-BRANCH",
+      "from_node": "node_HALL-3-BRANCH",
+      "to_node": "door_HALL-3-BRANCH",
+      "weight": 72.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_HALL-3-BRANCH_f3_main_right_top",
+      "from_node": "door_HALL-3-BRANCH",
+      "to_node": "f3_main_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_HALL-3-MAIN_door_HALL-3-MAIN",
+      "from_node": "node_HALL-3-MAIN",
+      "to_node": "door_HALL-3-MAIN",
+      "weight": 18.44,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_HALL-3-MAIN_f3_main_mid_top",
+      "from_node": "door_HALL-3-MAIN",
+      "to_node": "f3_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_STAIR-3A_door_STAIR-3A",
+      "from_node": "node_STAIR-3A",
+      "to_node": "door_STAIR-3A",
+      "weight": 28.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_STAIR-3A_f3_stairs_a",
+      "from_node": "door_STAIR-3A",
+      "to_node": "f3_stairs_a",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_STAIR-3B_door_STAIR-3B",
+      "from_node": "node_STAIR-3B",
+      "to_node": "door_STAIR-3B",
+      "weight": 3.75,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_STAIR-3B_f3_stairs_b",
+      "from_node": "door_STAIR-3B",
+      "to_node": "f3_stairs_b",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WAIT-3-01_door_WAIT-3-01",
+      "from_node": "node_WAIT-3-01",
+      "to_node": "door_WAIT-3-01",
+      "weight": 62.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WAIT-3-01_f3_main_mid_top",
+      "from_node": "door_WAIT-3-01",
+      "to_node": "f3_main_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WAIT-3-02_door_WAIT-3-02",
+      "from_node": "node_WAIT-3-02",
+      "to_node": "door_WAIT-3-02",
+      "weight": 64.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WAIT-3-02_f3_upper_mid_top",
+      "from_node": "door_WAIT-3-02",
+      "to_node": "f3_upper_mid_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-3A-ACC_door_WC-3A-ACC",
+      "from_node": "node_WC-3A-ACC",
+      "to_node": "door_WC-3A-ACC",
+      "weight": 0.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-3A-ACC_f3_main_left_bottom",
+      "from_node": "door_WC-3A-ACC",
+      "to_node": "f3_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-3A-F_door_WC-3A-F",
+      "from_node": "node_WC-3A-F",
+      "to_node": "door_WC-3A-F",
+      "weight": 44.75,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-3A-F_f3_main_left_bottom",
+      "from_node": "door_WC-3A-F",
+      "to_node": "f3_main_left_bottom",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-3A-M_door_WC-3A-M",
+      "from_node": "node_WC-3A-M",
+      "to_node": "door_WC-3A-M",
+      "weight": 39.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-3A-M_f3_main_left_top",
+      "from_node": "door_WC-3A-M",
+      "to_node": "f3_main_left_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-3B-ACC_door_WC-3B-ACC",
+      "from_node": "node_WC-3B-ACC",
+      "to_node": "door_WC-3B-ACC",
+      "weight": 0.0,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-3B-ACC_f3_upper_right_top",
+      "from_node": "door_WC-3B-ACC",
+      "to_node": "f3_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-3B-F_door_WC-3B-F",
+      "from_node": "node_WC-3B-F",
+      "to_node": "door_WC-3B-F",
+      "weight": 51.5,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-3B-F_f3_upper_right_top",
+      "from_node": "door_WC-3B-F",
+      "to_node": "f3_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_WC-3B-M_door_WC-3B-M",
+      "from_node": "node_WC-3B-M",
+      "to_node": "door_WC-3B-M",
+      "weight": 127.38,
+      "kind": "door"
+    },
+    {
+      "edge_id": "edge_door_WC-3B-M_f3_upper_right_top",
+      "from_node": "door_WC-3B-M",
+      "to_node": "f3_upper_right_top",
+      "weight": 0.0,
+      "kind": "walkway"
+    },
+    {
+      "edge_id": "edge_node_ELEV-1A_node_ELEV-2A",
+      "from_node": "node_ELEV-1A",
+      "to_node": "node_ELEV-2A",
+      "weight": 80.0,
+      "kind": "elevator"
+    },
+    {
+      "edge_id": "edge_node_STAIR-1A_node_STAIR-2A",
+      "from_node": "node_STAIR-1A",
+      "to_node": "node_STAIR-2A",
+      "weight": 140.0,
+      "kind": "stairs"
+    },
+    {
+      "edge_id": "edge_node_ELEV-1B_node_ELEV-2B",
+      "from_node": "node_ELEV-1B",
+      "to_node": "node_ELEV-2B",
+      "weight": 80.0,
+      "kind": "elevator"
+    },
+    {
+      "edge_id": "edge_node_STAIR-1B_node_STAIR-2B",
+      "from_node": "node_STAIR-1B",
+      "to_node": "node_STAIR-2B",
+      "weight": 140.0,
+      "kind": "stairs"
+    },
+    {
+      "edge_id": "edge_node_ELEV-2A_node_ELEV-3A",
+      "from_node": "node_ELEV-2A",
+      "to_node": "node_ELEV-3A",
+      "weight": 80.0,
+      "kind": "elevator"
+    },
+    {
+      "edge_id": "edge_node_STAIR-2A_node_STAIR-3A",
+      "from_node": "node_STAIR-2A",
+      "to_node": "node_STAIR-3A",
+      "weight": 140.0,
+      "kind": "stairs"
+    },
+    {
+      "edge_id": "edge_node_ELEV-2B_node_ELEV-3B",
+      "from_node": "node_ELEV-2B",
+      "to_node": "node_ELEV-3B",
+      "weight": 80.0,
+      "kind": "elevator"
+    },
+    {
+      "edge_id": "edge_node_STAIR-2B_node_STAIR-3B",
+      "from_node": "node_STAIR-2B",
+      "to_node": "node_STAIR-3B",
+      "weight": 140.0,
+      "kind": "stairs"
+    }
+  ],
+  "pois": [
+    {
+      "poi_id": "A101",
+      "location_id": "loc_A101",
+      "node_id": "node_A101",
+      "label": "A101 - Quầy hướng dẫn",
+      "x": 357.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A102",
+      "location_id": "loc_A102",
+      "node_id": "node_A102",
+      "label": "A102 - Kiosk lấy số",
+      "x": 469.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A103",
+      "location_id": "loc_A103",
+      "node_id": "node_A103",
+      "label": "A103 - Quầy xác thực CCCD/VNeID",
+      "x": 581.0,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A104",
+      "location_id": "loc_A104",
+      "node_id": "node_A104",
+      "label": "A104 - Quầy đăng ký 1",
+      "x": 692.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A105",
+      "location_id": "loc_A105",
+      "node_id": "node_A105",
+      "label": "A105 - Quầy đăng ký 2",
+      "x": 804.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A106",
+      "location_id": "loc_A106",
+      "node_id": "node_A106",
+      "label": "A106 - Quầy đăng ký 3",
+      "x": 916.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A107",
+      "location_id": "loc_A107",
+      "node_id": "node_A107",
+      "label": "A107 - Quầy BHYT 1",
+      "x": 1027.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A108",
+      "location_id": "loc_A108",
+      "node_id": "node_A108",
+      "label": "A108 - Quầy BHYT 2",
+      "x": 1138.5,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A109",
+      "location_id": "loc_A109",
+      "node_id": "node_A109",
+      "label": "A109 - Phòng tư vấn khám theo yêu cầu",
+      "x": 1258.0,
+      "y": 701.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A110",
+      "location_id": "loc_A110",
+      "node_id": "node_A110",
+      "label": "A110 - Quầy trả kết quả giấy tờ",
+      "x": 1502.5,
+      "y": 248.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A111",
+      "location_id": "loc_A111",
+      "node_id": "node_A111",
+      "label": "A111 - Phòng in/photocopy y tế",
+      "x": 1628.4,
+      "y": 248.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A112",
+      "location_id": "loc_A112",
+      "node_id": "node_A112",
+      "label": "A112 - Phòng sơ cứu nhỏ",
+      "x": 1754.3,
+      "y": 248.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A113",
+      "location_id": "loc_A113",
+      "node_id": "node_A113",
+      "label": "A113 - Phòng an ninh-y tế trực",
+      "x": 1880.2,
+      "y": 248.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A114",
+      "location_id": "loc_A114",
+      "node_id": "node_A114",
+      "label": "A114 - Kho cấp phát thuốc",
+      "x": 2005.5,
+      "y": 522.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A115",
+      "location_id": "loc_A115",
+      "node_id": "node_A115",
+      "label": "A115 - Quầy thanh toán 1",
+      "x": 1879.75,
+      "y": 522.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A116",
+      "location_id": "loc_A116",
+      "node_id": "node_A116",
+      "label": "A116 - Quầy thanh toán 2",
+      "x": 1754.0,
+      "y": 522.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A117",
+      "location_id": "loc_A117",
+      "node_id": "node_A117",
+      "label": "A117 - Quầy tạm ứng viện phí",
+      "x": 1628.25,
+      "y": 522.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A118",
+      "location_id": "loc_A118",
+      "node_id": "node_A118",
+      "label": "A118 - Quầy bảo lãnh viện phí",
+      "x": 1502.5,
+      "y": 522.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A119",
+      "location_id": "loc_A119",
+      "node_id": "node_A119",
+      "label": "A119 - Điểm gọi hỗ trợ",
+      "x": 1258.0,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A120",
+      "location_id": "loc_A120",
+      "node_id": "node_A120",
+      "label": "A120 - Khu chờ đăng ký",
+      "x": 1139.5,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A121",
+      "location_id": "loc_A121",
+      "node_id": "node_A121",
+      "label": "A121 - Phòng công tác xã hội",
+      "x": 804.5,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A122",
+      "location_id": "loc_A122",
+      "node_id": "node_A122",
+      "label": "A122 - Phòng hỗ trợ người cao tuổi",
+      "x": 692.5,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A123",
+      "location_id": "loc_A123",
+      "node_id": "node_A123",
+      "label": "A123 - Phòng chăm sóc khách hàng",
+      "x": 581.0,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A124",
+      "location_id": "loc_A124",
+      "node_id": "node_A124",
+      "label": "A124 - Nhà thuốc",
+      "x": 220.0,
+      "y": 750.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A125",
+      "location_id": "loc_A125",
+      "node_id": "node_A125",
+      "label": "A125 - Quầy tư vấn dùng thuốc",
+      "x": 225.562945368171,
+      "y": 703.9075663333596,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "ELEV-1A",
+      "location_id": "loc_ELEV-1A",
+      "node_id": "node_ELEV-1A",
+      "label": "ELEV-1A - Thang máy khu A tầng 1",
+      "x": 916.5,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "ELEV-1B",
+      "location_id": "loc_ELEV-1B",
+      "node_id": "node_ELEV-1B",
+      "label": "ELEV-1B - Thang máy khu B tầng 1",
+      "x": 2132.0,
+      "y": 416.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "ENT-1-01",
+      "location_id": "loc_ENT-1-01",
+      "node_id": "node_ENT-1-01",
+      "label": "ENT-1-01 - Lối vào chính",
+      "x": 220.0,
+      "y": 607.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "HALL-1-BRANCH",
+      "location_id": "loc_HALL-1-BRANCH",
+      "node_id": "node_HALL-1-BRANCH",
+      "label": "HALL-1-BRANCH - Hành lang nhánh tầng 1",
+      "x": 1380.0,
+      "y": 600.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "HALL-1-MAIN",
+      "location_id": "loc_HALL-1-MAIN",
+      "node_id": "node_HALL-1-MAIN",
+      "label": "HALL-1-MAIN - Hành lang chính tầng 1",
+      "x": 805.0,
+      "y": 772.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "STAIR-1A",
+      "location_id": "loc_STAIR-1A",
+      "node_id": "node_STAIR-1A",
+      "label": "STAIR-1A - Cầu thang bộ khu A tầng 1",
+      "x": 1028.0,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "STAIR-1B",
+      "location_id": "loc_STAIR-1B",
+      "node_id": "node_STAIR-1B",
+      "label": "STAIR-1B - Cầu thang bộ khu B tầng 1",
+      "x": 2132.0,
+      "y": 363.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WAIT-1-BRANCH",
+      "location_id": "loc_WAIT-1-BRANCH",
+      "node_id": "node_WAIT-1-BRANCH",
+      "label": "WAIT-1-BRANCH - Khu chờ nhánh tầng 1",
+      "x": 1754.0,
+      "y": 394.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WAIT-1-CENTER",
+      "location_id": "loc_WAIT-1-CENTER",
+      "node_id": "node_WAIT-1-CENTER",
+      "label": "WAIT-1-CENTER - Sảnh chờ trung tâm",
+      "x": 804.5,
+      "y": 834.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WC-1A-ACC",
+      "location_id": "loc_WC-1A-ACC",
+      "node_id": "node_WC-1A-ACC",
+      "label": "WC-1A-ACC - WC xe lăn khu A tầng 1",
+      "x": 469.5,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WC-1A-F",
+      "location_id": "loc_WC-1A-F",
+      "node_id": "node_WC-1A-F",
+      "label": "WC-1A-F - WC nữ khu A tầng 1",
+      "x": 357.5,
+      "y": 983.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WC-1A-M",
+      "location_id": "loc_WC-1A-M",
+      "node_id": "node_WC-1A-M",
+      "label": "WC-1A-M - WC nam khu A tầng 1",
+      "x": 220.0,
+      "y": 914.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WC-1B-ACC",
+      "location_id": "loc_WC-1B-ACC",
+      "node_id": "node_WC-1B-ACC",
+      "label": "WC-1B-ACC - WC xe lăn khu B tầng 1",
+      "x": 2132.0,
+      "y": 310.0,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WC-1B-F",
+      "location_id": "loc_WC-1B-F",
+      "node_id": "node_WC-1B-F",
+      "label": "WC-1B-F - WC nữ khu B tầng 1",
+      "x": 2132.0,
+      "y": 248.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "WC-1B-M",
+      "location_id": "loc_WC-1B-M",
+      "node_id": "node_WC-1B-M",
+      "label": "WC-1B-M - WC nam khu B tầng 1",
+      "x": 2006.1,
+      "y": 248.5,
+      "floor_number": 1
+    },
+    {
+      "poi_id": "A201",
+      "location_id": "loc_A201",
+      "node_id": "node_A201",
+      "label": "A201 - PK Nội tổng quát 1",
+      "x": 215.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A202",
+      "location_id": "loc_A202",
+      "node_id": "node_A202",
+      "label": "A202 - PK Nội tổng quát 2",
+      "x": 351.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A203",
+      "location_id": "loc_A203",
+      "node_id": "node_A203",
+      "label": "A203 - PK Tim mạch 1",
+      "x": 469.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A204",
+      "location_id": "loc_A204",
+      "node_id": "node_A204",
+      "label": "A204 - PK Tim mạch 2",
+      "x": 587.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A205",
+      "location_id": "loc_A205",
+      "node_id": "node_A205",
+      "label": "A205 - PK Hô hấp 1",
+      "x": 719.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A206",
+      "location_id": "loc_A206",
+      "node_id": "node_A206",
+      "label": "A206 - PK Hô hấp 2",
+      "x": 850.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A207",
+      "location_id": "loc_A207",
+      "node_id": "node_A207",
+      "label": "A207 - PK Tiêu hóa 1",
+      "x": 968.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A208",
+      "location_id": "loc_A208",
+      "node_id": "node_A208",
+      "label": "A208 - PK Tiêu hóa 2",
+      "x": 1087.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A209",
+      "location_id": "loc_A209",
+      "node_id": "node_A209",
+      "label": "A209 - PK Nội tiết 1",
+      "x": 1205.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A210",
+      "location_id": "loc_A210",
+      "node_id": "node_A210",
+      "label": "A210 - PK Nội tiết 2",
+      "x": 1323.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A211",
+      "location_id": "loc_A211",
+      "node_id": "node_A211",
+      "label": "A211 - PK Cơ xương khớp 1",
+      "x": 1434.5,
+      "y": 242.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A212",
+      "location_id": "loc_A212",
+      "node_id": "node_A212",
+      "label": "A212 - PK Cơ xương khớp 2",
+      "x": 1574.9,
+      "y": 242.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A213",
+      "location_id": "loc_A213",
+      "node_id": "node_A213",
+      "label": "A213 - PK Thần kinh 1",
+      "x": 1715.3,
+      "y": 242.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A214",
+      "location_id": "loc_A214",
+      "node_id": "node_A214",
+      "label": "A214 - PK Thần kinh 2",
+      "x": 1855.7,
+      "y": 242.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A215",
+      "location_id": "loc_A215",
+      "node_id": "node_A215",
+      "label": "A215 - PK Da liễu",
+      "x": 2137.0,
+      "y": 459.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A216",
+      "location_id": "loc_A216",
+      "node_id": "node_A216",
+      "label": "A216 - PK Tai mũi họng",
+      "x": 2018.6,
+      "y": 459.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A217",
+      "location_id": "loc_A217",
+      "node_id": "node_A217",
+      "label": "A217 - PK Mắt",
+      "x": 1900.2,
+      "y": 459.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A218",
+      "location_id": "loc_A218",
+      "node_id": "node_A218",
+      "label": "A218 - PK Răng hàm mặt",
+      "x": 1781.8,
+      "y": 459.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A219",
+      "location_id": "loc_A219",
+      "node_id": "node_A219",
+      "label": "A219 - PK Sản phụ khoa",
+      "x": 1663.4,
+      "y": 459.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A220",
+      "location_id": "loc_A220",
+      "node_id": "node_A220",
+      "label": "A220 - PK Nhi",
+      "x": 1545.0,
+      "y": 459.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A221",
+      "location_id": "loc_A221",
+      "node_id": "node_A221",
+      "label": "A221 - Phòng tư vấn dinh dưỡng",
+      "x": 1380.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A222",
+      "location_id": "loc_A222",
+      "node_id": "node_A222",
+      "label": "A222 - Phòng tư vấn tâm lý cơ bản",
+      "x": 1323.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A223",
+      "location_id": "loc_A223",
+      "node_id": "node_A223",
+      "label": "A223 - Phòng điều dưỡng",
+      "x": 1205.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A224",
+      "location_id": "loc_A224",
+      "node_id": "node_A224",
+      "label": "A224 - Phòng thủ thuật nhỏ",
+      "x": 850.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A225",
+      "location_id": "loc_A225",
+      "node_id": "node_A225",
+      "label": "A225 - Phòng tiêm-truyền ngắn",
+      "x": 719.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A226",
+      "location_id": "loc_A226",
+      "node_id": "node_A226",
+      "label": "A226 - Phòng đo sinh hiệu",
+      "x": 587.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A227",
+      "location_id": "loc_A227",
+      "node_id": "node_A227",
+      "label": "A227 - Phòng đọc KQ tổng hợp 2",
+      "x": 215.0,
+      "y": 645.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A228",
+      "location_id": "loc_A228",
+      "node_id": "node_A228",
+      "label": "A228 - Phòng đọc KQ tổng hợp 1",
+      "x": 215.0,
+      "y": 554.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "ELEV-2A",
+      "location_id": "loc_ELEV-2A",
+      "node_id": "node_ELEV-2A",
+      "label": "ELEV-2A - Thang máy khu A tầng 2",
+      "x": 968.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "ELEV-2B",
+      "location_id": "loc_ELEV-2B",
+      "node_id": "node_ELEV-2B",
+      "label": "ELEV-2B - Thang máy khu B tầng 2",
+      "x": 2136.5,
+      "y": 375.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "HALL-2-BRANCH",
+      "location_id": "loc_HALL-2-BRANCH",
+      "node_id": "node_HALL-2-BRANCH",
+      "label": "HALL-2-BRANCH - Hành lang nhánh tầng 2",
+      "x": 1435.0,
+      "y": 490.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "STAIR-2A",
+      "location_id": "loc_STAIR-2A",
+      "node_id": "node_STAIR-2A",
+      "label": "STAIR-2A - Cầu thang bộ khu A tầng 2",
+      "x": 1087.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "STAIR-2B",
+      "location_id": "loc_STAIR-2B",
+      "node_id": "node_STAIR-2B",
+      "label": "STAIR-2B - Cầu thang bộ khu B tầng 2",
+      "x": 2136.5,
+      "y": 332.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WAIT-2-01",
+      "location_id": "loc_WAIT-2-01",
+      "node_id": "node_WAIT-2-01",
+      "label": "WAIT-2-01 - Khu chờ khám 1",
+      "x": 837.0,
+      "y": 666.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WAIT-2-02",
+      "location_id": "loc_WAIT-2-02",
+      "node_id": "node_WAIT-2-02",
+      "label": "WAIT-2-02 - Khu chờ khám 2",
+      "x": 1781.5,
+      "y": 351.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WC-2A-ACC",
+      "location_id": "loc_WC-2A-ACC",
+      "node_id": "node_WC-2A-ACC",
+      "label": "WC-2A-ACC - WC xe lăn khu A tầng 2",
+      "x": 469.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WC-2A-F",
+      "location_id": "loc_WC-2A-F",
+      "node_id": "node_WC-2A-F",
+      "label": "WC-2A-F - WC nữ khu A tầng 2",
+      "x": 351.0,
+      "y": 788.0,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WC-2A-M",
+      "location_id": "loc_WC-2A-M",
+      "node_id": "node_WC-2A-M",
+      "label": "WC-2A-M - WC nam khu A tầng 2",
+      "x": 215.0,
+      "y": 735.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WC-2B-ACC",
+      "location_id": "loc_WC-2B-ACC",
+      "node_id": "node_WC-2B-ACC",
+      "label": "WC-2B-ACC - WC xe lăn khu B tầng 2",
+      "x": 2136.5,
+      "y": 288.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WC-2B-F",
+      "location_id": "loc_WC-2B-F",
+      "node_id": "node_WC-2B-F",
+      "label": "WC-2B-F - WC nữ khu B tầng 2",
+      "x": 2136.5,
+      "y": 242.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "WC-2B-M",
+      "location_id": "loc_WC-2B-M",
+      "node_id": "node_WC-2B-M",
+      "label": "WC-2B-M - WC nam khu B tầng 2",
+      "x": 1996.1,
+      "y": 242.5,
+      "floor_number": 2
+    },
+    {
+      "poi_id": "A301",
+      "location_id": "loc_A301",
+      "node_id": "node_A301",
+      "label": "A301 - Khu tiếp nhận CLS",
+      "x": 348.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A302",
+      "location_id": "loc_A302",
+      "node_id": "node_A302",
+      "label": "A302 - Quầy lấy số xét nghiệm",
+      "x": 482.5,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A303",
+      "location_id": "loc_A303",
+      "node_id": "node_A303",
+      "label": "A303 - Phòng lấy máu 1",
+      "x": 631.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A304",
+      "location_id": "loc_A304",
+      "node_id": "node_A304",
+      "label": "A304 - Phòng lấy máu 2",
+      "x": 773.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A305",
+      "location_id": "loc_A305",
+      "node_id": "node_A305",
+      "label": "A305 - Phòng XN sinh hóa",
+      "x": 902.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A306",
+      "location_id": "loc_A306",
+      "node_id": "node_A306",
+      "label": "A306 - Phòng XN huyết học",
+      "x": 1019.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A307",
+      "location_id": "loc_A307",
+      "node_id": "node_A307",
+      "label": "A307 - Phòng XN nước tiểu",
+      "x": 1135.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A308",
+      "location_id": "loc_A308",
+      "node_id": "node_A308",
+      "label": "A308 - Phòng XN miễn dịch",
+      "x": 1251.5,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A309",
+      "location_id": "loc_A309",
+      "node_id": "node_A309",
+      "label": "A309 - Phòng trả KQ xét nghiệm",
+      "x": 1380.0,
+      "y": 587.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A310",
+      "location_id": "loc_A310",
+      "node_id": "node_A310",
+      "label": "A310 - Phòng điện tim ECG",
+      "x": 1610.0,
+      "y": 248.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A311",
+      "location_id": "loc_A311",
+      "node_id": "node_A311",
+      "label": "A311 - Phòng siêu âm tổng quát 1",
+      "x": 1714.0,
+      "y": 248.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A312",
+      "location_id": "loc_A312",
+      "node_id": "node_A312",
+      "label": "A312 - Phòng siêu âm tổng quát 2",
+      "x": 1800.5,
+      "y": 248.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A313",
+      "location_id": "loc_A313",
+      "node_id": "node_A313",
+      "label": "A313 - Phòng siêu âm tim",
+      "x": 1902.0,
+      "y": 248.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A314",
+      "location_id": "loc_A314",
+      "node_id": "node_A314",
+      "label": "A314 - Phòng X-quang 1",
+      "x": 2138.0,
+      "y": 486.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A315",
+      "location_id": "loc_A315",
+      "node_id": "node_A315",
+      "label": "A315 - Phòng X-quang 2",
+      "x": 2021.5,
+      "y": 486.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A316",
+      "location_id": "loc_A316",
+      "node_id": "node_A316",
+      "label": "A316 - Phòng CT mô phỏng",
+      "x": 1902.0,
+      "y": 486.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A317",
+      "location_id": "loc_A317",
+      "node_id": "node_A317",
+      "label": "A317 - Phòng MRI mô phỏng",
+      "x": 1800.5,
+      "y": 486.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A318",
+      "location_id": "loc_A318",
+      "node_id": "node_A318",
+      "label": "A318 - Phòng nội soi tiêu hóa",
+      "x": 1714.0,
+      "y": 486.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A319",
+      "location_id": "loc_A319",
+      "node_id": "node_A319",
+      "label": "A319 - Phòng đo chức năng hô hấp",
+      "x": 1610.0,
+      "y": 486.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A320",
+      "location_id": "loc_A320",
+      "node_id": "node_A320",
+      "label": "A320 - Phòng đo mật độ xương",
+      "x": 1380.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A321",
+      "location_id": "loc_A321",
+      "node_id": "node_A321",
+      "label": "A321 - Phòng lấy mẫu chuyên biệt",
+      "x": 1251.5,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A322",
+      "location_id": "loc_A322",
+      "node_id": "node_A322",
+      "label": "A322 - Phòng tư vấn trước thủ thuật",
+      "x": 1135.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A323",
+      "location_id": "loc_A323",
+      "node_id": "node_A323",
+      "label": "A323 - Phòng nghỉ sau thủ thuật",
+      "x": 773.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A324",
+      "location_id": "loc_A324",
+      "node_id": "node_A324",
+      "label": "A324 - Quầy hỗ trợ KQ online",
+      "x": 631.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A325",
+      "location_id": "loc_A325",
+      "node_id": "node_A325",
+      "label": "A325 - Khu trả phim/CĐHA",
+      "x": 482.5,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "A326",
+      "location_id": "loc_A326",
+      "node_id": "node_A326",
+      "label": "A326 - Phòng kỹ thuật viên",
+      "x": 348.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "ELEV-3A",
+      "location_id": "loc_ELEV-3A",
+      "node_id": "node_ELEV-3A",
+      "label": "ELEV-3A - Thang máy khu A tầng 3",
+      "x": 902.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "ELEV-3B",
+      "location_id": "loc_ELEV-3B",
+      "node_id": "node_ELEV-3B",
+      "label": "ELEV-3B - Thang máy khu B tầng 3",
+      "x": 2138.0,
+      "y": 388.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "HALL-3-BRANCH",
+      "location_id": "loc_HALL-3-BRANCH",
+      "node_id": "node_HALL-3-BRANCH",
+      "label": "HALL-3-BRANCH - Hành lang nhánh tầng 3",
+      "x": 1480.0,
+      "y": 560.0,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "HALL-3-MAIN",
+      "location_id": "loc_HALL-3-MAIN",
+      "node_id": "node_HALL-3-MAIN",
+      "label": "HALL-3-MAIN - Hành lang chính tầng 3",
+      "x": 870.0,
+      "y": 612.0,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "STAIR-3A",
+      "location_id": "loc_STAIR-3A",
+      "node_id": "node_STAIR-3A",
+      "label": "STAIR-3A - Cầu thang bộ khu A tầng 3",
+      "x": 1019.0,
+      "y": 807.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "STAIR-3B",
+      "location_id": "loc_STAIR-3B",
+      "node_id": "node_STAIR-3B",
+      "label": "STAIR-3B - Cầu thang bộ khu B tầng 3",
+      "x": 2138.0,
+      "y": 344.25,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WAIT-3-01",
+      "location_id": "loc_WAIT-3-01",
+      "node_id": "node_WAIT-3-01",
+      "label": "WAIT-3-01 - Khu chờ xét nghiệm",
+      "x": 857.5,
+      "y": 688.0,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WAIT-3-02",
+      "location_id": "loc_WAIT-3-02",
+      "node_id": "node_WAIT-3-02",
+      "label": "WAIT-3-02 - Khu chờ chẩn đoán hình ảnh",
+      "x": 1816.0,
+      "y": 364.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WC-3A-ACC",
+      "location_id": "loc_WC-3A-ACC",
+      "node_id": "node_WC-3A-ACC",
+      "label": "WC-3A-ACC - WC xe lăn khu A tầng 3",
+      "x": 214.5,
+      "y": 755.0,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WC-3A-F",
+      "location_id": "loc_WC-3A-F",
+      "node_id": "node_WC-3A-F",
+      "label": "WC-3A-F - WC nữ khu A tầng 3",
+      "x": 214.5,
+      "y": 710.25,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WC-3A-M",
+      "location_id": "loc_WC-3A-M",
+      "node_id": "node_WC-3A-M",
+      "label": "WC-3A-M - WC nam khu A tầng 3",
+      "x": 214.5,
+      "y": 665.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WC-3B-ACC",
+      "location_id": "loc_WC-3B-ACC",
+      "node_id": "node_WC-3B-ACC",
+      "label": "WC-3B-ACC - WC xe lăn khu B tầng 3",
+      "x": 2138.0,
+      "y": 300.0,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WC-3B-F",
+      "location_id": "loc_WC-3B-F",
+      "node_id": "node_WC-3B-F",
+      "label": "WC-3B-F - WC nữ khu B tầng 3",
+      "x": 2138.0,
+      "y": 248.5,
+      "floor_number": 3
+    },
+    {
+      "poi_id": "WC-3B-M",
+      "location_id": "loc_WC-3B-M",
+      "node_id": "node_WC-3B-M",
+      "label": "WC-3B-M - WC nam khu B tầng 3",
+      "x": 2021.5,
+      "y": 248.5,
+      "floor_number": 3
+    }
+  ],
+  "created_at": "2026-07-05T09:49:06.068622+00:00",
+  "verified_at": null
+}

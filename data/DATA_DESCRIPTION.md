@@ -24,7 +24,7 @@ data/
     └── ocr_results/
 ```
 
-`generated/maps/` and `generated/ocr_results/` are currently empty placeholders. They are reserved for outputs created by map digitization, OCR mocks, routing previews, and demo seed scripts.
+`generated/maps/` now stores backend-generated digital map graphs. `generated/ocr_results/` remains reserved for OCR mocks, routing previews, and demo seed scripts.
 
 ## Raw Datasets
 
@@ -188,17 +188,14 @@ or direct validation using Python `jsonschema`.
 
 ### `generated/maps/`
 
-Reserved for digital map outputs. It is currently empty.
+Stores digital map outputs created by the backend map digitization service.
 
-Expected future contents:
+Current contents:
 
-| Expected file type | Description |
+| File type | Description |
 |---|---|
-| Draft graph JSON | Initial graph generated from floor-plan PDFs or a precomputed demo graph. Visible only in admin console. |
-| Verified map JSON | Human-approved graph used by patient app and routing engine. Must have `status: "verified"`. |
-| Walkable mask images | Binary/visual masks showing detected walkable regions. |
-| Skeleton images | Thinned corridor skeletons used to derive graph nodes/edges. |
-| Graph overlay images | Visual debug overlays for map builder review. |
+| `draft_maps/{map_id}.json` | Initial multi-floor graph generated from `data/raw/map-floor*.png` plus `reference/locations.json`. Visible in the admin console for review. |
+| `verified_maps/{map_id}.json` | Human-approved graph used by patient app and routing engine. Must have `status: "verified"`. |
 | Route preview JSON | Precomputed example routes such as `A203 → A303` and `A303 → A311`. |
 
 The architecture requires patient-facing route computation to use verified maps only.

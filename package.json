@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "install:all": "powershell -ExecutionPolicy Bypass -File scripts/install_all.ps1",
     "dev:patient": "pnpm --filter hospital-app dev",
     "dev:admin": "pnpm --filter admin-console dev",
+    "dev:engine": ".\\.venv\\Scripts\\python -m uvicorn app.main:app --host 127.0.0.1 --port 8001 --app-dir services/navigation-engine",
+    "test:unit": "cd services/navigation-engine && ..\\..\\.venv\\Scripts\\python -m pytest -q",
+    "test:integration": ".\\.venv\\Scripts\\python scripts\\integration_smoke.py",
+    "test:all": "powershell -ExecutionPolicy Bypass -File scripts/test_all.ps1",
     "build": "pnpm --filter hospital-app build && pnpm --filter admin-console build",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck"

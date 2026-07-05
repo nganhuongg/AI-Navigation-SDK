@@ -1,0 +1,5 @@
+{
+  "source_image": "data/raw/forms/sample_instruction_form_001.png",
+  "confidence": 0.92,
+  "text": "PHIẾU CHỈ ĐỊNH KHÁM BỆNH\nHọ tên: [đã ẩn]\nPhòng khám ban đầu: A203 - PK Tim mạch 1\nCHỈ ĐỊNH CẬN LÂM SÀNG:\n1. Lấy máu xét nghiệm - Phòng A303\n2. Siêu âm tổng quát - Phòng A311\nSau khi có kết quả, quay lại phòng khám A203.\nSố thứ tự: 47"
+}

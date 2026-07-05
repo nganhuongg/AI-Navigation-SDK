@@ -13,17 +13,46 @@
   the phone. Putting everything under one Provider keeps the state in one place.
 */
 
+import { useEffect } from "react";
 import { DemoProvider, useDemo } from "@/context/demo";
+import SmartUXEvents from "@/integrations/smartux/smartuxEvents";
 
 export default function PhoneShell({ children }: { children: React.ReactNode }) {
   return (
     <DemoProvider>
+      <SmartUXCrashLogger />
       <div className="flex flex-col items-center gap-5">
         <PhoneFrame>{children}</PhoneFrame>
         <DemoToggleBar />
       </div>
     </DemoProvider>
   );
+}
+
+function SmartUXCrashLogger() {
+  useEffect(() => {
+    const handleError = (event: ErrorEvent) => {
+      SmartUXEvents.exception(event.error || event.message || "Unhandled window error", {
+        source: "window.error",
+      });
+    };
+
+    const handleRejection = (event: PromiseRejectionEvent) => {
+      SmartUXEvents.exception(event.reason || "Unhandled promise rejection", {
+        source: "unhandledrejection",
+      });
+    };
+
+    window.addEventListener("error", handleError);
+    window.addEventListener("unhandledrejection", handleRejection);
+
+    return () => {
+      window.removeEventListener("error", handleError);
+      window.removeEventListener("unhandledrejection", handleRejection);
+    };
+  }, []);
+
+  return null;
 }
 
 /* ── Phone frame ── */
@@ -62,8 +91,8 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
         </div>
       </div>
 
-      {/* Scrollable page content */}
-      <div className="flex-1 overflow-y-auto flex flex-col font-sans">
+      {/* Page content. Individual screens own their scroll areas inside the phone. */}
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden font-sans">
         {children}
       </div>
     </div>

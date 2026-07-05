@@ -11,9 +11,14 @@ export type ExtractedJourneyFields = {
   specialty: string | null;
   initial_exam_room: string | null;
   ordered_services: string[];
+  detected_room_codes: string[];
+  room_descriptions: Record<string, string>;
+  room_notes: Record<string, string>;
+  room_queue_numbers: Record<string, string>;
   return_room: string | null;
   queue_number: string | number | null;
   completed_steps: string[];
+  source: "ocr" | "hospital_api" | "manual" | null;
 };
 
 export type SpecializedServiceStatus = "pending" | "in_progress" | "completed" | "skipped";

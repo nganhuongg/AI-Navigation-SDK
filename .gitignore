@@ -1,7 +1,13 @@
-# Environment — never commit secrets
+# Environment - never commit secrets
 .env
 .env.local
-.env.example
+
+# Local agent/private planning context
+.agents/
+.claude/
+initial_prompt.md
+docs/BACKEND_PLAN.md
+docs/trợ-lý-ai-điều-hướng/
 
 # Node dependencies
 node_modules/
@@ -17,10 +23,14 @@ __pycache__/
 .venv/
 *.egg-info/
 
-# Runtime data (reset before every demo)
+# Runtime data - reset before every demo
 data/runtime/sessions/*.json
 data/runtime/events/events.json
 data/runtime/dashboard_cache/dashboard_summary.json
+
+# Temporary outputs and logs
+tmp/
+*.log
 
 # OS files
 .DS_Store
@@ -30,5 +40,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-reflection.md 
-ARCHITECTURE.md
+reflection.md
+progress.md

@@ -23,6 +23,10 @@
       "specialty",
       "initial_exam_room",
       "ordered_services",
+      "detected_room_codes",
+      "room_descriptions",
+      "room_notes",
+      "room_queue_numbers",
       "return_room",
       "queue_number",
       "completed_steps"
@@ -37,6 +41,10 @@
         "completed_steps",
         "initial_exam_room",
         "ordered_services",
+        "detected_room_codes",
+        "room_descriptions",
+        "room_notes",
+        "room_queue_numbers",
         "return_room"
       ]
     },
@@ -46,7 +54,8 @@
       "fills": [
         "initial_exam_room",
         "ordered_services",
-        "return_room"
+        "return_room",
+        "room_queue_numbers"
       ]
     }
   ],
@@ -80,9 +89,14 @@
       "specialty": null,
       "initial_exam_room": null,
       "ordered_services": [],
+      "detected_room_codes": [],
+      "room_descriptions": {},
+      "room_notes": {},
       "return_room": null,
       "queue_number": null,
-      "completed_steps": []
+      "completed_steps": [],
+      "source": null,
+      "room_queue_numbers": {}
     },
     "current_step": "waiting_for_doctor",
     "next_action": "Khám ban đầu",
@@ -243,6 +257,16 @@
         "blood_collection",
         "general_ultrasound"
       ],
+      "detected_room_codes": [
+        "A203",
+        "A303",
+        "A311"
+      ],
+      "room_descriptions": {
+        "A303": "Lấy máu xét nghiệm",
+        "A311": "Siêu âm tổng quát"
+      },
+      "room_notes": {},
       "return_room": "A203",
       "queue_number": null,
       "completed_steps": [
@@ -250,7 +274,9 @@
         "identity",
         "payment",
         "blood_collection"
-      ]
+      ],
+      "source": "ocr",
+      "room_queue_numbers": {}
     },
     "current_step": "general_ultrasound",
     "next_action": "Đi tới phòng A311 để siêu âm tổng quát",

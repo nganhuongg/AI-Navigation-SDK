@@ -1,65 +1,158 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useEffect, useState } from "react";
+import { getEngineBaseUrl, getHealth, listMaps } from "@/lib/api";
+import type { DigitalMap, HealthStatus } from "@/lib/types";
+import { Chip, EmptyState } from "@/components/ui";
+
+export default function OverviewPage() {
+  const [engineUrl, setEngineUrl] = useState<string | null>(null);
+  const [health, setHealth] = useState<HealthStatus | null>(null);
+  const [healthError, setHealthError] = useState<string | null>(null);
+  const [maps, setMaps] = useState<DigitalMap[] | null>(null);
+
+  useEffect(() => {
+    setEngineUrl(getEngineBaseUrl());
+    getHealth()
+      .then(setHealth)
+      .catch((caught) => setHealthError(caught instanceof Error ? caught.message : "Không kết nối được engine"));
+    listMaps()
+      .then(setMaps)
+      .catch(() => setMaps([]));
+  }, []);
+
+  const verifiedMap = maps?.find((item) => item.status === "verified") ?? maps?.[0] ?? null;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <div className="topbar">
+        <div>
+          <h2>Tổng quan hệ thống</h2>
+          <div className="sub">Trạng thái các dịch vụ VNPT đang chạy trên engine</div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="topbar-right">
+          <span className="engine-badge">{engineUrl ?? "…"}</span>
         </div>
-      </main>
+      </div>
+
+      <div className="content">
+        {healthError ? (
+          <EmptyState text={`Không lấy được trạng thái engine: ${healthError}. Kiểm tra backend đang chạy trên cổng 8001.`} />
+        ) : null}
+
+        <div className="grid-2">
+          <ServiceCard
+            eyebrow="OCR"
+            name="SmartReader"
+            sub="/rpa-service/aidigdoc/v1/ocr/scan-table"
+            description="Ảnh phiếu khám → mã phòng, mô tả, số thứ tự → xác nhận vào hành trình khám."
+            real={health?.services.ocr.real ?? null}
+            href="/ocr"
+            cta="Mở bảng OCR"
+          />
+          <ServiceCard
+            eyebrow="SmartVoice"
+            name="STT + TTS"
+            sub="/stt-service/v1/grpc/standard · /tts-service/v2/standard"
+            description="Giọng nói bệnh nhân → văn bản, và văn bản chỉ đường → giọng đọc."
+            real={
+              health ? health.services.smartvoice_stt.real && health.services.smartvoice_tts.real : null
+            }
+            href="/smartvoice"
+            cta="Mở bảng SmartVoice"
+          />
+          <ServiceCard
+            eyebrow="SmartBot"
+            name="Chatbot điều hướng"
+            sub="assistant-stream.vnpt.vn/v1/conversation"
+            description="Nhận diện ý định + trả lời điều hướng, luôn chốt lại bằng dữ liệu hành trình thật."
+            real={health?.services.smartbot.real ?? null}
+            href="/smartbot"
+            cta="Mở bảng SmartBot"
+          />
+          <div className="overview-card">
+            <div className="oc-top">
+              <div>
+                <div className="eyebrow">Dựng bản đồ</div>
+                <div className="oc-name">{verifiedMap?.map_id ?? "Chưa có bản đồ"}</div>
+              </div>
+              {verifiedMap ? (
+                <Chip variant={verifiedMap.status === "verified" ? "busy" : "neutral"}>
+                  {verifiedMap.status === "verified" ? "Đã xác thực" : "Bản nháp"}
+                </Chip>
+              ) : (
+                <Chip variant="neutral">Chưa có</Chip>
+              )}
+            </div>
+            {verifiedMap ? (
+              <div className="oc-sub">
+                {verifiedMap.nodes.length} nút · {verifiedMap.edges.length} cạnh · {verifiedMap.pois.length} POI
+              </div>
+            ) : (
+              <div className="oc-sub">Chưa số hoá bản đồ nào</div>
+            )}
+            <p style={{ fontSize: 13, color: "var(--muted)" }}>
+              Số hoá bản đồ nhiều tầng, gán POI, tìm đường ngắn nhất trên đồ thị đã xác thực.
+            </p>
+            <div className="oc-foot">
+              <a className="btn btn-primary" href="/map-builder">
+                Mở bảng dựng bản đồ
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="panel">
+          <div className="foot-note">
+            Trạng thái Thực/Mock đọc trực tiếp từ <code>USE_VNPT_*</code> trong <code>.env</code> qua{" "}
+            <code>GET /health</code>. Đặt lại <code>false</code> bất kỳ lúc nào để quay về mock, đảm bảo demo
+            không phụ thuộc kết nối ngoài.
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function ServiceCard({
+  eyebrow,
+  name,
+  sub,
+  description,
+  real,
+  href,
+  cta,
+}: {
+  eyebrow: string;
+  name: string;
+  sub: string;
+  description: string;
+  real: boolean | null;
+  href: string;
+  cta: string;
+}) {
+  return (
+    <div className="overview-card">
+      <div className="oc-top">
+        <div>
+          <div className="eyebrow">{eyebrow}</div>
+          <div className="oc-name">{name}</div>
+        </div>
+        {real === null ? (
+          <Chip variant="neutral">Đang kiểm tra…</Chip>
+        ) : real ? (
+          <Chip variant="real">Thực · đã kết nối</Chip>
+        ) : (
+          <Chip variant="mock">Mock · offline</Chip>
+        )}
+      </div>
+      <div className="oc-sub">{sub}</div>
+      <p style={{ fontSize: 13, color: "var(--muted)" }}>{description}</p>
+      <div className="oc-foot">
+        <a className="btn btn-primary" href={href}>
+          {cta}
+        </a>
+      </div>
     </div>
   );
 }

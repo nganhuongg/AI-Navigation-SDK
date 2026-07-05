@@ -9,3 +9,4 @@ export * from "./ocr";
 export * from "./route";
 export * from "./assistant";
 export * from "./analytics";
+export * from "./voice";

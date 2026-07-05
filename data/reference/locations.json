@@ -1,0 +1,2956 @@
+{
+  "schema_version": 1,
+  "source_file": "data/raw/locations.csv",
+  "hospital_id": "bachmai_demo",
+  "building_id": "building_main_a",
+  "location_count": 121,
+  "locations": [
+    {
+      "location_id": "loc_A101",
+      "poi_id": "A101",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A101 - Quầy hướng dẫn",
+      "name": "Quầy hướng dẫn",
+      "function": "Hỏi đường, hỗ trợ chung",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "guidance",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "hướng dẫn"
+      ],
+      "ocr_keywords": [
+        "Quầy hướng dẫn"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A102",
+      "poi_id": "A102",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A102 - Kiosk lấy số",
+      "name": "Kiosk lấy số",
+      "function": "Lấy số khám",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "kiosk",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "kiosk lấy số"
+      ],
+      "ocr_keywords": [
+        "Kiosk lấy số"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A103",
+      "poi_id": "A103",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A103 - Quầy xác thực CCCD/VNeID",
+      "name": "Quầy xác thực CCCD/VNeID",
+      "function": "Xác minh thông tin",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "identity",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "xác thực cccd",
+        "vneid"
+      ],
+      "ocr_keywords": [
+        "Quầy xác thực CCCD",
+        "VNeID"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A104",
+      "poi_id": "A104",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A104 - Quầy đăng ký 1",
+      "name": "Quầy đăng ký 1",
+      "function": "Tiếp nhận khám",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "registration",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "đăng ký 1"
+      ],
+      "ocr_keywords": [
+        "Quầy đăng ký 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A105",
+      "poi_id": "A105",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A105 - Quầy đăng ký 2",
+      "name": "Quầy đăng ký 2",
+      "function": "Tiếp nhận khám",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "registration",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "đăng ký 2"
+      ],
+      "ocr_keywords": [
+        "Quầy đăng ký 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A106",
+      "poi_id": "A106",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A106 - Quầy đăng ký 3",
+      "name": "Quầy đăng ký 3",
+      "function": "Tiếp nhận khám",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "registration",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "đăng ký 3"
+      ],
+      "ocr_keywords": [
+        "Quầy đăng ký 3"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A107",
+      "poi_id": "A107",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A107 - Quầy BHYT 1",
+      "name": "Quầy BHYT 1",
+      "function": "Kiểm tra thẻ",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "insurance",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "bhyt 1"
+      ],
+      "ocr_keywords": [
+        "Quầy BHYT 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A108",
+      "poi_id": "A108",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A108 - Quầy BHYT 2",
+      "name": "Quầy BHYT 2",
+      "function": "Kiểm tra thẻ",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "insurance",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "bhyt 2"
+      ],
+      "ocr_keywords": [
+        "Quầy BHYT 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A109",
+      "poi_id": "A109",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A109 - Phòng tư vấn khám theo yêu cầu",
+      "name": "Phòng tư vấn khám theo yêu cầu",
+      "function": "Tư vấn khám",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "consulting",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "tư vấn khám theo yêu cầu"
+      ],
+      "ocr_keywords": [
+        "Phòng tư vấn khám theo yêu cầu"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A110",
+      "poi_id": "A110",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A110 - Quầy trả kết quả giấy tờ",
+      "name": "Quầy trả kết quả giấy tờ",
+      "function": "Trả/nhận hồ sơ",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "document",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "trả kết quả giấy tờ"
+      ],
+      "ocr_keywords": [
+        "Quầy trả kết quả giấy tờ"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A111",
+      "poi_id": "A111",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A111 - Phòng in/photocopy y tế",
+      "name": "Phòng in/photocopy y tế",
+      "function": "In sao hồ sơ",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "in",
+        "photocopy y tế"
+      ],
+      "ocr_keywords": [
+        "Phòng in",
+        "photocopy y tế"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A112",
+      "poi_id": "A112",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A112 - Phòng sơ cứu nhỏ",
+      "name": "Phòng sơ cứu nhỏ",
+      "function": "Sơ cứu ban đầu",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "first_aid",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "sơ cứu nhỏ"
+      ],
+      "ocr_keywords": [
+        "Phòng sơ cứu nhỏ"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A113",
+      "poi_id": "A113",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A113 - Phòng an ninh-y tế trực",
+      "name": "Phòng an ninh-y tế trực",
+      "function": "Hỗ trợ an ninh",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "security",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "an ninh-y tế trực"
+      ],
+      "ocr_keywords": [
+        "Phòng an ninh-y tế trực"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A114",
+      "poi_id": "A114",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "nha_thuoc_thuoc",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A114 - Kho cấp phát thuốc",
+      "name": "Kho cấp phát thuốc",
+      "function": "Cấp phát nội bộ",
+      "category": "Nhà thuốc / thuốc",
+      "poi_type": "pharmacy_internal",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "kho cấp phát thuốc"
+      ],
+      "ocr_keywords": [
+        "Kho cấp phát thuốc"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A115",
+      "poi_id": "A115",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A115 - Quầy thanh toán 1",
+      "name": "Quầy thanh toán 1",
+      "function": "Thanh toán",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "cashier",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "thanh toán 1"
+      ],
+      "ocr_keywords": [
+        "Quầy thanh toán 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A116",
+      "poi_id": "A116",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A116 - Quầy thanh toán 2",
+      "name": "Quầy thanh toán 2",
+      "function": "Thanh toán",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "cashier",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "thanh toán 2"
+      ],
+      "ocr_keywords": [
+        "Quầy thanh toán 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A117",
+      "poi_id": "A117",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A117 - Quầy tạm ứng viện phí",
+      "name": "Quầy tạm ứng viện phí",
+      "function": "Nộp tạm ứng",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "cashier",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "tạm ứng viện phí"
+      ],
+      "ocr_keywords": [
+        "Quầy tạm ứng viện phí"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A118",
+      "poi_id": "A118",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "hanh_chinh_tiep_nhan",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A118 - Quầy bảo lãnh viện phí",
+      "name": "Quầy bảo lãnh viện phí",
+      "function": "Hỗ trợ bảo lãnh",
+      "category": "Hành chính / tiếp nhận",
+      "poi_type": "insurance_guarantee",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "bảo lãnh viện phí"
+      ],
+      "ocr_keywords": [
+        "Quầy bảo lãnh viện phí"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A119",
+      "poi_id": "A119",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A119 - Điểm gọi hỗ trợ",
+      "name": "Điểm gọi hỗ trợ",
+      "function": "Gọi nhân viên",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "help_point",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "điểm gọi hỗ trợ"
+      ],
+      "ocr_keywords": [
+        "Điểm gọi hỗ trợ"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A120",
+      "poi_id": "A120",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A120 - Khu chờ đăng ký",
+      "name": "Khu chờ đăng ký",
+      "function": "Chờ khám",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "khu chờ đăng ký"
+      ],
+      "ocr_keywords": [
+        "Khu chờ đăng ký"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A121",
+      "poi_id": "A121",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A121 - Phòng công tác xã hội",
+      "name": "Phòng công tác xã hội",
+      "function": "Hỗ trợ yếu thế",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "social_work",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "công tác xã hội"
+      ],
+      "ocr_keywords": [
+        "Phòng công tác xã hội"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A122",
+      "poi_id": "A122",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A122 - Phòng hỗ trợ người cao tuổi",
+      "name": "Phòng hỗ trợ người cao tuổi",
+      "function": "Ưu tiên hỗ trợ",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "elderly_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "hỗ trợ người cao tuổi"
+      ],
+      "ocr_keywords": [
+        "Phòng hỗ trợ người cao tuổi"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A123",
+      "poi_id": "A123",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "ho_tro_dich_vu",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A123 - Phòng chăm sóc khách hàng",
+      "name": "Phòng chăm sóc khách hàng",
+      "function": "Hỗ trợ bệnh nhân",
+      "category": "Hỗ trợ / Dịch vụ",
+      "poi_type": "customer_service",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "chăm sóc khách hàng"
+      ],
+      "ocr_keywords": [
+        "Phòng chăm sóc khách hàng"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A124",
+      "poi_id": "A124",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "nha_thuoc_thuoc",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A124 - Nhà thuốc",
+      "name": "Nhà thuốc",
+      "function": "Nhận thuốc",
+      "category": "Nhà thuốc / thuốc",
+      "poi_type": "pharmacy",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "nhà thuốc"
+      ],
+      "ocr_keywords": [
+        "Nhà thuốc"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A125",
+      "poi_id": "A125",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "nha_thuoc_thuoc",
+      "area": "Tầng 1 - Tiếp nhận & dịch vụ",
+      "label": "A125 - Quầy tư vấn dùng thuốc",
+      "name": "Quầy tư vấn dùng thuốc",
+      "function": "Hướng dẫn dùng thuốc",
+      "category": "Nhà thuốc / thuốc",
+      "poi_type": "pharmacy_advice",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "tư vấn dùng thuốc"
+      ],
+      "ocr_keywords": [
+        "Quầy tư vấn dùng thuốc"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_ENT-1-01",
+      "poi_id": "ENT-1-01",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "ENT-1-01 - Lối vào chính",
+      "name": "Lối vào chính",
+      "function": "Điểm bắt đầu hành trình bệnh nhân",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "entrance",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "lối vào chính"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_HALL-1-MAIN",
+      "poi_id": "HALL-1-MAIN",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "HALL-1-MAIN - Hành lang chính tầng 1",
+      "name": "Hành lang chính tầng 1",
+      "function": "Trục di chuyển chính qua sảnh chờ trung tâm",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "hallway",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "hành lang chính tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_HALL-1-BRANCH",
+      "poi_id": "HALL-1-BRANCH",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "HALL-1-BRANCH - Hành lang nhánh tầng 1",
+      "name": "Hành lang nhánh tầng 1",
+      "function": "Nhánh chữ L nối sang cụm quầy dịch vụ",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "hallway",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "hành lang nhánh tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WAIT-1-CENTER",
+      "poi_id": "WAIT-1-CENTER",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WAIT-1-CENTER - Sảnh chờ trung tâm",
+      "name": "Sảnh chờ trung tâm",
+      "function": "Ghế chờ/lấy số; có màn hình số thứ tự, loa đọc hướng dẫn, lối xe lăn",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "sảnh chờ trung tâm"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WAIT-1-BRANCH",
+      "poi_id": "WAIT-1-BRANCH",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WAIT-1-BRANCH - Khu chờ nhánh tầng 1",
+      "name": "Khu chờ nhánh tầng 1",
+      "function": "Ghế chờ tại nhánh chữ L",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "khu chờ nhánh tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_ELEV-1A",
+      "poi_id": "ELEV-1A",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "ELEV-1A - Thang máy khu A tầng 1",
+      "name": "Thang máy khu A tầng 1",
+      "function": "Di chuyển tầng, ưu tiên cho người già/người đi xe lăn",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "elevator",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "thang máy khu a tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_STAIR-1A",
+      "poi_id": "STAIR-1A",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "STAIR-1A - Cầu thang bộ khu A tầng 1",
+      "name": "Cầu thang bộ khu A tầng 1",
+      "function": "Di chuyển tầng bằng thang bộ",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "stair",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "cầu thang bộ khu a tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_ELEV-1B",
+      "poi_id": "ELEV-1B",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "ELEV-1B - Thang máy khu B tầng 1",
+      "name": "Thang máy khu B tầng 1",
+      "function": "Di chuyển tầng tại nhánh chữ L",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "elevator",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "thang máy khu b tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_STAIR-1B",
+      "poi_id": "STAIR-1B",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 1 - POI cố định",
+      "label": "STAIR-1B - Cầu thang bộ khu B tầng 1",
+      "name": "Cầu thang bộ khu B tầng 1",
+      "function": "Di chuyển tầng bằng thang bộ tại nhánh chữ L",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "stair",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "cầu thang bộ khu b tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-1A-M",
+      "poi_id": "WC-1A-M",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WC-1A-M - WC nam khu A tầng 1",
+      "name": "WC nam khu A tầng 1",
+      "function": "Vệ sinh nam",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_male",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nam khu a tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-1A-F",
+      "poi_id": "WC-1A-F",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WC-1A-F - WC nữ khu A tầng 1",
+      "name": "WC nữ khu A tầng 1",
+      "function": "Vệ sinh nữ",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_female",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nữ khu a tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-1A-ACC",
+      "poi_id": "WC-1A-ACC",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WC-1A-ACC - WC xe lăn khu A tầng 1",
+      "name": "WC xe lăn khu A tầng 1",
+      "function": "WC cho người khuyết tật/người đi xe lăn",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_accessible",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "wc xe lăn khu a tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-1B-M",
+      "poi_id": "WC-1B-M",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WC-1B-M - WC nam khu B tầng 1",
+      "name": "WC nam khu B tầng 1",
+      "function": "Vệ sinh nam",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_male",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nam khu b tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-1B-F",
+      "poi_id": "WC-1B-F",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WC-1B-F - WC nữ khu B tầng 1",
+      "name": "WC nữ khu B tầng 1",
+      "function": "Vệ sinh nữ",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_female",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nữ khu b tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-1B-ACC",
+      "poi_id": "WC-1B-ACC",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_1",
+      "floor_number": 1,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 1 - POI cố định",
+      "label": "WC-1B-ACC - WC xe lăn khu B tầng 1",
+      "name": "WC xe lăn khu B tầng 1",
+      "function": "WC cho người khuyết tật/người đi xe lăn",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_accessible",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "wc xe lăn khu b tầng 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_A201",
+      "poi_id": "A201",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A201 - PK Nội tổng quát 1",
+      "name": "PK Nội tổng quát 1",
+      "function": "Khám ban đầu",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám nội tổng quát 1"
+      ],
+      "ocr_keywords": [
+        "PK Nội tổng quát 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A202",
+      "poi_id": "A202",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A202 - PK Nội tổng quát 2",
+      "name": "PK Nội tổng quát 2",
+      "function": "Khám nội khoa",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám nội tổng quát 2"
+      ],
+      "ocr_keywords": [
+        "PK Nội tổng quát 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A203",
+      "poi_id": "A203",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A203 - PK Tim mạch 1",
+      "name": "PK Tim mạch 1",
+      "function": "Khám tim",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám tim mạch 1"
+      ],
+      "ocr_keywords": [
+        "PK Tim mạch 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A204",
+      "poi_id": "A204",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A204 - PK Tim mạch 2",
+      "name": "PK Tim mạch 2",
+      "function": "Tái khám tim",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám tim mạch 2"
+      ],
+      "ocr_keywords": [
+        "PK Tim mạch 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A205",
+      "poi_id": "A205",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A205 - PK Hô hấp 1",
+      "name": "PK Hô hấp 1",
+      "function": "Khám hô hấp",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám hô hấp 1"
+      ],
+      "ocr_keywords": [
+        "PK Hô hấp 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A206",
+      "poi_id": "A206",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A206 - PK Hô hấp 2",
+      "name": "PK Hô hấp 2",
+      "function": "Tái khám hô hấp",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám hô hấp 2"
+      ],
+      "ocr_keywords": [
+        "PK Hô hấp 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A207",
+      "poi_id": "A207",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A207 - PK Tiêu hóa 1",
+      "name": "PK Tiêu hóa 1",
+      "function": "Khám tiêu hóa",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám tiêu hóa 1"
+      ],
+      "ocr_keywords": [
+        "PK Tiêu hóa 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A208",
+      "poi_id": "A208",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A208 - PK Tiêu hóa 2",
+      "name": "PK Tiêu hóa 2",
+      "function": "Đọc kết quả",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám tiêu hóa 2"
+      ],
+      "ocr_keywords": [
+        "PK Tiêu hóa 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A209",
+      "poi_id": "A209",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A209 - PK Nội tiết 1",
+      "name": "PK Nội tiết 1",
+      "function": "Khám nội tiết",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám nội tiết 1"
+      ],
+      "ocr_keywords": [
+        "PK Nội tiết 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A210",
+      "poi_id": "A210",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A210 - PK Nội tiết 2",
+      "name": "PK Nội tiết 2",
+      "function": "Tư vấn nội tiết",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám nội tiết 2"
+      ],
+      "ocr_keywords": [
+        "PK Nội tiết 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A211",
+      "poi_id": "A211",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A211 - PK Cơ xương khớp 1",
+      "name": "PK Cơ xương khớp 1",
+      "function": "Khám khớp",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám cơ xương khớp 1"
+      ],
+      "ocr_keywords": [
+        "PK Cơ xương khớp 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A212",
+      "poi_id": "A212",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A212 - PK Cơ xương khớp 2",
+      "name": "PK Cơ xương khớp 2",
+      "function": "Tái khám khớp",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám cơ xương khớp 2"
+      ],
+      "ocr_keywords": [
+        "PK Cơ xương khớp 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A213",
+      "poi_id": "A213",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A213 - PK Thần kinh 1",
+      "name": "PK Thần kinh 1",
+      "function": "Khám thần kinh",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám thần kinh 1"
+      ],
+      "ocr_keywords": [
+        "PK Thần kinh 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A214",
+      "poi_id": "A214",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A214 - PK Thần kinh 2",
+      "name": "PK Thần kinh 2",
+      "function": "Đọc kết quả",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám thần kinh 2"
+      ],
+      "ocr_keywords": [
+        "PK Thần kinh 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A215",
+      "poi_id": "A215",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A215 - PK Da liễu",
+      "name": "PK Da liễu",
+      "function": "Khám da",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám da liễu"
+      ],
+      "ocr_keywords": [
+        "PK Da liễu"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A216",
+      "poi_id": "A216",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A216 - PK Tai mũi họng",
+      "name": "PK Tai mũi họng",
+      "function": "Khám TMH",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám tai mũi họng"
+      ],
+      "ocr_keywords": [
+        "PK Tai mũi họng"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A217",
+      "poi_id": "A217",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A217 - PK Mắt",
+      "name": "PK Mắt",
+      "function": "Khám mắt",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám mắt"
+      ],
+      "ocr_keywords": [
+        "PK Mắt"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A218",
+      "poi_id": "A218",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A218 - PK Răng hàm mặt",
+      "name": "PK Răng hàm mặt",
+      "function": "Khám răng miệng",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám răng hàm mặt"
+      ],
+      "ocr_keywords": [
+        "PK Răng hàm mặt"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A219",
+      "poi_id": "A219",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A219 - PK Sản phụ khoa",
+      "name": "PK Sản phụ khoa",
+      "function": "Khám sản/phụ khoa",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám sản phụ khoa"
+      ],
+      "ocr_keywords": [
+        "PK Sản phụ khoa"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A220",
+      "poi_id": "A220",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A220 - PK Nhi",
+      "name": "PK Nhi",
+      "function": "Khám trẻ em",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng khám nhi"
+      ],
+      "ocr_keywords": [
+        "PK Nhi"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A221",
+      "poi_id": "A221",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A221 - Phòng tư vấn dinh dưỡng",
+      "name": "Phòng tư vấn dinh dưỡng",
+      "function": "Tư vấn ăn uống",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng tư vấn dinh dưỡng"
+      ],
+      "ocr_keywords": [
+        "Phòng tư vấn dinh dưỡng"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A222",
+      "poi_id": "A222",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A222 - Phòng tư vấn tâm lý cơ bản",
+      "name": "Phòng tư vấn tâm lý cơ bản",
+      "function": "Tư vấn tâm lý",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng tư vấn tâm lý cơ bản"
+      ],
+      "ocr_keywords": [
+        "Phòng tư vấn tâm lý cơ bản"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A223",
+      "poi_id": "A223",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A223 - Phòng điều dưỡng",
+      "name": "Phòng điều dưỡng",
+      "function": "Hỗ trợ điều dưỡng",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng điều dưỡng"
+      ],
+      "ocr_keywords": [
+        "Phòng điều dưỡng"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A224",
+      "poi_id": "A224",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A224 - Phòng thủ thuật nhỏ",
+      "name": "Phòng thủ thuật nhỏ",
+      "function": "Thủ thuật",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng thủ thuật nhỏ"
+      ],
+      "ocr_keywords": [
+        "Phòng thủ thuật nhỏ"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A225",
+      "poi_id": "A225",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A225 - Phòng tiêm-truyền ngắn",
+      "name": "Phòng tiêm-truyền ngắn",
+      "function": "Tiêm, truyền",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng tiêm-truyền ngắn"
+      ],
+      "ocr_keywords": [
+        "Phòng tiêm-truyền ngắn"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A226",
+      "poi_id": "A226",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A226 - Phòng đo sinh hiệu",
+      "name": "Phòng đo sinh hiệu",
+      "function": "HA, mạch",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng đo sinh hiệu"
+      ],
+      "ocr_keywords": [
+        "Phòng đo sinh hiệu"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A227",
+      "poi_id": "A227",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A227 - Phòng đọc KQ tổng hợp 2",
+      "name": "Phòng đọc KQ tổng hợp 2",
+      "function": "Tái khám sau CLS",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng đọc kq tổng hợp 2"
+      ],
+      "ocr_keywords": [
+        "Phòng đọc KQ tổng hợp 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A228",
+      "poi_id": "A228",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "kham_lam_sang",
+      "area": "Tầng 2 - Khám lâm sàng",
+      "label": "A228 - Phòng đọc KQ tổng hợp 1",
+      "name": "Phòng đọc KQ tổng hợp 1",
+      "function": "Bác sĩ đọc KQ",
+      "category": "Khám lâm sàng",
+      "poi_type": "clinical_support",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng đọc kq tổng hợp 1"
+      ],
+      "ocr_keywords": [
+        "Phòng đọc KQ tổng hợp 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_HALL-2-BRANCH",
+      "poi_id": "HALL-2-BRANCH",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 2 - POI cố định",
+      "label": "HALL-2-BRANCH - Hành lang nhánh tầng 2",
+      "name": "Hành lang nhánh tầng 2",
+      "function": "Nhánh chữ L nối cụm phòng khám 2",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "hallway",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "hành lang nhánh tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WAIT-2-01",
+      "poi_id": "WAIT-2-01",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WAIT-2-01 - Khu chờ khám 1",
+      "name": "Khu chờ khám 1",
+      "function": "Ghế chờ trước cụm phòng khám chính",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "khu chờ khám 1"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WAIT-2-02",
+      "poi_id": "WAIT-2-02",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WAIT-2-02 - Khu chờ khám 2",
+      "name": "Khu chờ khám 2",
+      "function": "Ghế chờ trước cụm phòng khám nhánh",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "khu chờ khám 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_ELEV-2A",
+      "poi_id": "ELEV-2A",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 2 - POI cố định",
+      "label": "ELEV-2A - Thang máy khu A tầng 2",
+      "name": "Thang máy khu A tầng 2",
+      "function": "Di chuyển tầng, ưu tiên người già/người đi xe lăn",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "elevator",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "thang máy khu a tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_STAIR-2A",
+      "poi_id": "STAIR-2A",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 2 - POI cố định",
+      "label": "STAIR-2A - Cầu thang bộ khu A tầng 2",
+      "name": "Cầu thang bộ khu A tầng 2",
+      "function": "Di chuyển tầng bằng thang bộ",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "stair",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "cầu thang bộ khu a tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_ELEV-2B",
+      "poi_id": "ELEV-2B",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 2 - POI cố định",
+      "label": "ELEV-2B - Thang máy khu B tầng 2",
+      "name": "Thang máy khu B tầng 2",
+      "function": "Di chuyển tầng tại nhánh chữ L",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "elevator",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "thang máy khu b tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_STAIR-2B",
+      "poi_id": "STAIR-2B",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 2 - POI cố định",
+      "label": "STAIR-2B - Cầu thang bộ khu B tầng 2",
+      "name": "Cầu thang bộ khu B tầng 2",
+      "function": "Di chuyển tầng bằng thang bộ tại nhánh chữ L",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "stair",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "cầu thang bộ khu b tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-2A-M",
+      "poi_id": "WC-2A-M",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WC-2A-M - WC nam khu A tầng 2",
+      "name": "WC nam khu A tầng 2",
+      "function": "Vệ sinh nam",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_male",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nam khu a tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-2A-F",
+      "poi_id": "WC-2A-F",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WC-2A-F - WC nữ khu A tầng 2",
+      "name": "WC nữ khu A tầng 2",
+      "function": "Vệ sinh nữ",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_female",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nữ khu a tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-2A-ACC",
+      "poi_id": "WC-2A-ACC",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WC-2A-ACC - WC xe lăn khu A tầng 2",
+      "name": "WC xe lăn khu A tầng 2",
+      "function": "WC cho người khuyết tật/người đi xe lăn",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_accessible",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "wc xe lăn khu a tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-2B-M",
+      "poi_id": "WC-2B-M",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WC-2B-M - WC nam khu B tầng 2",
+      "name": "WC nam khu B tầng 2",
+      "function": "Vệ sinh nam",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_male",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nam khu b tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-2B-F",
+      "poi_id": "WC-2B-F",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WC-2B-F - WC nữ khu B tầng 2",
+      "name": "WC nữ khu B tầng 2",
+      "function": "Vệ sinh nữ",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_female",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nữ khu b tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-2B-ACC",
+      "poi_id": "WC-2B-ACC",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_2",
+      "floor_number": 2,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 2 - POI cố định",
+      "label": "WC-2B-ACC - WC xe lăn khu B tầng 2",
+      "name": "WC xe lăn khu B tầng 2",
+      "function": "WC cho người khuyết tật/người đi xe lăn",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_accessible",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "wc xe lăn khu b tầng 2"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_A301",
+      "poi_id": "A301",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A301 - Khu tiếp nhận CLS",
+      "name": "Khu tiếp nhận CLS",
+      "function": "Xác nhận phiếu",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "khu tiếp nhận cls"
+      ],
+      "ocr_keywords": [
+        "Khu tiếp nhận CLS"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A302",
+      "poi_id": "A302",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A302 - Quầy lấy số xét nghiệm",
+      "name": "Quầy lấy số xét nghiệm",
+      "function": "Lấy số",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "quầy lấy số xét nghiệm"
+      ],
+      "ocr_keywords": [
+        "Quầy lấy số xét nghiệm"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A303",
+      "poi_id": "A303",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A303 - Phòng lấy máu 1",
+      "name": "Phòng lấy máu 1",
+      "function": "Lấy mẫu",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng lấy máu 1"
+      ],
+      "ocr_keywords": [
+        "Phòng lấy máu 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A304",
+      "poi_id": "A304",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A304 - Phòng lấy máu 2",
+      "name": "Phòng lấy máu 2",
+      "function": "Lấy mẫu",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng lấy máu 2"
+      ],
+      "ocr_keywords": [
+        "Phòng lấy máu 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A305",
+      "poi_id": "A305",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A305 - Phòng XN sinh hóa",
+      "name": "Phòng XN sinh hóa",
+      "function": "Xét nghiệm",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng xn sinh hóa"
+      ],
+      "ocr_keywords": [
+        "Phòng XN sinh hóa"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A306",
+      "poi_id": "A306",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A306 - Phòng XN huyết học",
+      "name": "Phòng XN huyết học",
+      "function": "Xét nghiệm",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng xn huyết học"
+      ],
+      "ocr_keywords": [
+        "Phòng XN huyết học"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A307",
+      "poi_id": "A307",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A307 - Phòng XN nước tiểu",
+      "name": "Phòng XN nước tiểu",
+      "function": "Xét nghiệm",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng xn nước tiểu"
+      ],
+      "ocr_keywords": [
+        "Phòng XN nước tiểu"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A308",
+      "poi_id": "A308",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A308 - Phòng XN miễn dịch",
+      "name": "Phòng XN miễn dịch",
+      "function": "Xét nghiệm",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng xn miễn dịch"
+      ],
+      "ocr_keywords": [
+        "Phòng XN miễn dịch"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A309",
+      "poi_id": "A309",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A309 - Phòng trả KQ xét nghiệm",
+      "name": "Phòng trả KQ xét nghiệm",
+      "function": "Trả kết quả",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng trả kq xét nghiệm"
+      ],
+      "ocr_keywords": [
+        "Phòng trả KQ xét nghiệm"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A310",
+      "poi_id": "A310",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A310 - Phòng điện tim ECG",
+      "name": "Phòng điện tim ECG",
+      "function": "Đo điện tim",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng điện tim ecg"
+      ],
+      "ocr_keywords": [
+        "Phòng điện tim ECG"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A311",
+      "poi_id": "A311",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A311 - Phòng siêu âm tổng quát 1",
+      "name": "Phòng siêu âm tổng quát 1",
+      "function": "Siêu âm",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng siêu âm tổng quát 1"
+      ],
+      "ocr_keywords": [
+        "Phòng siêu âm tổng quát 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A312",
+      "poi_id": "A312",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A312 - Phòng siêu âm tổng quát 2",
+      "name": "Phòng siêu âm tổng quát 2",
+      "function": "Siêu âm",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng siêu âm tổng quát 2"
+      ],
+      "ocr_keywords": [
+        "Phòng siêu âm tổng quát 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A313",
+      "poi_id": "A313",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A313 - Phòng siêu âm tim",
+      "name": "Phòng siêu âm tim",
+      "function": "Siêu âm tim / Chẩn đoán tim mạch",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng siêu âm tim"
+      ],
+      "ocr_keywords": [
+        "Phòng siêu âm tim"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A314",
+      "poi_id": "A314",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A314 - Phòng X-quang 1",
+      "name": "Phòng X-quang 1",
+      "function": "Chụp phim",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng x-quang 1"
+      ],
+      "ocr_keywords": [
+        "Phòng X-quang 1"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A315",
+      "poi_id": "A315",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A315 - Phòng X-quang 2",
+      "name": "Phòng X-quang 2",
+      "function": "Chụp phim",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng x-quang 2"
+      ],
+      "ocr_keywords": [
+        "Phòng X-quang 2"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A316",
+      "poi_id": "A316",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A316 - Phòng CT mô phỏng",
+      "name": "Phòng CT mô phỏng",
+      "function": "Chẩn đoán hình ảnh",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng ct mô phỏng"
+      ],
+      "ocr_keywords": [
+        "Phòng CT mô phỏng"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A317",
+      "poi_id": "A317",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A317 - Phòng MRI mô phỏng",
+      "name": "Phòng MRI mô phỏng",
+      "function": "Chẩn đoán hình ảnh",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng mri mô phỏng"
+      ],
+      "ocr_keywords": [
+        "Phòng MRI mô phỏng"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A318",
+      "poi_id": "A318",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A318 - Phòng nội soi tiêu hóa",
+      "name": "Phòng nội soi tiêu hóa",
+      "function": "Nội soi",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng nội soi tiêu hóa"
+      ],
+      "ocr_keywords": [
+        "Phòng nội soi tiêu hóa"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A319",
+      "poi_id": "A319",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A319 - Phòng đo chức năng hô hấp",
+      "name": "Phòng đo chức năng hô hấp",
+      "function": "Đo chức năng",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng đo chức năng hô hấp"
+      ],
+      "ocr_keywords": [
+        "Phòng đo chức năng hô hấp"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A320",
+      "poi_id": "A320",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A320 - Phòng đo mật độ xương",
+      "name": "Phòng đo mật độ xương",
+      "function": "Đo loãng xương",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "diagnostic",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng đo mật độ xương"
+      ],
+      "ocr_keywords": [
+        "Phòng đo mật độ xương"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A321",
+      "poi_id": "A321",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A321 - Phòng lấy mẫu chuyên biệt",
+      "name": "Phòng lấy mẫu chuyên biệt",
+      "function": "Lấy mẫu đặc biệt",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng lấy mẫu chuyên biệt"
+      ],
+      "ocr_keywords": [
+        "Phòng lấy mẫu chuyên biệt"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A322",
+      "poi_id": "A322",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A322 - Phòng tư vấn trước thủ thuật",
+      "name": "Phòng tư vấn trước thủ thuật",
+      "function": "Tư vấn trước TT",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng tư vấn trước thủ thuật"
+      ],
+      "ocr_keywords": [
+        "Phòng tư vấn trước thủ thuật"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A323",
+      "poi_id": "A323",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A323 - Phòng nghỉ sau thủ thuật",
+      "name": "Phòng nghỉ sau thủ thuật",
+      "function": "Nghỉ sau thủ thuật",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng nghỉ sau thủ thuật"
+      ],
+      "ocr_keywords": [
+        "Phòng nghỉ sau thủ thuật"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A324",
+      "poi_id": "A324",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A324 - Quầy hỗ trợ KQ online",
+      "name": "Quầy hỗ trợ KQ online",
+      "function": "Tra cứu kết quả",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "quầy hỗ trợ kq online"
+      ],
+      "ocr_keywords": [
+        "Quầy hỗ trợ KQ online"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A325",
+      "poi_id": "A325",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "can_lam_sang_chan_doan_hinh_anh",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A325 - Khu trả phim/CĐHA",
+      "name": "Khu trả phim/CĐHA",
+      "function": "Nhận phim, ảnh",
+      "category": "Cận lâm sàng / Chẩn đoán hình ảnh",
+      "poi_type": "lab",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "khu trả phim",
+        "cđha"
+      ],
+      "ocr_keywords": [
+        "Khu trả phim",
+        "CĐHA"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_A326",
+      "poi_id": "A326",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "noi_bo_ky_thuat",
+      "area": "Tầng 3 - Cận lâm sàng & CĐHA",
+      "label": "A326 - Phòng kỹ thuật viên",
+      "name": "Phòng kỹ thuật viên",
+      "function": "Làm việc kỹ thuật",
+      "category": "Nội bộ / kỹ thuật",
+      "poi_type": "internal",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "phòng kỹ thuật viên"
+      ],
+      "ocr_keywords": [
+        "Phòng kỹ thuật viên"
+      ],
+      "notes": ""
+    },
+    {
+      "location_id": "loc_HALL-3-MAIN",
+      "poi_id": "HALL-3-MAIN",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 3 - POI cố định",
+      "label": "HALL-3-MAIN - Hành lang chính tầng 3",
+      "name": "Hành lang chính tầng 3",
+      "function": "Trục di chuyển chính khu cận lâm sàng",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "hallway",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "hành lang chính tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_HALL-3-BRANCH",
+      "poi_id": "HALL-3-BRANCH",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 3 - POI cố định",
+      "label": "HALL-3-BRANCH - Hành lang nhánh tầng 3",
+      "name": "Hành lang nhánh tầng 3",
+      "function": "Nhánh chữ L nối cụm chẩn đoán hình ảnh",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "hallway",
+      "opening_hours": "",
+      "is_patient_destination": false,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "hành lang nhánh tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WAIT-3-01",
+      "poi_id": "WAIT-3-01",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WAIT-3-01 - Khu chờ xét nghiệm",
+      "name": "Khu chờ xét nghiệm",
+      "function": "Ghế chờ trước cụm lấy mẫu/xét nghiệm",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "khu chờ xét nghiệm"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WAIT-3-02",
+      "poi_id": "WAIT-3-02",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "khu_cho_ghe_cho",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WAIT-3-02 - Khu chờ chẩn đoán hình ảnh",
+      "name": "Khu chờ chẩn đoán hình ảnh",
+      "function": "Ghế chờ trước cụm siêu âm/X-quang/CT/MRI",
+      "category": "Khu chờ / ghế chờ",
+      "poi_type": "waiting_area",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "khu chờ chẩn đoán hình ảnh"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_ELEV-3A",
+      "poi_id": "ELEV-3A",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 3 - POI cố định",
+      "label": "ELEV-3A - Thang máy khu A tầng 3",
+      "name": "Thang máy khu A tầng 3",
+      "function": "Di chuyển tầng, ưu tiên người già/người đi xe lăn",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "elevator",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "thang máy khu a tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_STAIR-3A",
+      "poi_id": "STAIR-3A",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 3 - POI cố định",
+      "label": "STAIR-3A - Cầu thang bộ khu A tầng 3",
+      "name": "Cầu thang bộ khu A tầng 3",
+      "function": "Di chuyển tầng bằng thang bộ",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "stair",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "cầu thang bộ khu a tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_ELEV-3B",
+      "poi_id": "ELEV-3B",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 3 - POI cố định",
+      "label": "ELEV-3B - Thang máy khu B tầng 3",
+      "name": "Thang máy khu B tầng 3",
+      "function": "Di chuyển tầng tại nhánh chữ L",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "elevator",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "thang máy khu b tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_STAIR-3B",
+      "poi_id": "STAIR-3B",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "thang_may_cau_thang_hanh_lang",
+      "area": "Tầng 3 - POI cố định",
+      "label": "STAIR-3B - Cầu thang bộ khu B tầng 3",
+      "name": "Cầu thang bộ khu B tầng 3",
+      "function": "Di chuyển tầng bằng thang bộ tại nhánh chữ L",
+      "category": "Thang máy / cầu thang / hành lang",
+      "poi_type": "stair",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "cầu thang bộ khu b tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-3A-M",
+      "poi_id": "WC-3A-M",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WC-3A-M - WC nam khu A tầng 3",
+      "name": "WC nam khu A tầng 3",
+      "function": "Vệ sinh nam",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_male",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nam khu a tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-3A-F",
+      "poi_id": "WC-3A-F",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WC-3A-F - WC nữ khu A tầng 3",
+      "name": "WC nữ khu A tầng 3",
+      "function": "Vệ sinh nữ",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_female",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nữ khu a tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-3A-ACC",
+      "poi_id": "WC-3A-ACC",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WC-3A-ACC - WC xe lăn khu A tầng 3",
+      "name": "WC xe lăn khu A tầng 3",
+      "function": "WC cho người khuyết tật/người đi xe lăn",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_accessible",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "wc xe lăn khu a tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-3B-M",
+      "poi_id": "WC-3B-M",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WC-3B-M - WC nam khu B tầng 3",
+      "name": "WC nam khu B tầng 3",
+      "function": "Vệ sinh nam",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_male",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nam khu b tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-3B-F",
+      "poi_id": "WC-3B-F",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WC-3B-F - WC nữ khu B tầng 3",
+      "name": "WC nữ khu B tầng 3",
+      "function": "Vệ sinh nữ",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_female",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Theo tuyến",
+      "voice_aliases": [
+        "wc nữ khu b tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    },
+    {
+      "location_id": "loc_WC-3B-ACC",
+      "poi_id": "WC-3B-ACC",
+      "hospital_id": "bachmai_demo",
+      "building_id": "building_main_a",
+      "floor_id": "floor_3",
+      "floor_number": 3,
+      "department_id": "wc_tiep_can",
+      "area": "Tầng 3 - POI cố định",
+      "label": "WC-3B-ACC - WC xe lăn khu B tầng 3",
+      "name": "WC xe lăn khu B tầng 3",
+      "function": "WC cho người khuyết tật/người đi xe lăn",
+      "category": "WC / tiếp cận",
+      "poi_type": "wc_accessible",
+      "opening_hours": "",
+      "is_patient_destination": true,
+      "wheelchair_access": "Có",
+      "voice_aliases": [
+        "wc xe lăn khu b tầng 3"
+      ],
+      "ocr_keywords": [],
+      "notes": "Mã POI riêng, không trùng mã phòng A###"
+    }
+  ]
+}
