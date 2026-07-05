@@ -254,32 +254,6 @@ Nguyên tắc bảo mật của MVP:
 - Redactor backend loại bỏ số điện thoại, CCCD, mã hồ sơ, BHYT-like ID, DOB label và tên bệnh nhân theo nhãn form trước các luồng assistant/SmartBot.
 - SmartBot không được tư vấn chẩn đoán hoặc điều trị. Câu hỏi y khoa ngoài phạm vi phải trả lời fallback và hướng người bệnh hỏi nhân viên y tế/bác sĩ.
 
-Khi chuẩn bị push GitHub:
-
-- kiểm tra `.gitignore`;
-- không commit `.env`, `tmp/`, runtime sessions/events, log;
-- không commit tài liệu nội bộ/agent context nếu không cần public.
-
-Các mục đã được đưa vào `.gitignore` theo hướng public repo:
-
-```text
-.agents/
-.claude/
-initial_prompt.md
-docs/BACKEND_PLAN.md
-docs/trợ-lý-ai-điều-hướng/
-tmp/
-*.log
-```
-
-Nếu các file này đã từng được Git track trước đó, cần tự bỏ khỏi index trước khi push:
-
-```powershell
-git rm -r --cached .agents .claude docs/trợ-lý-ai-điều-hướng
-git rm --cached initial_prompt.md docs/BACKEND_PLAN.md
-```
-
-Lệnh trên chỉ bỏ khỏi Git index, không xóa file local.
 
 ## Cấu Trúc Repo
 
