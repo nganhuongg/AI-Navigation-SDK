@@ -3,13 +3,33 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import { confirmOcr, extractOcr, getHealth, startSession } from "@/lib/api";
 import type { HealthStatus, OCRResult, SessionContext } from "@/lib/types";
-import { Chip, EmptyState, Kv, Panel, ServiceChip, StepCard } from "@/components/ui";
+import { Chip, EmptyState, Kv, Metric, Panel, ServiceChip, StepCard } from "@/components/ui";
 
 const CHECKPOINTS = [
   ["register", "Đăng ký"] as const,
   ["identity", "Xác thực"] as const,
   ["payment", "Thanh toán"] as const,
 ];
+
+type BenchmarkRow = {
+  id: number;
+  source_image: string;
+  confidence: number;
+  initial_exam_room: string;
+  return_room: string;
+  sequence: string;
+  room_code: string;
+  queue_number: string;
+  result: "PASS" | "FAIL";
+  result_reason: string;
+};
+
+type BenchmarkResponse = {
+  source: string;
+  benchmark_note: string;
+  summary: { total_forms: number; pass_forms: number; total_lines: number; pass_lines: number; pass_rate: number };
+  rows: BenchmarkRow[];
+};
 
 export default function OcrPage() {
   const [health, setHealth] = useState<HealthStatus | null>(null);
@@ -20,9 +40,19 @@ export default function OcrPage() {
   const [isBusy, setIsBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [markInitialStepsDone, setMarkInitialStepsDone] = useState(true);
+  const [benchmark, setBenchmark] = useState<BenchmarkResponse | null>(null);
+  const [benchmarkError, setBenchmarkError] = useState<string | null>(null);
 
   useEffect(() => {
     getHealth().then(setHealth).catch(() => setHealth(null));
+    fetch("/api/ocr-benchmark")
+      .then(async (response) => {
+        const body = (await response.json()) as BenchmarkResponse & { error?: string };
+        if (!response.ok) throw new Error(body.error || "Benchmark unavailable");
+        return body;
+      })
+      .then(setBenchmark)
+      .catch((caught) => setBenchmarkError(caught instanceof Error ? caught.message : "Không đọc được benchmark"));
   }, []);
 
   useEffect(() => {
@@ -265,7 +295,68 @@ export default function OcrPage() {
             <EmptyState text="Bắt đầu phiên để xem hành trình." />
           )}
         </Panel>
+
+        <OcrBenchmark benchmark={benchmark} error={benchmarkError} />
       </div>
     </>
+  );
+}
+
+function OcrBenchmark({ benchmark, error }: { benchmark: BenchmarkResponse | null; error: string | null }) {
+  return (
+    <section className="ocr-benchmark" aria-labelledby="ocr-benchmark-title">
+      <div className="ocr-benchmark-head">
+        <div>
+          <div className="eyebrow">OCR test dataset</div>
+          <h2 id="ocr-benchmark-title">Benchmark</h2>
+        </div>
+      </div>
+
+      {error ? <EmptyState text={`Không tải được benchmark: ${error}`} /> : null}
+      {!benchmark && !error ? <EmptyState text="Đang đọc dữ liệu benchmark…" /> : null}
+      {benchmark ? (
+        <>
+          <div className="ocr-benchmark-summary">
+            <div className="ocr-benchmark-rate">
+              <span>Tỉ lệ PASS</span>
+              <strong>{(benchmark.summary.pass_rate * 100).toFixed(1)}%</strong>
+              <div className="ocr-benchmark-progress"><i style={{ width: `${benchmark.summary.pass_rate * 100}%` }} /></div>
+            </div>
+            <Metric label="Số phiếu pass" value={`${benchmark.summary.pass_forms}/${benchmark.summary.total_forms}`} />
+            <Metric label="Số dòng pass" value={`${benchmark.summary.pass_lines}/${benchmark.summary.total_lines}`} />
+          </div>
+          <div className="ocr-benchmark-table-wrap">
+            <table className="ocr-benchmark-table">
+              <thead><tr><th>STT</th><th>Source_image</th><th>Confidence</th><th>Initial_exam_room</th><th>Return_room</th><th>Sequence</th><th>Room_code</th><th>Queue_number</th><th>Result</th></tr></thead>
+              <tbody>
+                {benchmark.rows.map((row) => (
+                  <tr key={row.id}>
+                    <td className="benchmark-number">{row.id}</td>
+                    <td className="benchmark-image">
+                      <a
+                        className="benchmark-image-link"
+                        href={`/api/ocr-benchmark/image?source=${encodeURIComponent(row.source_image)}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="Mở ảnh phiếu khám"
+                      >
+                        {row.source_image}
+                      </a>
+                    </td>
+                    <td className="benchmark-confidence">{(row.confidence * 100).toFixed(2)}%</td>
+                    <td>{row.initial_exam_room || "—"}</td>
+                    <td>{row.return_room || "—"}</td>
+                    <td className="benchmark-lines">{row.sequence || "—"}</td>
+                    <td className="benchmark-lines">{row.room_code || "—"}</td>
+                    <td className="benchmark-lines">{row.queue_number || "—"}</td>
+                    <td><span className={`benchmark-result ${row.result.toLowerCase()}`} title={row.result_reason}>{row.result}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      ) : null}
+    </section>
   );
 }
