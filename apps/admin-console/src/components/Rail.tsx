@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { href: "/ocr", label: "OCR · SmartReader", icon: "▤", statusKey: "ocr" as const },
   { href: "/smartvoice", label: "SmartVoice", icon: "◐", statusKey: "smartvoice" as const },
   { href: "/smartbot", label: "SmartBot", icon: "◔", statusKey: "smartbot" as const },
+  { href: "/care-journey", label: "Care Journey", icon: "CJ", statusKey: null },
   { href: "/map-builder", label: "Dựng bản đồ", icon: "▨", statusKey: null },
 ];
 

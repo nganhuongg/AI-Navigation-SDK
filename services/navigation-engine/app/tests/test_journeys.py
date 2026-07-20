@@ -25,3 +25,13 @@ def test_missing_template_404(client):
     response = client.get("/journey-templates/nope_v9")
     assert response.status_code == 404
     assert response.json()["success"] is False
+
+
+def test_update_template_requires_matching_id(client):
+    doc = client.get("/journey-templates/standard_outpatient_v1").json()["data"]
+    doc["template_id"] = "different_template"
+
+    response = client.put("/journey-templates/standard_outpatient_v1", json=doc)
+
+    assert response.status_code == 422
+    assert response.json()["success"] is False

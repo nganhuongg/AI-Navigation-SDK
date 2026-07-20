@@ -2,6 +2,8 @@ import type {
   ApiResponse,
   ChatbotMessageResponse,
   ChatbotMetadata,
+  CareJourneyTemplate,
+  CareJourneyTemplateSummary,
   DigitalMap,
   HealthStatus,
   MapStatus,
@@ -51,6 +53,28 @@ export async function startSession(): Promise<SessionContext> {
     body: JSON.stringify({ template_id: "standard_outpatient_v1" }),
   });
   return unwrap<SessionContext>(response);
+}
+
+export async function listJourneyTemplates(): Promise<CareJourneyTemplateSummary[]> {
+  const response = await fetch(`${getEngineBaseUrl()}/journey-templates`);
+  return unwrap<CareJourneyTemplateSummary[]>(response);
+}
+
+export async function getJourneyTemplate(templateId: string): Promise<CareJourneyTemplate> {
+  const response = await fetch(`${getEngineBaseUrl()}/journey-templates/${encodeURIComponent(templateId)}`);
+  return unwrap<CareJourneyTemplate>(response);
+}
+
+export async function updateJourneyTemplate(
+  templateId: string,
+  template: CareJourneyTemplate,
+): Promise<CareJourneyTemplate> {
+  const response = await fetch(`${getEngineBaseUrl()}/journey-templates/${encodeURIComponent(templateId)}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(template),
+  });
+  return unwrap<CareJourneyTemplate>(response);
 }
 
 export async function extractOcr(file: File): Promise<OCRResult> {

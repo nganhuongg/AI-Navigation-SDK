@@ -30,6 +30,43 @@
       "return_room",
       "queue_number",
       "completed_steps"
+    ],
+    "ocr_service_columns": [
+      {
+        "key": "service_name",
+        "label": "Tên dịch vụ",
+        "description": "Tên bước hoặc dịch vụ sau khi đọc phiếu chỉ định"
+      },
+      {
+        "key": "room",
+        "label": "Phòng",
+        "description": "Mã phòng bệnh nhân cần đi tới"
+      },
+      {
+        "key": "room_name",
+        "label": "Tên phòng",
+        "description": "Tên hiển thị của phòng trong bệnh viện"
+      },
+      {
+        "key": "floor",
+        "label": "Tầng",
+        "description": "Tầng của phòng cần đi tới"
+      },
+      {
+        "key": "estimated_duration_minutes",
+        "label": "Thời lượng",
+        "description": "Thời lượng dự kiến cho bước này, tính bằng phút"
+      },
+      {
+        "key": "next_step",
+        "label": "Bước sau",
+        "description": "Bước tiếp theo trong hành trình"
+      },
+      {
+        "key": "status",
+        "label": "Trạng thái mẫu",
+        "description": "Trạng thái mặc định khi tạo phiên bệnh nhân"
+      }
     ]
   },
   "update_modes": [

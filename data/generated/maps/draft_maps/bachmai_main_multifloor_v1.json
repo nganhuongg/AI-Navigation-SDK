@@ -570,7 +570,7 @@
     },
     {
       "node_id": "door_A119",
-      "x": 1320.0,
+      "x": 1184.0890254636404,
       "y": 914.0,
       "floor_number": 1,
       "kind": "corridor",
@@ -681,7 +681,7 @@
     {
       "node_id": "node_A124",
       "x": 220.0,
-      "y": 750.0,
+      "y": 863.2614933771931,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_A124",
@@ -700,8 +700,8 @@
     },
     {
       "node_id": "node_A125",
-      "x": 220.0,
-      "y": 690.0,
+      "x": 220.00000000000003,
+      "y": 806.4975360451131,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_A125",
@@ -751,7 +751,7 @@
     {
       "node_id": "door_ENT-1-01",
       "x": 220.0,
-      "y": 762.0,
+      "y": 706.9872746453633,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -770,8 +770,8 @@
     },
     {
       "node_id": "door_HALL-1-BRANCH",
-      "x": 1320.0,
-      "y": 762.0,
+      "x": 1197.0329278004365,
+      "y": 765.2360426679198,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -3365,14 +3365,14 @@
       "edge_id": "edge_node_A119_door_A119",
       "from_node": "node_A119",
       "to_node": "door_A119",
-      "weight": 92.76,
+      "weight": 101.11,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_A119_f1_main_right_bottom",
       "from_node": "door_A119",
       "to_node": "f1_main_right_bottom",
-      "weight": 0.0,
+      "weight": 135.91,
       "kind": "walkway"
     },
     {
@@ -3435,7 +3435,7 @@
       "edge_id": "edge_node_A124_door_A124",
       "from_node": "node_A124",
       "to_node": "door_A124",
-      "weight": 12.0,
+      "weight": 101.26,
       "kind": "door"
     },
     {
@@ -3449,7 +3449,7 @@
       "edge_id": "edge_node_A125_door_A125",
       "from_node": "node_A125",
       "to_node": "door_A125",
-      "weight": 72.0,
+      "weight": 44.5,
       "kind": "door"
     },
     {
@@ -3491,28 +3491,28 @@
       "edge_id": "edge_node_ENT-1-01_door_ENT-1-01",
       "from_node": "node_ENT-1-01",
       "to_node": "door_ENT-1-01",
-      "weight": 155.0,
+      "weight": 99.99,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_ENT-1-01_f1_main_left_top",
       "from_node": "door_ENT-1-01",
       "to_node": "f1_main_left_top",
-      "weight": 0.0,
+      "weight": 55.01,
       "kind": "walkway"
     },
     {
       "edge_id": "edge_node_HALL-1-BRANCH_door_HALL-1-BRANCH",
       "from_node": "node_HALL-1-BRANCH",
       "to_node": "door_HALL-1-BRANCH",
-      "weight": 172.75,
+      "weight": 246.54,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_HALL-1-BRANCH_f1_main_right_top",
       "from_node": "door_HALL-1-BRANCH",
       "to_node": "f1_main_right_top",
-      "weight": 0.0,
+      "weight": 123.01,
       "kind": "walkway"
     },
     {
@@ -5312,7 +5312,7 @@
       "node_id": "node_A124",
       "label": "A124 - Nhà thuốc",
       "x": 220.0,
-      "y": 750.0,
+      "y": 863.2614933771931,
       "floor_number": 1
     },
     {
@@ -5320,8 +5320,8 @@
       "location_id": "loc_A125",
       "node_id": "node_A125",
       "label": "A125 - Quầy tư vấn dùng thuốc",
-      "x": 220.0,
-      "y": 690.0,
+      "x": 220.00000000000003,
+      "y": 806.4975360451131,
       "floor_number": 1
     },
     {
@@ -6189,6 +6189,6 @@
       "floor_number": 3
     }
   ],
-  "created_at": "2026-07-20T09:39:03.528635+00:00",
+  "created_at": "2026-07-20T15:45:06.611837+00:00",
   "verified_at": null
 }

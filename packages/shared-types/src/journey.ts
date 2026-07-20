@@ -36,6 +36,7 @@ export type SpecializedService = {
   status: SpecializedServiceStatus;
   completed_at: string | null;
   next_step: string | null;
+  [key: string]: string | number | null | undefined;
 };
 
 export type SpecializedProcess = {
@@ -64,6 +65,12 @@ export type CareJourneyUpdateMode = {
   fills: string[];
 };
 
+export type CareJourneyTableColumn = {
+  key: string;
+  label: string;
+  description: string;
+};
+
 export type CareJourneyTemplate = {
   template_id: string;
   version: number;
@@ -82,6 +89,7 @@ export type CareJourneyTemplate = {
     patient_identifier_policy: string;
     session_ttl_minutes: number;
     allowed_extracted_fields: string[];
+    ocr_service_columns?: CareJourneyTableColumn[];
   };
   update_modes: CareJourneyUpdateMode[];
   patient_journey_template: PatientJourneyState;
