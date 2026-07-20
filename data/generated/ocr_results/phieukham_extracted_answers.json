@@ -1,0 +1,459 @@
+{
+  "dataset": "phieukham_extracted_answers",
+  "generated_at": "2026-07-20T08:40:30.091796+00:00",
+  "source": "VNPT SmartReader scan-table via services.navigation-engine OCR parser",
+  "privacy_note": "Raw OCR text and patient identity fields are intentionally omitted.",
+  "records": [
+    {
+      "source_image": "data/reference/phieukham/phieu1.jpg",
+      "confidence": 0.9675080635648303,
+      "is_low_confidence": false,
+      "requires_user_confirmation": true,
+      "initial_exam_room": "A209",
+      "return_room": "A209",
+      "ordered_services": [],
+      "detected_room_codes": [
+        "A209",
+        "A304",
+        "A307",
+        "A310",
+        "A314",
+        "A309",
+        "A228"
+      ],
+      "room_descriptions": {
+        "A209": "PK Nội tiết 1 - - Tầng 2 - Khu A",
+        "A304": "lấy máu 2 - - Tầng 3 - Khu A",
+        "A307": "XN nước tiểu - - Tầng 3 - Khu A",
+        "A310": "điện tim - - Tầng 3 - Khu A",
+        "A314": "X-quang 1 - - Tầng 3 - Khu A",
+        "A309": "trả KQ xét nghiệm - - Tầng 3 - Khu A",
+        "A228": "đọc KQ tổng hợp 1 - - Tầng 2 - Khu A"
+      },
+      "room_notes": {},
+      "room_queue_numbers": {},
+      "room_answers": [
+        {
+          "sequence": 1,
+          "room_code": "A209",
+          "room_name": "PK Nội tiết 1",
+          "description": "PK Nội tiết 1 - - Tầng 2 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 2,
+          "room_code": "A304",
+          "room_name": "Phòng lấy máu 2",
+          "description": "lấy máu 2 - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 3,
+          "room_code": "A307",
+          "room_name": "Phòng XN nước tiểu",
+          "description": "XN nước tiểu - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 4,
+          "room_code": "A310",
+          "room_name": "Phòng điện tim ECG",
+          "description": "điện tim - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 5,
+          "room_code": "A314",
+          "room_name": "Phòng X-quang 1",
+          "description": "X-quang 1 - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 6,
+          "room_code": "A309",
+          "room_name": "Phòng trả KQ xét nghiệm",
+          "description": "trả KQ xét nghiệm - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 7,
+          "room_code": "A228",
+          "room_name": "Phòng đọc KQ tổng hợp 1",
+          "description": "đọc KQ tổng hợp 1 - - Tầng 2 - Khu A",
+          "note": null,
+          "queue_number": null
+        }
+      ]
+    },
+    {
+      "source_image": "data/reference/phieukham/phieu2.jpg",
+      "confidence": 0.9728657173607222,
+      "is_low_confidence": false,
+      "requires_user_confirmation": true,
+      "initial_exam_room": "A211",
+      "return_room": "A211",
+      "ordered_services": [],
+      "detected_room_codes": [
+        "A109",
+        "A226",
+        "A211",
+        "A314",
+        "A320",
+        "A228",
+        "A212",
+        "A323"
+      ],
+      "room_descriptions": {
+        "A109": "Tư vấn theo yêu cầu",
+        "A226": "Đo sinh hiệu",
+        "A211": "chuyên khoa Cơ xương khớp",
+        "A314": "Chụp X-quang 1",
+        "A320": "Đo mật độ xương",
+        "A228": "Đọc KQ tổng hợp 1",
+        "A212": "Tái Cơ xương khớp"
+      },
+      "room_notes": {
+        "A109": "Tư vấn theo yêu cầu. Ghi chu: ban đầu, ưu tiên hỗ trợ xe lăn",
+        "A226": "Đo sinh hiệu. Ghi chu: Thực hiện trước khi vào chuyên khoa",
+        "A211": "chuyên khoa Cơ xương khớp. Ghi chu: Bác sĩ thăm và chỉ định cận lâm sàng",
+        "A314": "Chụp X-quang 1. Ghi chu: Chờ gọi theo STT",
+        "A320": "Đo mật độ xương. Ghi chu: Làm theo hướng dẫn của nhân viên",
+        "A228": "Đọc KQ tổng hợp 1. Ghi chu: Gom đủ kết quả trước khi quay lại",
+        "A212": "Tái Cơ xương khớp. Ghi chu: Bác sĩ xem kết quả và tư vấn điều trị"
+      },
+      "room_queue_numbers": {
+        "A109": "05",
+        "A226": "11",
+        "A211": "23",
+        "A314": "34",
+        "A320": "17",
+        "A228": "08",
+        "A212": "06"
+      },
+      "room_answers": [
+        {
+          "sequence": 1,
+          "room_code": "A109",
+          "room_name": "Phòng tư vấn khám theo yêu cầu",
+          "description": "Tư vấn theo yêu cầu",
+          "note": "Tư vấn theo yêu cầu. Ghi chu: ban đầu, ưu tiên hỗ trợ xe lăn",
+          "queue_number": "05"
+        },
+        {
+          "sequence": 2,
+          "room_code": "A226",
+          "room_name": "Phòng đo sinh hiệu",
+          "description": "Đo sinh hiệu",
+          "note": "Đo sinh hiệu. Ghi chu: Thực hiện trước khi vào chuyên khoa",
+          "queue_number": "11"
+        },
+        {
+          "sequence": 3,
+          "room_code": "A211",
+          "room_name": "PK Cơ xương khớp 1",
+          "description": "chuyên khoa Cơ xương khớp",
+          "note": "chuyên khoa Cơ xương khớp. Ghi chu: Bác sĩ thăm và chỉ định cận lâm sàng",
+          "queue_number": "23"
+        },
+        {
+          "sequence": 4,
+          "room_code": "A314",
+          "room_name": "Phòng X-quang 1",
+          "description": "Chụp X-quang 1",
+          "note": "Chụp X-quang 1. Ghi chu: Chờ gọi theo STT",
+          "queue_number": "34"
+        },
+        {
+          "sequence": 5,
+          "room_code": "A320",
+          "room_name": "Phòng đo mật độ xương",
+          "description": "Đo mật độ xương",
+          "note": "Đo mật độ xương. Ghi chu: Làm theo hướng dẫn của nhân viên",
+          "queue_number": "17"
+        },
+        {
+          "sequence": 6,
+          "room_code": "A228",
+          "room_name": "Phòng đọc KQ tổng hợp 1",
+          "description": "Đọc KQ tổng hợp 1",
+          "note": "Đọc KQ tổng hợp 1. Ghi chu: Gom đủ kết quả trước khi quay lại",
+          "queue_number": "08"
+        },
+        {
+          "sequence": 7,
+          "room_code": "A212",
+          "room_name": "PK Cơ xương khớp 2",
+          "description": "Tái Cơ xương khớp",
+          "note": "Tái Cơ xương khớp. Ghi chu: Bác sĩ xem kết quả và tư vấn điều trị",
+          "queue_number": "06"
+        },
+        {
+          "sequence": 8,
+          "room_code": "A323",
+          "room_name": "Phòng nghỉ sau thủ thuật",
+          "description": null,
+          "note": null,
+          "queue_number": null
+        }
+      ]
+    },
+    {
+      "source_image": "data/reference/phieukham/phieu3.jpg",
+      "confidence": 0.9767747816143573,
+      "is_low_confidence": false,
+      "requires_user_confirmation": true,
+      "initial_exam_room": "A205",
+      "return_room": "A205",
+      "ordered_services": [],
+      "detected_room_codes": [
+        "A205",
+        "A316",
+        "A227"
+      ],
+      "room_descriptions": {
+        "A205": "chuyên khoa Hô hấp",
+        "A316": "Chụp X- quang ngực thẳng",
+        "A227": "Đọc KQ tổng hợp"
+      },
+      "room_notes": {
+        "A205": "chuyên khoa Hô hấp. Ghi chu: Bác sĩ ban đầu",
+        "A316": "Chụp X- quang ngực thẳng. Ghi chu: Chờ gọi theo STT",
+        "A227": "Đọc KQ tổng hợp. Ghi chu: Mang đủ kết quả"
+      },
+      "room_queue_numbers": {
+        "A205": "22",
+        "A316": "44",
+        "A227": "16"
+      },
+      "room_answers": [
+        {
+          "sequence": 1,
+          "room_code": "A205",
+          "room_name": "PK Hô hấp 1",
+          "description": "chuyên khoa Hô hấp",
+          "note": "chuyên khoa Hô hấp. Ghi chu: Bác sĩ ban đầu",
+          "queue_number": "22"
+        },
+        {
+          "sequence": 2,
+          "room_code": "A316",
+          "room_name": "Phòng CT mô phỏng",
+          "description": "Chụp X- quang ngực thẳng",
+          "note": "Chụp X- quang ngực thẳng. Ghi chu: Chờ gọi theo STT",
+          "queue_number": "44"
+        },
+        {
+          "sequence": 3,
+          "room_code": "A227",
+          "room_name": "Phòng đọc KQ tổng hợp 2",
+          "description": "Đọc KQ tổng hợp",
+          "note": "Đọc KQ tổng hợp. Ghi chu: Mang đủ kết quả",
+          "queue_number": "16"
+        }
+      ]
+    },
+    {
+      "source_image": "data/reference/phieukham/phieu4.jpg",
+      "confidence": 0.9706808851175384,
+      "is_low_confidence": false,
+      "requires_user_confirmation": true,
+      "initial_exam_room": "A209",
+      "return_room": "A209",
+      "ordered_services": [],
+      "detected_room_codes": [
+        "A209",
+        "A304",
+        "A307",
+        "A310",
+        "A314",
+        "A309",
+        "A228"
+      ],
+      "room_descriptions": {
+        "A209": "PK Nội tiết 1 - - Tầng 2 - Khu A",
+        "A304": "lấy máu 2 - - Tầng 3 - Khu A",
+        "A307": "XN nước tiểu - - Tầng 3 - Khu A",
+        "A310": "điện tim - - Tầng 3 - Khu A",
+        "A314": "X-quang 1 - - Tầng 3 - Khu A",
+        "A309": "trả KQ xét nghiệm - - Tầng 3 - Khu A",
+        "A228": "đọc KQ tổng hợp 1 - - Tầng 2 - Khu A"
+      },
+      "room_notes": {},
+      "room_queue_numbers": {},
+      "room_answers": [
+        {
+          "sequence": 1,
+          "room_code": "A209",
+          "room_name": "PK Nội tiết 1",
+          "description": "PK Nội tiết 1 - - Tầng 2 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 2,
+          "room_code": "A304",
+          "room_name": "Phòng lấy máu 2",
+          "description": "lấy máu 2 - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 3,
+          "room_code": "A307",
+          "room_name": "Phòng XN nước tiểu",
+          "description": "XN nước tiểu - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 4,
+          "room_code": "A310",
+          "room_name": "Phòng điện tim ECG",
+          "description": "điện tim - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 5,
+          "room_code": "A314",
+          "room_name": "Phòng X-quang 1",
+          "description": "X-quang 1 - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 6,
+          "room_code": "A309",
+          "room_name": "Phòng trả KQ xét nghiệm",
+          "description": "trả KQ xét nghiệm - - Tầng 3 - Khu A",
+          "note": null,
+          "queue_number": null
+        },
+        {
+          "sequence": 7,
+          "room_code": "A228",
+          "room_name": "Phòng đọc KQ tổng hợp 1",
+          "description": "đọc KQ tổng hợp 1 - - Tầng 2 - Khu A",
+          "note": null,
+          "queue_number": null
+        }
+      ]
+    },
+    {
+      "source_image": "data/reference/phieukham/phieu5.jpg",
+      "confidence": 0.9674600285521894,
+      "is_low_confidence": false,
+      "requires_user_confirmation": true,
+      "initial_exam_room": "A209",
+      "return_room": "A209",
+      "ordered_services": [],
+      "detected_room_codes": [
+        "A304",
+        "A209",
+        "A312"
+      ],
+      "room_descriptions": {
+        "A304": "Lấy máu xét nghiệm",
+        "A209": "chuyên khoa Nội tiết",
+        "A312": "Siêu âm tuyến giáp"
+      },
+      "room_notes": {
+        "A304": "Lấy máu xét nghiệm. Ghi chu: Thực hiện theo chỉ định trước",
+        "A209": "chuyên khoa Nội tiết. Ghi chu: Bác sĩ đọc kết quả ban đầu",
+        "A312": "Siêu âm tuyến giáp. Ghi chu: Thực hiện theo chỉ định của bác sĩ"
+      },
+      "room_queue_numbers": {
+        "A304": "19",
+        "A209": "31",
+        "A312": "18"
+      },
+      "room_answers": [
+        {
+          "sequence": 1,
+          "room_code": "A304",
+          "room_name": "Phòng lấy máu 2",
+          "description": "Lấy máu xét nghiệm",
+          "note": "Lấy máu xét nghiệm. Ghi chu: Thực hiện theo chỉ định trước",
+          "queue_number": "19"
+        },
+        {
+          "sequence": 2,
+          "room_code": "A209",
+          "room_name": "PK Nội tiết 1",
+          "description": "chuyên khoa Nội tiết",
+          "note": "chuyên khoa Nội tiết. Ghi chu: Bác sĩ đọc kết quả ban đầu",
+          "queue_number": "31"
+        },
+        {
+          "sequence": 3,
+          "room_code": "A312",
+          "room_name": "Phòng siêu âm tổng quát 2",
+          "description": "Siêu âm tuyến giáp",
+          "note": "Siêu âm tuyến giáp. Ghi chu: Thực hiện theo chỉ định của bác sĩ",
+          "queue_number": "18"
+        }
+      ]
+    },
+    {
+      "source_image": "data/reference/phieukham/phieu6.jpg",
+      "confidence": 0.9825261657515051,
+      "is_low_confidence": false,
+      "requires_user_confirmation": true,
+      "initial_exam_room": "A203",
+      "return_room": "A203",
+      "ordered_services": [],
+      "detected_room_codes": [
+        "A203",
+        "A310",
+        "A228"
+      ],
+      "room_descriptions": {
+        "A203": "chuyên khoa Tim mạch",
+        "A310": "Điện tim đồ (ECG)",
+        "A228": "Đọc KQ tổng hợp 1"
+      },
+      "room_notes": {
+        "A203": "chuyên khoa Tim mạch. Ghi chu: Bác sĩ ban đầu",
+        "A310": "Điện tim đồ (ECG). Ghi chu: Không cần nhịn ăn",
+        "A228": "Đọc KQ tổng hợp 1. Ghi chu: Mang đầy đủ kết quả"
+      },
+      "room_queue_numbers": {
+        "A203": "18",
+        "A310": "07",
+        "A228": "12"
+      },
+      "room_answers": [
+        {
+          "sequence": 1,
+          "room_code": "A203",
+          "room_name": "PK Tim mạch 1",
+          "description": "chuyên khoa Tim mạch",
+          "note": "chuyên khoa Tim mạch. Ghi chu: Bác sĩ ban đầu",
+          "queue_number": "18"
+        },
+        {
+          "sequence": 2,
+          "room_code": "A310",
+          "room_name": "Phòng điện tim ECG",
+          "description": "Điện tim đồ (ECG)",
+          "note": "Điện tim đồ (ECG). Ghi chu: Không cần nhịn ăn",
+          "queue_number": "07"
+        },
+        {
+          "sequence": 3,
+          "room_code": "A228",
+          "room_name": "Phòng đọc KQ tổng hợp 1",
+          "description": "Đọc KQ tổng hợp 1",
+          "note": "Đọc KQ tổng hợp 1. Ghi chu: Mang đầy đủ kết quả",
+          "queue_number": "12"
+        }
+      ]
+    }
+  ]
+}

@@ -170,8 +170,8 @@
     },
     {
       "node_id": "f1_elevator_a",
-      "x": 918.0,
-      "y": 945.0,
+      "x": 913.985143137197,
+      "y": 912.8803927509546,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -650,7 +650,7 @@
     },
     {
       "node_id": "door_A123",
-      "x": 805.0,
+      "x": 568.1234450946258,
       "y": 914.0,
       "floor_number": 1,
       "kind": "corridor",
@@ -660,8 +660,8 @@
     },
     {
       "node_id": "node_A123",
-      "x": 581.0,
-      "y": 983.0,
+      "x": 576.985143137197,
+      "y": 987.0149509061306,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_A123",
@@ -670,8 +670,8 @@
     },
     {
       "node_id": "door_A124",
-      "x": 372.98099762470315,
-      "y": 814.8487520667665,
+      "x": 220.0,
+      "y": 762.0,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -680,8 +680,8 @@
     },
     {
       "node_id": "node_A124",
-      "x": 217.2185273159145,
-      "y": 866.8235572002204,
+      "x": 232.04457058840887,
+      "y": 866.4335762777891,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_A124",
@@ -690,8 +690,8 @@
     },
     {
       "node_id": "door_A125",
-      "x": 169.93349168646083,
-      "y": 736.9663805999528,
+      "x": 220.0,
+      "y": 762.0,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -700,8 +700,8 @@
     },
     {
       "node_id": "node_A125",
-      "x": 175.49643705463185,
-      "y": 815.1680970002362,
+      "x": 191.89600196037932,
+      "y": 810.4485271839197,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_A125",
@@ -710,8 +710,8 @@
     },
     {
       "node_id": "door_ELEV-1A",
-      "x": 918.0,
-      "y": 945.0,
+      "x": 1010.3417078444678,
+      "y": 912.8803927509546,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -720,8 +720,8 @@
     },
     {
       "node_id": "node_ELEV-1A",
-      "x": 916.5,
-      "y": 983.0,
+      "x": 900.4405725487882,
+      "y": 991.0299018122612,
       "floor_number": 1,
       "kind": "elevator",
       "location_id": "loc_ELEV-1A",
@@ -750,8 +750,8 @@
     },
     {
       "node_id": "door_ENT-1-01",
-      "x": 250.59619952494066,
-      "y": 692.4621683332023,
+      "x": 183.86628823477344,
+      "y": 693.7458345957789,
       "floor_number": 1,
       "kind": "corridor",
       "location_id": null,
@@ -760,8 +760,8 @@
     },
     {
       "node_id": "node_ENT-1-01",
-      "x": 197.7482185273159,
-      "y": 615.3445398000157,
+      "x": 220.0,
+      "y": 607.0,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_ENT-1-01",
@@ -800,8 +800,8 @@
     },
     {
       "node_id": "node_HALL-1-MAIN",
-      "x": 805.0,
-      "y": 772.0,
+      "x": 805.0000000000001,
+      "y": 759.9551472816081,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_HALL-1-MAIN",
@@ -820,8 +820,8 @@
     },
     {
       "node_id": "node_STAIR-1A",
-      "x": 1028.0,
-      "y": 983.0,
+      "x": 1015.9554294115911,
+      "y": 1003.0747545306532,
       "floor_number": 1,
       "kind": "stairs",
       "location_id": "loc_STAIR-1A",
@@ -870,7 +870,7 @@
     },
     {
       "node_id": "door_WAIT-1-CENTER",
-      "x": 805.0,
+      "x": 680.5394372531085,
       "y": 762.0,
       "floor_number": 1,
       "kind": "corridor",
@@ -900,8 +900,8 @@
     },
     {
       "node_id": "node_WC-1A-ACC",
-      "x": 469.5,
-      "y": 983.0,
+      "x": 481.5445705884089,
+      "y": 978.9850490938692,
       "floor_number": 1,
       "kind": "room",
       "location_id": "loc_WC-1A-ACC",
@@ -3085,7 +3085,7 @@
       "edge_id": "edge_f1_elevator_a_f1_main_mid_bottom",
       "from_node": "f1_elevator_a",
       "to_node": "f1_main_mid_bottom",
-      "weight": 117.18,
+      "weight": 108.99,
       "kind": "walkway"
     },
     {
@@ -3421,56 +3421,56 @@
       "edge_id": "edge_node_A123_door_A123",
       "from_node": "node_A123",
       "to_node": "door_A123",
-      "weight": 234.39,
+      "weight": 73.55,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_A123_f1_main_mid_bottom",
       "from_node": "door_A123",
       "to_node": "f1_main_mid_bottom",
-      "weight": 0.0,
+      "weight": 236.88,
       "kind": "walkway"
     },
     {
       "edge_id": "edge_node_A124_door_A124",
       "from_node": "node_A124",
       "to_node": "door_A124",
-      "weight": 164.21,
+      "weight": 105.13,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_A124_f1_main_left_top",
       "from_node": "door_A124",
       "to_node": "f1_main_left_top",
-      "weight": 161.85,
+      "weight": 0.0,
       "kind": "walkway"
     },
     {
       "edge_id": "edge_node_A125_door_A125",
       "from_node": "node_A125",
       "to_node": "door_A125",
-      "weight": 78.4,
+      "weight": 56.01,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_A125_f1_main_left_top",
       "from_node": "door_A125",
       "to_node": "f1_main_left_top",
-      "weight": 55.98,
+      "weight": 0.0,
       "kind": "walkway"
     },
     {
       "edge_id": "edge_node_ELEV-1A_door_ELEV-1A",
       "from_node": "node_ELEV-1A",
       "to_node": "door_ELEV-1A",
-      "weight": 38.03,
+      "weight": 134.85,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_ELEV-1A_f1_elevator_a",
       "from_node": "door_ELEV-1A",
       "to_node": "f1_elevator_a",
-      "weight": 0.0,
+      "weight": 96.36,
       "kind": "walkway"
     },
     {
@@ -3491,14 +3491,14 @@
       "edge_id": "edge_node_ENT-1-01_door_ENT-1-01",
       "from_node": "node_ENT-1-01",
       "to_node": "door_ENT-1-01",
-      "weight": 93.49,
+      "weight": 93.97,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_ENT-1-01_f1_main_left_top",
       "from_node": "door_ENT-1-01",
       "to_node": "f1_main_left_top",
-      "weight": 75.97,
+      "weight": 77.23,
       "kind": "walkway"
     },
     {
@@ -3519,7 +3519,7 @@
       "edge_id": "edge_node_HALL-1-MAIN_door_HALL-1-MAIN",
       "from_node": "node_HALL-1-MAIN",
       "to_node": "door_HALL-1-MAIN",
-      "weight": 10.0,
+      "weight": 2.04,
       "kind": "door"
     },
     {
@@ -3533,7 +3533,7 @@
       "edge_id": "edge_node_STAIR-1A_door_STAIR-1A",
       "from_node": "node_STAIR-1A",
       "to_node": "door_STAIR-1A",
-      "weight": 38.05,
+      "weight": 59.75,
       "kind": "door"
     },
     {
@@ -3575,21 +3575,21 @@
       "edge_id": "edge_node_WAIT-1-CENTER_door_WAIT-1-CENTER",
       "from_node": "node_WAIT-1-CENTER",
       "to_node": "door_WAIT-1-CENTER",
-      "weight": 72.5,
+      "weight": 143.61,
       "kind": "door"
     },
     {
       "edge_id": "edge_door_WAIT-1-CENTER_f1_main_mid_top",
       "from_node": "door_WAIT-1-CENTER",
       "to_node": "f1_main_mid_top",
-      "weight": 0.0,
+      "weight": 124.46,
       "kind": "walkway"
     },
     {
       "edge_id": "edge_node_WC-1A-ACC_door_WC-1A-ACC",
       "from_node": "node_WC-1A-ACC",
       "to_node": "door_WC-1A-ACC",
-      "weight": 258.87,
+      "weight": 269.5,
       "kind": "door"
     },
     {
@@ -5045,14 +5045,14 @@
       "edge_id": "edge_node_ELEV-1A_node_ELEV-2A",
       "from_node": "node_ELEV-1A",
       "to_node": "node_ELEV-2A",
-      "weight": 80.0,
+      "weight": 213.98,
       "kind": "elevator"
     },
     {
       "edge_id": "edge_node_STAIR-1A_node_STAIR-2A",
       "from_node": "node_STAIR-1A",
       "to_node": "node_STAIR-2A",
-      "weight": 140.0,
+      "weight": 226.5,
       "kind": "stairs"
     },
     {
@@ -5302,8 +5302,8 @@
       "location_id": "loc_A123",
       "node_id": "node_A123",
       "label": "A123 - Phòng chăm sóc khách hàng",
-      "x": 581.0,
-      "y": 983.0,
+      "x": 576.985143137197,
+      "y": 987.0149509061306,
       "floor_number": 1
     },
     {
@@ -5311,8 +5311,8 @@
       "location_id": "loc_A124",
       "node_id": "node_A124",
       "label": "A124 - Nhà thuốc",
-      "x": 217.2185273159145,
-      "y": 866.8235572002204,
+      "x": 232.04457058840887,
+      "y": 866.4335762777891,
       "floor_number": 1
     },
     {
@@ -5320,8 +5320,8 @@
       "location_id": "loc_A125",
       "node_id": "node_A125",
       "label": "A125 - Quầy tư vấn dùng thuốc",
-      "x": 175.49643705463185,
-      "y": 815.1680970002362,
+      "x": 191.89600196037932,
+      "y": 810.4485271839197,
       "floor_number": 1
     },
     {
@@ -5329,8 +5329,8 @@
       "location_id": "loc_ELEV-1A",
       "node_id": "node_ELEV-1A",
       "label": "ELEV-1A - Thang máy khu A tầng 1",
-      "x": 916.5,
-      "y": 983.0,
+      "x": 900.4405725487882,
+      "y": 991.0299018122612,
       "floor_number": 1
     },
     {
@@ -5347,8 +5347,8 @@
       "location_id": "loc_ENT-1-01",
       "node_id": "node_ENT-1-01",
       "label": "ENT-1-01 - Lối vào chính",
-      "x": 197.7482185273159,
-      "y": 615.3445398000157,
+      "x": 220.0,
+      "y": 607.0,
       "floor_number": 1
     },
     {
@@ -5365,8 +5365,8 @@
       "location_id": "loc_HALL-1-MAIN",
       "node_id": "node_HALL-1-MAIN",
       "label": "HALL-1-MAIN - Hành lang chính tầng 1",
-      "x": 805.0,
-      "y": 772.0,
+      "x": 805.0000000000001,
+      "y": 759.9551472816081,
       "floor_number": 1
     },
     {
@@ -5374,8 +5374,8 @@
       "location_id": "loc_STAIR-1A",
       "node_id": "node_STAIR-1A",
       "label": "STAIR-1A - Cầu thang bộ khu A tầng 1",
-      "x": 1028.0,
-      "y": 983.0,
+      "x": 1015.9554294115911,
+      "y": 1003.0747545306532,
       "floor_number": 1
     },
     {
@@ -5410,8 +5410,8 @@
       "location_id": "loc_WC-1A-ACC",
       "node_id": "node_WC-1A-ACC",
       "label": "WC-1A-ACC - WC xe lăn khu A tầng 1",
-      "x": 469.5,
-      "y": 983.0,
+      "x": 481.5445705884089,
+      "y": 978.9850490938692,
       "floor_number": 1
     },
     {
@@ -6189,6 +6189,6 @@
       "floor_number": 3
     }
   ],
-  "created_at": "2026-07-05T11:30:51.499327+00:00",
-  "verified_at": "2026-07-05T11:32:03.305472+00:00"
+  "created_at": "2026-07-20T08:56:22.610760+00:00",
+  "verified_at": "2026-07-20T08:58:58.560523+00:00"
 }
