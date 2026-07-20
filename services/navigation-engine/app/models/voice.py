@@ -20,10 +20,20 @@ class PreprocessInfo(BaseModel):
     note: str = ""
 
 
+class STTTimingInfo(BaseModel):
+    """Server-side timing for one STT request, in milliseconds."""
+
+    request_read_ms: int | None = None
+    preprocessing_ms: int = 0
+    adapter_ms: int = 0
+    total_ms: int = 0
+
+
 class STTResponse(BaseModel):
     text: str
     confidence: float = 0.0
     preprocess: PreprocessInfo = Field(default_factory=PreprocessInfo)
+    timing: STTTimingInfo = Field(default_factory=STTTimingInfo)
 
 
 class TTSRequest(BaseModel):

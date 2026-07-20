@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from time import perf_counter
+
 from fastapi import APIRouter, File, UploadFile
 
 from app.models.common import APIResponse
@@ -14,8 +16,13 @@ router = APIRouter(tags=["voice"])
 @router.post("/stt")
 async def speech_to_text(file: UploadFile = File(...)) -> APIResponse:
     """Transcribe an uploaded audio clip to Vietnamese text."""
+    read_started = perf_counter()
     audio_bytes = await file.read()
-    return APIResponse.ok(stt_service.transcribe(audio_bytes).model_dump())
+    request_read_ms = round((perf_counter() - read_started) * 1000)
+    result = stt_service.transcribe(audio_bytes)
+    result.timing.request_read_ms = request_read_ms
+    result.timing.total_ms += request_read_ms
+    return APIResponse.ok(result.model_dump())
 
 
 @router.post("/tts")

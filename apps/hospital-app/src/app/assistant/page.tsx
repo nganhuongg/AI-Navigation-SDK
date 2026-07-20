@@ -41,6 +41,12 @@ type Message = {
 const INITIAL_ASSISTANT_PROMPT =
   "Cháu đang nghe bác nói. Bác có thể hỏi: tôi vừa khám xong thì đi đâu, phòng xét nghiệm máu ở đâu, hoặc tôi có cần quay lại bác sĩ không.";
 
+const MIC_SAFE_WINDOW_MS = 3000;
+
+function waitForMicSafeWindow(): Promise<void> {
+  return new Promise((resolve) => window.setTimeout(resolve, MIC_SAFE_WINDOW_MS));
+}
+
 function parseScreenParam(value: string | null): Screen {
   const screens: Screen[] = ["home", "voice", "scan", "ocr", "checklist", "fallback", "end"];
   return screens.includes(value as Screen) ? (value as Screen) : "home";
@@ -445,6 +451,7 @@ function VoiceScreen({
     { id: "assistant-0", role: "assistant", text: INITIAL_ASSISTANT_PROMPT },
   ]);
   const [draft, setDraft] = useState("");
+  const [warmingUp, setWarmingUp] = useState(false);
   const [listening, setListening] = useState(false);
   const [processing, setProcessing] = useState(false);
   const [voiceError, setVoiceError] = useState<string | null>(null);
@@ -463,23 +470,28 @@ function VoiceScreen({
   }, []);
 
   async function startListening() {
-    if (listening || processing) return;
+    if (warmingUp || listening || processing) return;
+    setWarmingUp(true);
     setVoiceError(null);
     try {
       const recorder = await PcmRecorder.create();
       recorderRef.current = recorder;
       recorder.start();
       await recorder.waitUntilReady();
+      await waitForMicSafeWindow();
       setListening(true);
     } catch (error) {
       setVoiceError(error instanceof Error ? error.message : "Không thể mở micro.");
       void stopListening(false);
+    } finally {
+      setWarmingUp(false);
     }
   }
 
   async function stopListening(process = true) {
     const recorder = recorderRef.current;
     recorderRef.current = null;
+    setWarmingUp(false);
     setListening(false);
     if (!recorder) return;
     try {
@@ -626,7 +638,9 @@ function VoiceScreen({
               <div>
                 <p className="text-sm font-black text-slate-900">Cháu sẵn sàng hỗ trợ bác</p>
                 <p className="text-xs font-semibold text-slate-500">
-                  {listening
+                  {warmingUp
+                    ? "Đang chuẩn bị micro, chưa nói vội"
+                    : listening
                     ? "Micro đang hoạt động"
                     : processing
                       ? "Đang xử lý giọng nói"
@@ -758,10 +772,10 @@ function VoiceScreen({
           <button
             type="button"
             onClick={() => (listening ? stopListening() : void startListening())}
-            disabled={processing}
+            disabled={processing || warmingUp}
             aria-label={listening ? "Dừng nghe" : "Bật micro"}
             className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl text-white shadow-sm disabled:opacity-60 ${
-              listening ? "bg-red-500" : "bg-[#008751]"
+              warmingUp ? "bg-amber-500" : listening ? "bg-red-500" : "bg-[#008751]"
             }`}
           >
             <MicSmallIcon />

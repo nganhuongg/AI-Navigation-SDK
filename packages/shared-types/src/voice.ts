@@ -12,10 +12,18 @@ export type VoicePreprocessInfo = {
   note: string;
 };
 
+export type STTTimingInfo = {
+  request_read_ms: number | null;
+  preprocessing_ms: number;
+  adapter_ms: number;
+  total_ms: number;
+};
+
 export type STTResponse = {
   text: string;
   confidence: number;
   preprocess: VoicePreprocessInfo;
+  timing: STTTimingInfo;
 };
 
 export type TTSRequest = {

@@ -35,6 +35,15 @@ def test_stt_returns_transcript(client):
     ).issubset(data["preprocess"].keys())
     assert data["preprocess"]["input_sample_rate"] == 16000
     assert data["preprocess"]["enabled"] is False
+    assert set(
+        [
+            "request_read_ms",
+            "preprocessing_ms",
+            "adapter_ms",
+            "total_ms",
+        ]
+    ).issubset(data["timing"].keys())
+    assert data["timing"]["total_ms"] >= 0
 
 
 def test_tts_returns_valid_wav(client):

@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
+from time import perf_counter
 from typing import Optional
 
 from app.adapters import mock_voice, vnpt_smartvoice
 from app.core.config import settings
-from app.models.voice import PreprocessInfo, STTResponse
+from app.models.voice import PreprocessInfo, STTResponse, STTTimingInfo
 from app.services.voice import audio_preprocess
 
 
@@ -19,15 +20,26 @@ def _get_adapter():
 
 def transcribe(audio_bytes: Optional[bytes], scenario: str = "default") -> STTResponse:
     """Run VAD/denoise on the input, then transcribe."""
+    total_started = perf_counter()
+    preprocess_started = perf_counter()
     if settings.use_stt_preprocessing:
         processed, info = audio_preprocess.preprocess(audio_bytes or b"")
     else:
         processed, info = _preprocessing_disabled(audio_bytes or b"")
+    preprocess_ms = round((perf_counter() - preprocess_started) * 1000)
+
+    adapter_started = perf_counter()
     raw = _get_adapter().speech_to_text(processed, scenario)
+    adapter_ms = round((perf_counter() - adapter_started) * 1000)
     return STTResponse(
         text=raw.get("text", ""),
         confidence=float(raw.get("confidence", 0.0)),
         preprocess=PreprocessInfo(**info),
+        timing=STTTimingInfo(
+            preprocessing_ms=preprocess_ms,
+            adapter_ms=adapter_ms,
+            total_ms=round((perf_counter() - total_started) * 1000),
+        ),
     )
 
 

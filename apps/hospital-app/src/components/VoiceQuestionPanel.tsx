@@ -21,6 +21,12 @@ type ChatMessage = {
   cards?: SmartBotCard[];
 };
 
+const MIC_SAFE_WINDOW_MS = 3000;
+
+function waitForMicSafeWindow(): Promise<void> {
+  return new Promise((resolve) => window.setTimeout(resolve, MIC_SAFE_WINDOW_MS));
+}
+
 export default function VoiceQuestionPanel() {
   const { session } = useDemo();
   const [state, setState] = useState<RecorderState>("idle");
@@ -58,6 +64,7 @@ export default function VoiceQuestionPanel() {
       recorderRef.current = recorder;
       recorder.start();
       await recorder.waitUntilReady();
+      await waitForMicSafeWindow();
       setState("recording");
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : "Không mở được microphone.");
