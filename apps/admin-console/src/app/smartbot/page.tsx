@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { getHealth, sendChatMessage, transcribeAudio } from "@/lib/api";
 import { PcmRecorder } from "@/lib/recorder";
+import { SMARTBOT_BENCHMARK_CASES, type SmartBotBenchmarkCase } from "@/lib/smartbotBenchmark";
 import type { ChatbotMessageResponse, HealthStatus } from "@/lib/types";
 import { Chip, EmptyState, Kv, Panel, ServiceChip } from "@/components/ui";
 
@@ -13,11 +14,33 @@ type ChatMessage = {
   fallback?: boolean;
 };
 
+type BenchmarkResult = SmartBotBenchmarkCase & {
+  actualIntent: string | null;
+  actualAnswer: string;
+  handoffRequired: boolean;
+  latencyMs: number | null;
+  pass: boolean;
+  error: string | null;
+};
+
 const SAMPLE_QUESTIONS = [
   "Tôi đi thử máu ở đâu?",
   "Tôi đau ngực uống thuốc gì?",
   "Quầy đăng ký khám ở đâu?",
 ];
+
+function evaluateBenchmark(test: SmartBotBenchmarkCase, result: ChatbotMessageResponse): boolean {
+  const intentPass = (result.intent_name ?? "") === test.expectedIntent;
+  const roomPass = test.expectedTargetRoom
+    ? result.reply_text.toUpperCase().includes(test.expectedTargetRoom.toUpperCase())
+    : true;
+  return intentPass && roomPass;
+}
+
+function escapeCsv(value: string | number | boolean | null): string {
+  const text = value === null ? "" : String(value);
+  return `"${text.replaceAll('"', '""')}"`;
+}
 
 export default function SmartBotPage() {
   const [health, setHealth] = useState<HealthStatus | null>(null);
@@ -29,6 +52,10 @@ export default function SmartBotPage() {
   const [error, setError] = useState<string | null>(null);
   const [lastResponse, setLastResponse] = useState<ChatbotMessageResponse | null>(null);
   const [latencyMs, setLatencyMs] = useState<number | null>(null);
+  const [benchmarkResults, setBenchmarkResults] = useState<BenchmarkResult[]>([]);
+  const [benchmarkRunning, setBenchmarkRunning] = useState(false);
+  const [benchmarkProgress, setBenchmarkProgress] = useState(0);
+  const [benchmarkError, setBenchmarkError] = useState<string | null>(null);
   const recorderRef = useRef<PcmRecorder | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
@@ -90,6 +117,100 @@ export default function SmartBotPage() {
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : "Không mở được microphone.");
     }
+  }
+
+  const benchmarkPassed = benchmarkResults.filter((item) => item.pass).length;
+  const benchmarkCompleted = benchmarkResults.length;
+  const benchmarkAccuracy =
+    benchmarkCompleted > 0 ? Math.round((benchmarkPassed / benchmarkCompleted) * 100) : null;
+  const benchmarkAverageLatency =
+    benchmarkCompleted > 0
+      ? Math.round(
+          benchmarkResults.reduce((sum, item) => sum + (item.latencyMs ?? 0), 0) / benchmarkCompleted,
+        )
+      : null;
+
+  async function runBenchmark() {
+    if (benchmarkRunning) return;
+    setBenchmarkRunning(true);
+    setBenchmarkError(null);
+    setBenchmarkResults([]);
+    setBenchmarkProgress(0);
+    const nextResults: BenchmarkResult[] = [];
+    for (const test of SMARTBOT_BENCHMARK_CASES) {
+      const startedAt = performance.now();
+      try {
+        const result = await sendChatMessage(test.question, `${sessionId}_${test.id}`);
+        const measuredLatency = Math.round(performance.now() - startedAt);
+        const row: BenchmarkResult = {
+          ...test,
+          actualIntent: result.intent_name,
+          actualAnswer: result.reply_text,
+          handoffRequired: result.handoff_required,
+          latencyMs: measuredLatency,
+          pass: evaluateBenchmark(test, result),
+          error: null,
+        };
+        nextResults.push(row);
+      } catch (caught) {
+        nextResults.push({
+          ...test,
+          actualIntent: null,
+          actualAnswer: "",
+          handoffRequired: true,
+          latencyMs: null,
+          pass: false,
+          error: caught instanceof Error ? caught.message : "Benchmark request failed.",
+        });
+      }
+      setBenchmarkResults([...nextResults]);
+      setBenchmarkProgress(nextResults.length);
+      await new Promise((resolve) => window.setTimeout(resolve, 120));
+    }
+    setBenchmarkRunning(false);
+  }
+
+  function exportBenchmarkCsv() {
+    if (benchmarkResults.length === 0) return;
+    const headers = [
+      "id",
+      "group",
+      "question",
+      "expected_intent",
+      "actual_intent",
+      "expected_target_room",
+      "actual_answer",
+      "handoff_required",
+      "latency_ms",
+      "pass",
+      "error",
+      "notes",
+    ];
+    const rows = benchmarkResults.map((item) =>
+      [
+        item.id,
+        item.group,
+        item.question,
+        item.expectedIntent,
+        item.actualIntent,
+        item.expectedTargetRoom,
+        item.actualAnswer,
+        item.handoffRequired,
+        item.latencyMs,
+        item.pass,
+        item.error,
+        item.notes,
+      ]
+        .map(escapeCsv)
+        .join(","),
+    );
+    const blob = new Blob([[headers.join(","), ...rows].join("\n")], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "smartbot-benchmark-results.csv";
+    link.click();
+    URL.revokeObjectURL(url);
   }
 
   return (
@@ -180,6 +301,92 @@ export default function SmartBotPage() {
             </div>
           </Panel>
         </div>
+        <Panel eyebrow="Benchmark" title="SmartBot batch test">
+          <div className="btn-row" style={{ marginBottom: 12 }}>
+            <button className="btn btn-primary" onClick={runBenchmark} disabled={benchmarkRunning}>
+              {benchmarkRunning
+                ? `Đang chạy ${benchmarkProgress}/${SMARTBOT_BENCHMARK_CASES.length}`
+                : `Chạy ${SMARTBOT_BENCHMARK_CASES.length} câu benchmark`}
+            </button>
+            <button
+              className="btn btn-secondary"
+              onClick={exportBenchmarkCsv}
+              disabled={benchmarkRunning || benchmarkResults.length === 0}
+            >
+              Export CSV
+            </button>
+            <button
+              className="btn btn-secondary"
+              onClick={() => {
+                setBenchmarkResults([]);
+                setBenchmarkProgress(0);
+                setBenchmarkError(null);
+              }}
+              disabled={benchmarkRunning || benchmarkResults.length === 0}
+            >
+              Xóa kết quả
+            </button>
+          </div>
+
+          <div className="grid-3" style={{ marginBottom: 14 }}>
+            <Kv label="cases" value={`${benchmarkCompleted}/${SMARTBOT_BENCHMARK_CASES.length}`} mono />
+            <Kv
+              label="auto_pass_rate"
+              value={benchmarkAccuracy === null ? "-" : `${benchmarkPassed}/${benchmarkCompleted} (${benchmarkAccuracy}%)`}
+              mono
+            />
+            <Kv label="avg_latency" value={benchmarkAverageLatency === null ? "-" : `${benchmarkAverageLatency} ms`} mono />
+          </div>
+
+          {benchmarkError ? <p style={{ color: "var(--red)", fontSize: 12.5 }}>{benchmarkError}</p> : null}
+
+          {benchmarkResults.length === 0 ? (
+            <EmptyState text="Chạy benchmark để ghi lại câu trả lời, intent, độ trễ và pass/fail sơ bộ." />
+          ) : (
+            <div className="scroll-x">
+              <table style={{ borderCollapse: "collapse", minWidth: 1180, width: "100%", fontSize: 12 }}>
+                <thead>
+                  <tr style={{ textAlign: "left", color: "var(--muted)" }}>
+                    <th style={{ padding: 8 }}>ID</th>
+                    <th style={{ padding: 8 }}>Group</th>
+                    <th style={{ padding: 8 }}>Question</th>
+                    <th style={{ padding: 8 }}>Expected</th>
+                    <th style={{ padding: 8 }}>Actual</th>
+                    <th style={{ padding: 8 }}>Latency</th>
+                    <th style={{ padding: 8 }}>Result</th>
+                    <th style={{ padding: 8 }}>Answer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {benchmarkResults.map((item) => (
+                    <tr key={item.id} style={{ borderTop: "1px solid var(--line)" }}>
+                      <td style={{ padding: 8, fontFamily: "var(--font-mono)" }}>{item.id}</td>
+                      <td style={{ padding: 8 }}>{item.group}</td>
+                      <td style={{ padding: 8, maxWidth: 240 }}>{item.question}</td>
+                      <td style={{ padding: 8, fontFamily: "var(--font-mono)" }}>
+                        {item.expectedIntent}
+                        {item.expectedTargetRoom ? ` / ${item.expectedTargetRoom}` : ""}
+                      </td>
+                      <td style={{ padding: 8, fontFamily: "var(--font-mono)" }}>{item.actualIntent ?? "-"}</td>
+                      <td style={{ padding: 8 }}>{item.latencyMs === null ? "-" : `${item.latencyMs} ms`}</td>
+                      <td style={{ padding: 8, color: item.pass ? "var(--green)" : "var(--red)", fontWeight: 700 }}>
+                        {item.pass ? "PASS" : "FAIL"}
+                      </td>
+                      <td style={{ padding: 8, minWidth: 360, whiteSpace: "pre-wrap" }}>
+                        {item.error ?? item.actualAnswer}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          <div className="foot-note" style={{ marginTop: 12 }}>
+            Auto pass chỉ kiểm tra intent và mã phòng trong câu trả lời. Những case paraphrase/ambiguous vẫn nên được
+            đánh giá thủ công trước khi đưa vào slide.
+          </div>
+        </Panel>
       </div>
     </>
   );
