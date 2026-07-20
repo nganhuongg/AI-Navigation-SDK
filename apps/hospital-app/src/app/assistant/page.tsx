@@ -1364,7 +1364,7 @@ function Header({ title, onBack }: { title: string; onBack?: () => void }) {
         disabled={!onBack}
       >
         <ChevronLeftIcon />
-        Quay láº¡i
+        Quay lại
       </button>
       <div className="text-center text-base font-extrabold">{title}</div>
       <div className="w-16" />
