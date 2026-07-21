@@ -43,11 +43,11 @@ def test_ocr_result_feeds_confirm_ocr(client):
     session = _data(client.post(f"/session/{sid}/confirm-ocr", json=body))
 
     service_ids = [s["service_id"] for s in session["journey"]["specialized_process"]["services"]]
-    assert service_ids == ["room_A203", "room_A303", "room_A311", "pharmacy"]
+    assert service_ids == ["room_A303", "room_A311", "return_doctor", "pharmacy"]
     rooms = [s["room"] for s in session["journey"]["specialized_process"]["services"]]
-    assert rooms == ["A203", "A303", "A311", "A124"]
-    # After OCR confirm, the next stop follows the first detected room code.
-    assert session["next_action"]["target_room"] == "A203"
+    assert rooms == ["A303", "A311", "A203", "A124"]
+    # After OCR confirm, the next stop follows the first actual service room.
+    assert session["next_action"]["target_room"] == "A303"
 
 
 def test_schema_parser_detects_catalog_room_codes_with_ocr_spacing():
@@ -133,13 +133,14 @@ def test_confirm_ocr_builds_dynamic_journey_from_detected_room_codes(client):
     assert extracted["room_queue_numbers"] == {"A207": "29", "A304": "46", "A305": "13"}
     services = session["journey"]["specialized_process"]["services"]
     assert [service["service_id"] for service in services] == [
-        "room_A207",
         "room_A304",
         "room_A305",
+        "return_doctor",
         "pharmacy",
     ]
-    assert [service["room"] for service in services] == ["A207", "A304", "A305", "A124"]
+    assert [service["room"] for service in services] == ["A304", "A305", "A207", "A124"]
     assert services[0]["room_name"]
-    assert services[1]["service_name"] == "Xet nghiem mau"
-    assert "Ghi chu" in services[2]["description"]
-    assert session["next_action"]["target_room"] == "A207"
+    assert services[0]["service_name"] == "Xet nghiem mau"
+    assert "Ghi chu" in services[1]["description"]
+    assert services[2]["service_id"] == "return_doctor"
+    assert session["next_action"]["target_room"] == "A304"

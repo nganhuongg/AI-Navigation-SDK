@@ -69,7 +69,9 @@ function AfterSdkAssistant() {
   const [ocr, setOcr] = useState<OcrResult | null>(null);
   const [busy, setBusy] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
-  const [arrivalConfirmed, setArrivalConfirmed] = useState(false);
+  const arrivalKey = `${session?.next_action.type || "none"}:${session?.next_action.target_room || "none"}`;
+  const [arrivalConfirmationKey, setArrivalConfirmationKey] = useState<string | null>(null);
+  const arrivalConfirmed = arrivalConfirmationKey === arrivalKey;
 
   useEffect(() => {
     if (session) return;
@@ -99,7 +101,7 @@ function AfterSdkAssistant() {
     SmartUXEvents.screenView(getAssistantScreenName(screen), {
       session_id: session?.session_id || "anonymous_session",
     });
-  }, [screen]);
+  }, [screen, session?.session_id]);
 
   const steps = useMemo(() => buildSteps(session), [session]);
   const activeStep = steps.find((step) => step.status === "active") ?? steps[0];
@@ -176,14 +178,14 @@ function AfterSdkAssistant() {
 
   async function confirmArrived() {
     if (!session) {
-      setArrivalConfirmed(true);
+      setArrivalConfirmationKey(arrivalKey);
       return;
     }
     setBusy("arrive");
     try {
       const updated = await markArrived(session.session_id);
       setSession(updated);
-      setArrivalConfirmed(true);
+      setArrivalConfirmationKey(arrivalKey);
       setToast("Trạng thái hành trình đã được cập nhật.");
       SmartUXEvents.stepCompleted(activeStep.id, {
         room_id: targetRoom,
@@ -205,10 +207,6 @@ function AfterSdkAssistant() {
       setBusy(null);
     }
   }
-
-  useEffect(() => {
-    setArrivalConfirmed(false);
-  }, [session?.next_action.target_room, session?.next_action.type]);
 
   return (
     <div className="relative flex h-full min-h-0 flex-col bg-white text-slate-800">
@@ -245,7 +243,6 @@ function AfterSdkAssistant() {
       ) : null}
       {screen === "checklist" ? (
         <ChecklistScreen
-          session={session}
           steps={steps}
           activeStep={activeStep}
           targetRoom={targetRoom}
@@ -732,7 +729,7 @@ function VoiceScreen({
             </p>
             {hint.target_location_id ? (
               <Link
-                href={`/navigate?destination=${encodeURIComponent(hint.target_location_id)}`}
+                href={`/navigate?mode=lookup&destination=${encodeURIComponent(hint.target_location_id)}`}
                 className="mt-3 flex h-11 w-full items-center justify-center rounded-2xl bg-[#008751] text-sm font-black text-white"
               >
                 Chỉ đường đến phòng {hint.target_room}
@@ -956,7 +953,6 @@ function OcrScreen({
 }
 
 function ChecklistScreen({
-  session,
   steps,
   activeStep,
   targetRoom,
@@ -966,7 +962,6 @@ function ChecklistScreen({
   arrivalConfirmed,
   question,
 }: {
-  session: PatientSession | null;
   steps: FlowStep[];
   activeStep: FlowStep;
   targetRoom: string;
@@ -1045,7 +1040,7 @@ function ChecklistScreen({
                   ) : null}
                   {step.room && step.status !== "completed" ? (
                     <Link
-                      href={`/navigate?destination=${encodeURIComponent(routeLocationForRoom(step.room))}`}
+                      href={`/navigate?mode=journey&destination=${encodeURIComponent(routeLocationForRoom(step.room))}`}
                       className="mt-2 inline-flex h-9 items-center justify-center rounded-xl bg-[#008751] px-3 text-xs font-black text-white"
                     >
                       Chỉ đường
@@ -1066,7 +1061,7 @@ function ChecklistScreen({
       <div className="shrink-0 border-t border-slate-200 bg-white p-4 shadow-2xl">
         <div className="space-y-2.5">
           <Link
-            href={`/navigate?destination=${encodeURIComponent(routeLocationForRoom(targetRoom))}`}
+            href={`/navigate?mode=journey&destination=${encodeURIComponent(routeLocationForRoom(targetRoom))}`}
             className="flex h-12 w-full items-center justify-center rounded-2xl bg-[#008751] text-sm font-black text-white"
           >
             Xem bản đồ thật
@@ -1300,7 +1295,8 @@ function buildSteps(session: PatientSession | null): FlowStep[] {
   const serviceSteps = services.map((service) => serviceToStep(service, session));
   const returnRoom =
     session?.journey.specialized_process?.return_room || session?.journey.extracted_fields.return_room;
-  const returnStep: FlowStep | null = returnRoom
+  const hasReturnDoctorService = services.some((service) => service.service_id === "return_doctor");
+  const returnStep: FlowStep | null = returnRoom && !hasReturnDoctorService
     ? {
         id: "return",
         label: "Quay lại bác sĩ",

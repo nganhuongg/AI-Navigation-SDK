@@ -2,12 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import AppHeader from "@/components/AppHeader";
 import ReadAloudButton from "@/components/ReadAloudButton";
 import SDKGate from "@/components/SDKGate";
 import { useDemo } from "@/context/demo";
-import { getEngineBaseUrl, markArrived } from "@/lib/api";
+import { getEngineBaseUrl, markArrived, type PatientSession } from "@/lib/api";
 import SmartUXEvents from "@/integrations/smartux/smartuxEvents";
 
 type ApiResponse<T> = {
@@ -22,10 +22,20 @@ type MapFloor = {
   image_height: number;
 };
 
+type MapPoi = {
+  poi_id: string;
+  location_id: string;
+  label: string;
+  x: number;
+  y: number;
+  floor_number: number;
+};
+
 type DigitalMap = {
   map_id: string;
   status: "draft" | "verified";
   floors: MapFloor[];
+  pois: MapPoi[];
 };
 
 type RoutePoint = {
@@ -51,8 +61,10 @@ type RouteSegment = {
 };
 
 const MAP_ID = "bachmai_main_multifloor_v1";
+type RouteMode = "journey" | "lookup";
+type LocationOption = { locationId: string; label: string; detail: string };
 
-const DESTINATIONS = [
+const FALLBACK_CURRENT_LOCATIONS = [
   { locationId: "loc_A101", label: "A101", detail: "Quầy hướng dẫn - tầng 1" },
   { locationId: "loc_A203", label: "A203", detail: "Phòng khám ban đầu - tầng 2" },
   { locationId: "loc_A303", label: "A303", detail: "Phòng lấy máu 1 - tầng 3" },
@@ -78,7 +90,7 @@ async function getRoute(destination: string, sessionId: string | null, startLoca
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      session_id: sessionId || "patient_navigation_demo",
+      session_id: sessionId,
       start_location_id: startLocationId,
       destination_location_id: destination,
     }),
@@ -96,13 +108,16 @@ export default function NavigatePage() {
 
 function NavigateWorkspace() {
   const { session, setSession } = useDemo();
+  const router = useRouter();
   const searchParams = useSearchParams();
   const requestedDestination = searchParams.get("destination");
+  const requestedStart = searchParams.get("from");
+  const routeMode: RouteMode = searchParams.get("mode") === "lookup" ? "lookup" : "journey";
+  const inferredStartLocation = useMemo(() => resolveStartLocation(session), [session]);
+  const destination = requestedDestination || session?.next_action.target_location_id || null;
+  const [manualStartLocation, setManualStartLocation] = useState<string | null>(null);
   const [digitalMap, setDigitalMap] = useState<DigitalMap | null>(null);
   const [route, setRoute] = useState<RouteResult | null>(null);
-  const [destination, setDestination] = useState(
-    requestedDestination || session?.next_action.target_location_id || "loc_A203",
-  );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -110,7 +125,8 @@ function NavigateWorkspace() {
   const [routeCompleted, setRouteCompleted] = useState(false);
   const [currentStageIndex, setCurrentStageIndex] = useState(0);
 
-  const startLocationId = useMemo(() => resolveStartLocation(session), [session]);
+  const startLocationId =
+    requestedStart || manualStartLocation || (routeMode === "journey" ? inferredStartLocation : null);
 
   useEffect(() => {
     let ignore = false;
@@ -119,7 +135,10 @@ function NavigateWorkspace() {
       setError(null);
       try {
         const map = await loadVerifiedMap();
-        const nextRoute = await getRoute(destination, session?.session_id || null, startLocationId);
+        const nextRoute =
+          destination && startLocationId
+            ? await getRoute(destination, session?.session_id || null, startLocationId)
+            : null;
         if (!ignore) {
           setDigitalMap(map);
           setRoute(nextRoute);
@@ -139,27 +158,17 @@ function NavigateWorkspace() {
     };
   }, [destination, session?.session_id, startLocationId]);
 
-  useEffect(() => {
-    if (requestedDestination) {
-      setDestination(requestedDestination);
-    }
-  }, [requestedDestination]);
-
-  useEffect(() => {
-    if (!requestedDestination && session?.next_action.target_location_id) {
-      setDestination(session.next_action.target_location_id);
-    }
-  }, [requestedDestination, session?.next_action.target_location_id]);
-
-  const currentDestination = useMemo(
-    () =>
-      DESTINATIONS.find((item) => item.locationId === destination) ?? {
-        locationId: destination,
-        label: destination.replace(/^loc_/, ""),
-        detail: "Điểm đến trong bệnh viện",
-      },
-    [destination],
+  const currentDestination = useMemo(() => describeLocation(destination, digitalMap), [destination, digitalMap]);
+  const currentStart = useMemo(() => describeLocation(startLocationId, digitalMap), [startLocationId, digitalMap]);
+  const currentLocationOptions = useMemo(
+    () => buildCurrentLocationOptions(session, digitalMap),
+    [session, digitalMap],
   );
+  const destinationPoi = useMemo(() => findPoi(digitalMap, destination), [digitalMap, destination]);
+  const startPoi = useMemo(() => findPoi(digitalMap, startLocationId), [digitalMap, startLocationId]);
+  const fallbackFloor = destinationPoi
+    ? digitalMap?.floors.find((item) => item.floor_number === destinationPoi.floor_number) ?? null
+    : null;
   const segments = useMemo(() => splitRouteByFloor(route?.polyline ?? [], digitalMap?.floors ?? []), [route, digitalMap]);
   const stageCount = Math.max(segments.length, route?.instructions.length ?? 0);
   const activeSegment = pickSegmentForStage(segments, currentStageIndex, stageCount);
@@ -177,6 +186,7 @@ function NavigateWorkspace() {
   }, [session?.session_id]);
 
   useEffect(() => {
+    if (!startLocationId || !destination) return;
     SmartUXEvents.routeRequested(startLocationId, destination, {
       session_id: session?.session_id || "anonymous_session",
       accessibility_mode: "standard",
@@ -206,13 +216,12 @@ function NavigateWorkspace() {
         SmartUXEvents.sessionEnded("completed", {
           session_id: session.session_id,
         });
+        router.replace("/assistant?screen=checklist");
         return;
       }
-      if (updated.next_action.target_location_id) {
-        setDestination(updated.next_action.target_location_id);
-        setRouteCompleted(true);
-      }
       setStatusMessage(`Đã cập nhật hành trình. Bước tiếp theo: ${updated.next_action.message}`);
+      setRouteCompleted(true);
+      router.replace("/assistant?screen=checklist");
     } catch (caught) {
       SmartUXEvents.fallbackTriggered("route_confirmation_failed", {
         session_id: session?.session_id || "anonymous_session",
@@ -239,31 +248,50 @@ function NavigateWorkspace() {
               <h1 className="text-lg font-black text-slate-900">{currentDestination.label}</h1>
               <p className="text-xs text-slate-500">{currentDestination.detail}</p>
             </div>
-            <div className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-[#008751]">
-              Khoảng {estimatedMinutes} phút
-            </div>
+            {route ? (
+              <div className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-[#008751]">
+                Khoảng {estimatedMinutes} phút
+              </div>
+            ) : null}
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-2">
-            {DESTINATIONS.map((item) => (
-              <button
-                key={item.locationId}
-                onClick={() => {
-                  setRouteCompleted(false);
-                  setStatusMessage(null);
-                  setDestination(item.locationId);
-                }}
-                className={`rounded-xl border px-3 py-2 text-left text-xs font-semibold transition ${
-                  item.locationId === destination
-                    ? "border-[#008751] bg-emerald-50 text-[#008751]"
-                    : "border-gray-200 bg-white text-gray-600"
-                }`}
-              >
-                <div className="font-black">{item.label}</div>
-                <div className="mt-0.5 leading-snug">{item.detail}</div>
-              </button>
-            ))}
-          </div>
+        </div>
+
+        <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-400">Vị trí hiện tại</p>
+          {startLocationId ? (
+            <div className="mt-2 rounded-xl border border-emerald-100 bg-emerald-50 px-3 py-2">
+              <p className="text-sm font-black text-slate-900">{currentStart.label}</p>
+              <p className="mt-0.5 text-xs text-slate-500">{currentStart.detail}</p>
+            </div>
+          ) : (
+            <p className="mt-2 text-sm font-semibold leading-relaxed text-slate-600">
+              Bác chọn vị trí đang đứng để hệ thống tính đường chính xác.
+            </p>
+          )}
+          {!startLocationId || routeMode === "lookup" ? (
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              {currentLocationOptions.map((item) => (
+                <button
+                  key={item.locationId}
+                  type="button"
+                  onClick={() => {
+                    setRouteCompleted(false);
+                    setStatusMessage(null);
+                    setManualStartLocation(item.locationId);
+                  }}
+                  className={`rounded-xl border px-3 py-2 text-left text-xs font-semibold transition ${
+                    item.locationId === startLocationId
+                      ? "border-[#008751] bg-emerald-50 text-[#008751]"
+                      : "border-gray-200 bg-white text-gray-600"
+                  }`}
+                >
+                  <div className="font-black">{item.label}</div>
+                  <div className="mt-0.5 leading-snug">{item.detail}</div>
+                </button>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         {error ? (
@@ -326,6 +354,15 @@ function NavigateWorkspace() {
                   />
                 );
               })()
+            ) : fallbackFloor && digitalMap ? (
+              <MapOnlyCard
+                floor={fallbackFloor}
+                imageUrl={`${getEngineBaseUrl()}/maps/${digitalMap.map_id}/floor/${fallbackFloor.floor_number}/image`}
+                title="Bản đồ tầng"
+                subtitle={route ? "Chưa có polyline cho tuyến này, hiển thị bản đồ và điểm đến." : "Chọn đủ điểm đi và điểm đến để tính đường."}
+                startPoi={startPoi?.floor_number === fallbackFloor.floor_number ? startPoi : null}
+                destinationPoi={destinationPoi}
+              />
             ) : (
               <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50 p-6 text-center text-sm text-slate-500">
                 Chưa có tuyến đường để hiển thị.
@@ -389,15 +426,6 @@ function NavigateWorkspace() {
               {loading ? "Đang tính đường..." : "Chưa có hướng dẫn."}
             </p>
           )}
-        </div>
-
-        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
-          <p className="text-xs font-black uppercase tracking-widest text-[#008751]">Luồng sau SDK</p>
-          <p className="mt-1 text-sm font-semibold leading-relaxed text-slate-700">
-            Nếu bác đang ở phòng khám ban đầu, tuyến sẽ bắt đầu từ quầy đăng ký rồi dẫn tới phòng khám ban đầu;
-            còn khi có chỉ định cận lâm sàng, màn này sẽ cắt đúng đoạn từ vị trí hiện tại đến thang máy,
-            rồi từ thang máy đến điểm đến.
-          </p>
         </div>
       </main>
     </div>
@@ -517,6 +545,68 @@ function FloorRouteCard({
   );
 }
 
+function MapOnlyCard({
+  title,
+  subtitle,
+  floor,
+  imageUrl,
+  startPoi,
+  destinationPoi,
+}: {
+  title: string;
+  subtitle: string;
+  floor: MapFloor;
+  imageUrl: string;
+  startPoi: MapPoi | null;
+  destinationPoi: MapPoi | null;
+}) {
+  return (
+    <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+      <div className="flex items-start justify-between gap-3 border-b border-slate-100 px-4 py-3">
+        <div>
+          <p className="text-[11px] font-black uppercase tracking-widest text-[#008751]">{title}</p>
+          <p className="mt-1 text-sm font-semibold text-slate-700">{subtitle}</p>
+        </div>
+        <div className="rounded-full bg-slate-100 px-3 py-1 text-[11px] font-bold text-slate-600">
+          Tầng {floor.floor_number}
+        </div>
+      </div>
+      <div className="bg-slate-50 p-2">
+        <svg
+          viewBox={`0 0 ${floor.image_width} ${floor.image_height}`}
+          className="block h-auto w-full rounded-xl bg-white shadow-inner"
+          preserveAspectRatio="xMidYMid meet"
+          style={{ aspectRatio: `${floor.image_width} / ${floor.image_height}` }}
+        >
+          <image
+            href={imageUrl}
+            x={0}
+            y={0}
+            width={floor.image_width}
+            height={floor.image_height}
+            preserveAspectRatio="none"
+          />
+          {startPoi ? (
+            <RouteMarker
+              point={{ x: startPoi.x, y: startPoi.y, floor: startPoi.floor_number }}
+              color="#2563eb"
+              label="Vị trí hiện tại"
+            />
+          ) : null}
+          {destinationPoi ? (
+            <RouteMarker
+              point={{ x: destinationPoi.x, y: destinationPoi.y, floor: destinationPoi.floor_number }}
+              color="#ef4444"
+              label={destinationPoi.poi_id}
+              end
+            />
+          ) : null}
+        </svg>
+      </div>
+    </div>
+  );
+}
+
 function RouteMarker({
   point,
   color,
@@ -599,26 +689,97 @@ function dedupePolyline(points: RoutePoint[]) {
   return result;
 }
 
+function normalizeLocationId(value: string) {
+  return value.startsWith("loc_") ? value : `loc_${value}`;
+}
+
+function findPoi(digitalMap: DigitalMap | null, locationId: string | null): MapPoi | null {
+  if (!digitalMap || !locationId) return null;
+  const normalized = normalizeLocationId(locationId);
+  const room = normalized.replace(/^loc_/, "");
+  return (
+    digitalMap.pois.find((poi) => poi.location_id === normalized || poi.poi_id === room) ?? null
+  );
+}
+
+function describeLocation(locationId: string | null, digitalMap: DigitalMap | null): LocationOption {
+  if (!locationId) {
+    return {
+      locationId: "",
+      label: "Chưa chọn phòng",
+      detail: "Cần chọn đủ thông tin để tính đường.",
+    };
+  }
+  const poi = findPoi(digitalMap, locationId);
+  if (poi) {
+    return {
+      locationId: poi.location_id,
+      label: poi.poi_id,
+      detail: `${poi.label} - tầng ${poi.floor_number}`,
+    };
+  }
+  return {
+    locationId,
+    label: locationId.replace(/^loc_/, ""),
+    detail: "Điểm trong bệnh viện",
+  };
+}
+
+function buildCurrentLocationOptions(session: PatientSession | null, digitalMap: DigitalMap | null): LocationOption[] {
+  const options: LocationOption[] = [];
+  const seen = new Set<string>();
+  const push = (locationId: string | null | undefined, label?: string, floor?: number) => {
+    if (!locationId) return;
+    const normalized = normalizeLocationId(locationId);
+    if (seen.has(normalized)) return;
+    seen.add(normalized);
+    const described = describeLocation(normalized, digitalMap);
+    options.push({
+      locationId: normalized,
+      label: described.label,
+      detail: floor ? `${label ?? described.label} - tầng ${floor}` : described.detail,
+    });
+  };
+
+  if (session) {
+    push(session.journey.register.location_code, session.journey.register.room, session.journey.register.floor);
+    push(session.journey.identity.location_code, session.journey.identity.room, session.journey.identity.floor);
+    push(session.journey.payment.location_code, session.journey.payment.room, session.journey.payment.floor);
+    push(session.journey.extracted_fields.initial_exam_room);
+    for (const service of session.journey.specialized_process?.services ?? []) {
+      push(service.room, service.room_name, service.floor);
+    }
+  }
+
+  if (options.length > 0) return options.slice(0, 12);
+  for (const item of digitalMap?.pois ?? []) {
+    push(item.location_id);
+  }
+  if (options.length > 0) return options.slice(0, 12);
+  return FALLBACK_CURRENT_LOCATIONS;
+}
+
 function resolveStartLocation(session: ReturnType<typeof useDemo>["session"]) {
-  if (!session) return "loc_A101";
-  if (session.current_location) return session.current_location;
+  if (!session) return null;
+  if (session.current_location) return normalizeLocationId(session.current_location);
   if (session.journey.current_step === "waiting_for_doctor") {
-    return `loc_${session.journey.register.location_code}`;
+    return session.journey.extracted_fields.initial_exam_room
+      ? normalizeLocationId(session.journey.extracted_fields.initial_exam_room)
+      : null;
   }
   const services = session.journey.specialized_process?.services ?? [];
   const activeIndex = services.findIndex((service) => service.status !== "completed");
   if (activeIndex > 0) {
-    return `loc_${services[activeIndex - 1].room}`;
+    return normalizeLocationId(services[activeIndex - 1].room);
   }
   if (activeIndex === 0) {
     const initialExamRoom =
       session.journey.extracted_fields.initial_exam_room ||
-      session.journey.extracted_fields.return_room ||
-      "A203";
+      session.journey.extracted_fields.return_room;
     if (services[activeIndex].room !== initialExamRoom) {
-      return `loc_${initialExamRoom}`;
+      return initialExamRoom ? normalizeLocationId(initialExamRoom) : null;
     }
-    return `loc_${session.journey.payment.location_code || session.journey.register.location_code}`;
+    return session.journey.payment.location_code ? normalizeLocationId(session.journey.payment.location_code) : null;
   }
-  return `loc_${session.journey.register.location_code}`;
+  return null;
 }

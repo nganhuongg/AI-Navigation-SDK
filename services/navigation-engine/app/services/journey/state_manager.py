@@ -218,6 +218,7 @@ def _build_specialized_process_from_rooms(
     room_codes: list[str],
     room_descriptions: dict[str, str],
     room_notes: dict[str, str],
+    return_room: str | None,
 ) -> SpecializedProcess:
     """Build the care journey directly from OCR-detected room codes.
 
@@ -228,23 +229,44 @@ def _build_specialized_process_from_rooms(
     """
     services: list[SpecializedService] = []
     seen_rooms: set[str] = set()
+    return_room_normalized = return_room.upper() if return_room else None
 
     for room_code in room_codes:
         normalized = room_code.upper()
         if normalized in seen_rooms:
             continue
         seen_rooms.add(normalized)
+        if normalized == return_room_normalized:
+            continue
         service = _dynamic_service_from_room(normalized, room_descriptions, room_notes)
         if service is not None:
             services.append(service)
 
-    # Keep the template's standard pharmacy tail unless OCR already included it.
-    pharmacy = next(
-        (service for service in blueprint.services if service.service_id == "pharmacy"),
-        None,
-    )
-    if pharmacy is not None and pharmacy.room.upper() not in seen_rooms:
-        services.append(pharmacy.model_copy(deep=True))
+    # The doctor return is a real journey step, but not a clinical service listed
+    # on the instruction form. Keep it out of detected_room_codes and append it
+    # explicitly so OCR forms do not create a duplicate first route back to the
+    # initial exam room.
+    for tail_service_id in STANDARD_TAIL_SERVICES:
+        tail = next(
+            (service for service in blueprint.services if service.service_id == tail_service_id),
+            None,
+        )
+        if tail is None:
+            continue
+        fresh = tail.model_copy(deep=True)
+        if tail_service_id == "return_doctor" and return_room:
+            try:
+                location = location_service.get_location(return_room)
+                fresh.room = location.poi_id
+                fresh.room_name = location.name
+                fresh.building = location.building_id
+                fresh.floor = location.floor_number
+                fresh.department = location.category or location.area
+            except NotFoundError:
+                fresh.room = return_room
+        elif fresh.room.upper() in seen_rooms:
+            continue
+        services.append(fresh)
 
     for index, service in enumerate(services):
         service.status = "pending"
@@ -255,7 +277,7 @@ def _build_specialized_process_from_rooms(
 
     return SpecializedProcess(
         services=services,
-        return_room=room_codes[-1] if room_codes else blueprint.return_room,
+        return_room=return_room or blueprint.return_room,
     )
 
 
@@ -299,6 +321,7 @@ def apply_extracted_fields(
             extracted.detected_room_codes,
             extracted.room_descriptions,
             extracted.room_notes,
+            extracted.return_room or extracted.initial_exam_room,
         )
     else:
         journey.specialized_process = _build_specialized_process(

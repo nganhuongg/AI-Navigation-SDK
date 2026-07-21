@@ -23,7 +23,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Theo tuyến",
       "voice_aliases": [
-        "hướng dẫn"
+        "hướng dẫn", "hỏi đường", "hỗ trợ" 
       ],
       "ocr_keywords": [
         "Quầy hướng dẫn"
@@ -48,7 +48,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Theo tuyến",
       "voice_aliases": [
-        "kiosk lấy số"
+        "kiosk lấy số", "lấy số khám", "lấy số thứ tự"
       ],
       "ocr_keywords": [
         "Kiosk lấy số"
@@ -73,7 +73,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Theo tuyến",
       "voice_aliases": [
-        "xác thực cccd",
+        "xác thực căn cước công dân", "căn cước công dân", "căn cước",
         "vneid"
       ],
       "ocr_keywords": [
@@ -175,7 +175,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Theo tuyến",
       "voice_aliases": [
-        "bhyt 1"
+        "bhyt 1", "bảo hiểm y tế", "bảo hiểm"
       ],
       "ocr_keywords": [
         "Quầy BHYT 1"
@@ -200,7 +200,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Theo tuyến",
       "voice_aliases": [
-        "bhyt 2"
+        "bhyt 2", "bảo hiểm y tế", "bảo hiểm"
       ],
       "ocr_keywords": [
         "Quầy BHYT 2"
@@ -602,7 +602,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Theo tuyến",
       "voice_aliases": [
-        "nhà thuốc"
+        "nhà thuốc", "quầy thuốc", "mua thuốc"
       ],
       "ocr_keywords": [
         "Nhà thuốc"
@@ -767,7 +767,7 @@
       "is_patient_destination": true,
       "wheelchair_access": "Có",
       "voice_aliases": [
-        "thang máy khu a tầng 1"
+        "thang máy khu a tầng 1", "thang máy tầng 1"
       ],
       "ocr_keywords": [],
       "notes": "Mã POI riêng, không trùng mã phòng A###"
