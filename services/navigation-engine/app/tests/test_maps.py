@@ -66,4 +66,21 @@ def test_route_uses_verified_map_after_confirmation(client):
         for node_id in route["node_path"]
     )
 
+    multi_floor_route = _data(
+        client.post(
+            "/route",
+            json={
+                "session_id": "sess_map_route_test",
+                "start_location_id": "loc_A101",
+                "destination_location_id": "loc_A303",
+            },
+        )
+    )
+    instruction_text = " ".join(
+        instruction["text_vi"] for instruction in multi_floor_route["instructions"]
+    )
+    assert "tầng 1 lên tầng 3" in instruction_text
+    assert "tầng 1 lên tầng 2" not in instruction_text
+    assert "tầng 2 lên tầng 3" not in instruction_text
+
     digitizer.delete_map_files_for_test(map_id)

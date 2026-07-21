@@ -423,6 +423,10 @@ function FloorRouteCard({
   startLabel: string;
   endLabel: string;
 }) {
+  const routePath = points.map((point) => `${point.x},${point.y}`).join(" ");
+  const routeGradientId = `route-gradient-${floorNumber}`;
+  const routeGlowId = `route-glow-${floorNumber}`;
+
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
       <div className="flex items-start justify-between gap-3 border-b border-slate-100 px-4 py-3">
@@ -435,12 +439,23 @@ function FloorRouteCard({
         </div>
       </div>
 
-      <div className="bg-slate-50 p-3">
+      <div className="bg-slate-50 p-2">
         <svg
           viewBox={`0 0 ${floor.image_width} ${floor.image_height}`}
-          className="block h-[460px] max-h-[62vh] min-h-[380px] w-full rounded-xl bg-white shadow-inner"
+          className="block h-auto w-full rounded-xl bg-white shadow-inner"
           preserveAspectRatio="xMidYMid meet"
+          style={{ aspectRatio: `${floor.image_width} / ${floor.image_height}` }}
         >
+          <defs>
+            <linearGradient id={routeGradientId} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#0f766e" />
+              <stop offset="52%" stopColor="#10b981" />
+              <stop offset="100%" stopColor="#2563eb" />
+            </linearGradient>
+            <filter id={routeGlowId} x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="2" stdDeviation="2" floodColor="#064e3b" floodOpacity="0.2" />
+            </filter>
+          </defs>
           <image
             href={imageUrl}
             x={0}
@@ -452,22 +467,44 @@ function FloorRouteCard({
           {points.length > 1 ? (
             <>
               <polyline
-                points={points.map((point) => `${point.x},${point.y}`).join(" ")}
+                points={routePath}
                 fill="none"
-                stroke="#16a34a"
-                strokeWidth={18}
+                stroke="#ffffff"
+                strokeWidth={3.5}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                opacity={0.28}
+                opacity={0.78}
                 vectorEffect="non-scaling-stroke"
               />
               <polyline
-                points={points.map((point) => `${point.x},${point.y}`).join(" ")}
+                points={routePath}
                 fill="none"
-                stroke="#008751"
-                strokeWidth={7}
+                stroke="#064e3b"
+                strokeWidth={2.5}
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                opacity={0.1}
+                vectorEffect="non-scaling-stroke"
+              />
+              <polyline
+                points={routePath}
+                fill="none"
+                stroke={`url(#${routeGradientId})`}
+                strokeWidth={1.4}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                filter={`url(#${routeGlowId})`}
+                vectorEffect="non-scaling-stroke"
+              />
+              <polyline
+                points={routePath}
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth={0.45}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="0.5 7"
+                opacity={0.68}
                 vectorEffect="non-scaling-stroke"
               />
             </>
@@ -523,14 +560,20 @@ function splitRouteByFloor(polyline: RoutePoint[], floors: MapFloor[]): RouteSeg
   }
 
   const orderedFloors = [...groups.keys()].sort((a, b) => a - b);
-  return orderedFloors.map((floor, index) => ({
+  const visibleFloors = orderedFloors.filter((floor, index) => {
+    const isEndpointFloor = index === 0 || index === orderedFloors.length - 1;
+    const points = groups.get(floor) ?? [];
+    return isEndpointFloor || points.length > 1;
+  });
+
+  return visibleFloors.map((floor, index) => ({
     floor,
     points: groups.get(floor) ?? [],
-    title: index === 0 ? "Đoạn 1" : index === orderedFloors.length - 1 ? "Đoạn cuối" : `Đoạn ${index + 1}`,
+    title: index === 0 ? "Đoạn 1" : index === visibleFloors.length - 1 ? "Đoạn cuối" : `Đoạn ${index + 1}`,
     subtitle:
       index === 0
         ? "Từ vị trí hiện tại tới thang máy hoặc cầu thang"
-        : index === orderedFloors.length - 1
+        : index === visibleFloors.length - 1
           ? "Từ thang máy hoặc cầu thang tới điểm đến"
           : "Đoạn chuyển tầng trung gian",
   }));

@@ -104,6 +104,21 @@ def get_route_for_map(map_id: str, request: RouteRequest, status: MapStatus = "v
     return _route_on_map(digital_map, request)
 
 
+def _connector_for_transition(previous: MapNode, current: MapNode) -> str:
+    """Return the patient-facing connector used between two floors."""
+    if "elevator" in {previous.kind, current.kind}:
+        return "thang máy"
+    return "cầu thang"
+
+
+def _floor_direction(from_floor: int, to_floor: int) -> str:
+    if to_floor > from_floor:
+        return "lên"
+    if to_floor < from_floor:
+        return "xuống"
+    return "tới"
+
+
 def _instructions(path_nodes: list[MapNode], start_room: str | None, destination_room: str) -> list[RouteInstruction]:
     if not path_nodes:
         return []
@@ -116,16 +131,41 @@ def _instructions(path_nodes: list[MapNode], start_room: str | None, destination
     else:
         instructions.append(f"Giai đoạn 1: bắt đầu từ vị trí hiện tại ở tầng {first_floor}.")
 
-    current_floor = first_floor
     stage = 2
-    for previous, current in zip(path_nodes, path_nodes[1:]):
-        if previous.floor_number != current.floor_number:
-            connector = "thang máy" if "elevator" in {previous.kind, current.kind} else "cầu thang"
+    index = 0
+    while index < len(path_nodes) - 1:
+        previous = path_nodes[index]
+        current = path_nodes[index + 1]
+        if previous.floor_number == current.floor_number:
+            index += 1
+            continue
+
+        connector = _connector_for_transition(previous, current)
+        from_floor = previous.floor_number
+        to_floor = current.floor_number
+        index += 1
+
+        # The graph models each elevator/stair shaft as one edge per floor, but
+        # the patient experiences consecutive same-connector edges as one ride.
+        while index < len(path_nodes) - 1:
+            next_node = path_nodes[index + 1]
+            if path_nodes[index].floor_number == next_node.floor_number:
+                break
+            if _connector_for_transition(path_nodes[index], next_node) != connector:
+                break
+            to_floor = next_node.floor_number
+            index += 1
+
+        direction = _floor_direction(from_floor, to_floor)
+        if connector == "thang máy":
             instructions.append(
-                f"Giai đoạn {stage}: đến {connector}, đi từ tầng {previous.floor_number} lên tầng {current.floor_number}."
+                f"Giai đoạn {stage}: đến thang máy, đi thẳng từ tầng {from_floor} {direction} tầng {to_floor}."
             )
-            stage += 1
-            current_floor = current.floor_number
+        else:
+            instructions.append(
+                f"Giai đoạn {stage}: đến cầu thang, đi từ tầng {from_floor} {direction} tầng {to_floor}."
+            )
+        stage += 1
 
     if first_floor == last_floor:
         instructions.append(f"Giai đoạn {stage}: đi theo đường màu xanh đến phòng {destination_room}.")
