@@ -1079,7 +1079,7 @@ function ChecklistScreen({
             onClick={() => setScreen("scan")}
             className="flex h-12 w-full items-center justify-center rounded-2xl border-2 border-slate-200 text-sm font-bold text-slate-600"
           >
-            Quét lại phiếu chỉ định
+            Quét phiếu chỉ định
           </button>
           <button
             type="button"
